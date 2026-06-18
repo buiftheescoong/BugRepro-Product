@@ -1,0 +1,564 @@
+Root Url,Bug Id,Short Description,Sequence Actions,Số bước,Loại lỗi,Độ khó,Chú ý
+http://qairline.ui-testing.io.vn/,1,"
+
+Admin can create a flight with a departure time in the past (login with email: admin@gmail.com / password: Cong23032004*)","- Login admin = Fill email + Fill password + Click Login(3 bước)
+- Click ""Manage Flights""
+- Click ""+ New Flight"".
+- Fill ""F2"" in Flight Number.
+- Select ""BOE-787-9 Dreamliner"" from the Aircraft dropdown.
+- Fill ""80"" into Base Price
+- Select ""Ha Noi (GL-HN)"" from Departure Location
+- Select ""Da Nang (DN-DN)"" from Arrival Location
+- Set Departure Date/Time to ""2026-01-28 03:31 PM"".
+- Set Arrival Date/Time to ""2026-01-30 03:31 PM"".
+- Click ""Save"".
+- Click CloseDialog",14,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,Login admin/user = Fill email/username + Fill password + Click Login => tính là 3 bước
+http://qairline.ui-testing.io.vn/,2,"
+Admin can create a new flight with an arrival time earlier than the departure time","- Login admin (3 bước)
+- Click ""Manage Flights""
+- Click ""+ New Flight"".
+- Fill ""F3"" in Flight Number.
+- Select ""BOE-787-9 Dreamliner"" from the Aircraft dropdown.
+- Fill ""80"" into Base Price
+- Select ""Ho Chi Minh (TSN-HCM)"" from Departure Location
+- Select ""London (LD-UK)"" from Arrival Location
+- Set Departure Date/Time to ""2026-01-31 4:00 PM"".
+- Set Arrival Date/Time to ""2026-01-30 4:00 PM"".
+- Click ""Save"".
+- Click CloseDialog",14,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,3,"
+Admin can create two flights with the same flight number (FLIGHT NO.) ","- Login admin 
+- Click ""Manage Flights""
+- Click ""+ New Flight"".
+- Fill ""F1"" in Flight Number.
+- Select ""AB_A350"" from the Aircraft dropdown.
+- Fill ""200"" into Base Price
+- Select ""Ha Noi (GB-HN)"" from Departure Location
+- Select ""London (LD-UK)"" from Arrival Location
+- Set Departure Date/Time to ""2026-01-31 4:00 PM"".
+- Set Arrival Date/Time to ""2026-01-31 8:00PM"".
+- Click ""Save"".
+- Click CloseDialog",14,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,4,"
+Admin can create a flight with a negative base price  (login with email: admin@gmail.com / password: Cong23032004*)","- Login admin 
+- Click ""Manage Flights""
+- Click ""+ New Flight"".
+- Fill ""F4"" in Flight Number.
+- Select ""AB_A350"" from the Aircraft dropdown.
+- Fill ""-10"" into Base Price
+- Select ""Ha Noi (GB-HN)"" from Departure Location
+- Select ""London (LD-UK)"" from Arrival Location
+- Set Departure Date/Time to ""2026-01-30 4:00 PM"".
+- Set Arrival Date/Time to ""2026-01-30 8:00PM"".
+- Click ""Save"".
+- Click CloseDialog",14,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,5,"
+Admin can create a new flight using an aircraft that is already assigned to another flight at the same time or with overlapping flight schedules  (login with email: admin@gmail.com / password: Cong23032004*)","- Login admin (3 bước)
+- Click ""Manage Flights""
+- Click ""+ New Flight"".
+- Fill ""F5"" in Flight Number.
+- Select ""AB_A350"" from the Aircraft dropdown.
+- Fill ""50"" into Base Price
+- Select ""Ha Noi (GL-HN)"" from Departure Location
+- Select ""Da Nang (DN-DN)"" from Arrival Location
+- Set Departure Date/Time to ""2026-01-30 4:30 PM"".
+- Set Arrival Date/Time to ""2026-01-30 7:00 PM"".
+- Click ""Save"".
+- Click CloseDialog",14,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,6,"Admin deletes an aircraft on the Manage Aircrafts page. After clicking Delete, but the aircraft is still displayed on the interface. The aircraft only disappears after the page is reloaded (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click ""Manage Aircrafts"".
+Click the ""Delete BOE-777"" button.
+Click ""OK"" on the browser popup.",6,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,7,"
+Admin deletes an aircraft currently assigned to a flight; the Manage Flights page displays a blank screen afterward","Login Admin
+Click Manage Flights
+Click ""Manage Aircrafts"".
+Click ""Delete BOE-787-9-Dreamliner"" button.
+Click ""OK"" on the browser popup.
+Click ""Manage Flights"" ",8,"Lỗi sập, treo hoặc không khả dụng",Medium,
+http://qairline.ui-testing.io.vn/,8,"
+Admin can create a new aircraft with a total number of seats equal to 0 (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click ""Manage Aircrafts"".
+Click ""+ New Aircraft""
+Fill ""BOE-777"" into Aircraft Code
+Fill ""Boeing"" into Manufacturer
+Fill ""https://osky.1cdn.vn/2024/06/06/boeing-777-about-to-take-off1.jpeg"" into Logo Url
+Fill 0 into Economy Seats
+Fill 0 into Business Seats
+Click ""Save""",11,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,9,"
+Creating a new flight using an aircraft with a total number of seats equal to 0 results in a blank page. (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click ""Manage Aircrafts"".
+Click ""+ New Aircraft""
+Fill ""BOE-777"" into Aircraft Code
+Fill ""Boeing"" into Manufacturer
+Fill ""https://osky.1cdn.vn/2024/06/06/boeing-777-about-to-take-off1.jpeg"" into Logo Url
+Fill 0 into Economy Seats
+Fill 0 into Business Seats
+Click ""Save""
+Click ""Manage Flights""
+Click ""+ New Flight"".
+Fill ""F6"" in Flight Number.
+Select ""BOE-777"" from the Aircraft dropdown.
+Fill ""100"" into Base Price
+Select ""Ha Noi (GL-HN)"" from Departure Location
+Select ""Da Nang (DN-DN)"" from Arrival Location
+Set Departure Date/Time to ""2026-01-30 6:00 PM"".
+Set Arrival Date/Time to ""2026-01-30 8:00 PM"".
+Click ""Save"".
+Click CloseDialog",22,"Lỗi sập, treo hoặc không khả dụng",Hard,
+http://qairline.ui-testing.io.vn/,10,"
+Creating a new aircraft with an excessively long Aircraft Code breaks the UI layout, causing the ""+ New Aircraft"" button to overflow outside the screen.","Login Admin
+Click ""Manage Aircrafts"".
+Click ""+ New Aircraft""
+Fill ""BOE-7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777"" into Aircraft Code
+Fill ""Boeing"" into Manufacturer
+Fill ""https://osky.1cdn.vn/2024/06/06/boeing-777-about-to-take-off1.jpeg"" into Logo Url
+Fill 10 into Economy Seats
+Fill 50 into Business Seats
+Click ""Save""",11,Lỗi hiển thị giao diện,Medium,
+http://qairline.ui-testing.io.vn/,11,"
+After creating an aircraft with an excessively long Aircraft Code, creating a new flight using that aircraft on the Manage Flights page breaks the UI layout, causing columns such as Class Info and Action to overflow outside the screen (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click ""Manage Aircrafts"".
+Click ""+ New Aircraft""
+Fill ""BOE-7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777"" into Aircraft Code
+Fill ""Boeing"" into Manufacturer
+Fill ""https://osky.1cdn.vn/2024/06/06/boeing-777-about-to-take-off1.jpeg"" into Logo Url
+Fill 10 into Economy Seats
+Fill 50 into Business Seats
+Click ""Save""
+Click ""Manage Flights""
+Click ""+ New Flight"".
+Fill ""F7"" in Flight Number.
+Select ""BOE-7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777"" from the Aircraft dropdown.
+Fill ""100"" into Base Price
+Select ""Ho Chi Minh (TSN-HCM)"" from Departure Location
+Select ""Ha Noi (GB-HN)"" from Arrival Location
+Set Departure Date/Time to ""2026-02-01 6:00PM"".
+Set Arrival Date/Time to ""2026-02-01 9:00PM"".
+Click ""Save"".
+- Click CloseDialog",22,Lỗi hiển thị giao diện,Hard,
+http://qairline.ui-testing.io.vn/,12,"
+Creating a new aircraft with an excessively long Manufacturer name breaks the UI layout, causing subsequent columns to overflow outside the screen ","Login Admin
+Click ""Manage Aircrafts"".
+Click ""+ New Aircraft""
+Fill ""BOE-777"" into Aircraft Code
+Fill ""Boeingggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"" into Manufacturer
+Fill ""https://osky.1cdn.vn/2024/06/06/boeing-777-about-to-take-off1.jpeg"" into Logo Url
+Fill 10 into Economy Seats
+Fill 50 into Business Seats
+Click ""Save""",11,Lỗi hiển thị giao diện,Medium,
+http://qairline.ui-testing.io.vn/,13,"
+Deleting an airport that is assigned to a scheduled flight causes the Manage Flights page to display a blank screen (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click Manage Flights
+Click Manage Airport
+Click ""Delete Da Nang""
+Click ""Manage Flights""",7,"Lỗi sập, treo hoặc không khả dụng",Medium,
+http://qairline.ui-testing.io.vn/,14,"
+The UI fails to redirect to the Home page after admin interacts with any page then clicks Logout as an Admin ","Login Admin
+Click Promotions
+Click Logout",5,Lỗi điều hướng hoặc luồng thao tác,Medium,
+http://qairline.ui-testing.io.vn/,15,"
+Users can access flight information on the Admin page by appending /admin/flights to the root URL","Open url ""...../admin/Flights""",1,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+http://qairline.ui-testing.io.vn/,16,"
+Users can access aircraft information on the Admin page by appending /admin/aircrafts to the root URL .
+","Open url ""...../admin/Aircrafts""",1,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+http://qairline.ui-testing.io.vn/,17,"
+Search information entered on the Book Flight page is lost after navigating to another page and returning to Book Flight","Open url ""homepage""
+Click ""Book Flight""
+Select ""Ha Noi"" from ""From""
+Select ""Ho Chi Minh"" from ""To""
+Click ""Booking Guide""
+Click ""Book Flight""",6,Lỗi điều hướng hoặc luồng thao tác,Medium,
+http://qairline.ui-testing.io.vn/,18,"
+Users can directly access the successful payment page by appending /checkout-page to the root URL ","Open url ""..../checkout-page""",1,Lỗi điều hướng hoặc luồng thao tác,Easy,
+http://qairline.ui-testing.io.vn/,19,The ticket prices for Economy and Business classes are the same when user search for a flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026,"Login User (3 bước)
+Click ""Book Flight""
+Select ""Ha Noi"" from ""From""
+Select ""Ho Chi Minh"" from ""To""
+Set Departure Date ""30/1/2026""
+Set Return Date ""31/1/2026""
+Click ""Passengers/Class""
+Click ""+ Adults""
+Click ""Business""
+Click ""Confirm""
+Click ""Search Flights""
+",13,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,20,"The system allows users to enter a future date of birth when filling in passenger information (user login with email ""cong@gmail.com"" and password ""Cong23032004*"" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)","Login User a
+Click ""Book Flight""
+Select ""Ha Noi"" from ""From""
+Select ""Ho Chi Minh"" from ""To""
+Set Departure Date ""30/1/2026""
+Set Return Date ""31/1/2026""
+Click ""Passengers/Class""
+Click ""+ Adults""
+Click ""Business""
+Click ""Confirm""
+Click ""Search Flights""
+Click B47
+Fill ""Van A"" into First Name 
+Fill ""Nguyen"" into Last Name
+Set Date of Birth ""02/03/2026""
+Fill ""123456789"" into Passport Number
+Select ""Vietnam"" from Country
+Fill ""Bac Ninh"" into Province
+Fill ""0976543218"" into Phone Number
+Fill ""a@gmail.com"" into Email
+Choose file passport.jpg
+Click Next
+
+",26,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,21,"Users can successfully proceed to the next booking step after entering their personal details even without properly agreeing to the terms
+(user login with email ""cong@gmail.com"" and password ""Cong23032004*"" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)","Login User a
+Click ""Book Flight""
+Select ""Ha Noi"" from ""From""
+Select ""Ho Chi Minh"" from ""To""
+Set Departure Date ""30/1/2026""
+Set Return Date ""31/1/2026""
+Click ""Passengers/Class""
+Click ""+ Adults""
+Click ""Business""
+Click ""Confirm""
+Click ""Search Flights""
+Click B47
+Fill ""Van A"" into First Name 
+Fill ""Nguyen"" into Last Name
+Set Date of Birth ""02/03/2026""
+Fill ""123456789"" into Passport Number
+Select ""Vietnam"" from Country
+Fill ""Bac Ninh"" into Province
+Fill ""0976543218"" into Phone Number
+Fill ""a@gmail.com"" into Email
+Choose file passport.jpg
+Click Next
+Click I agree with the terms and conditions
+Click Next",28,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,22,"The passport image is lost when the user navigates back to view the selected seats from the Traveller Details page and then returns to Traveller Details (user login with email ""cong@gmail.com"" and password ""Cong23032004*"" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)","Login User a
+Click ""Book Flight""
+Select ""Ha Noi"" from ""From""
+Select ""Ho Chi Minh"" from ""To""
+Set Departure Date ""30/1/2026""
+Set Return Date ""31/1/2026""
+Click ""Passengers/Class""
+Click ""+ Adults""
+Click ""Business""
+Click ""Confirm""
+Click ""Search Flights""
+Click B47
+Fill ""Van A"" into First Name 
+Fill ""Nguyen"" into Last Name
+Set Date of Birth ""02/03/2026""
+Fill ""123456789"" into Passport Number
+Select ""Vietnam"" from Country
+Fill ""Bac Ninh"" into Province
+Fill ""0976543218"" into Phone Number
+Fill ""a@gmail.com"" into Email
+Choose file passport.jpg
+Click Previous
+Click Next
+",27,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,23,"Airport codes are not displayed on the UI when users search for flight information (such as searching Ha Noi, Ho Chi Minh,..) ","Login User a
+Click Book Flight
+Select ""Ha Noi"" from ""From""",5,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,24,"On the Current Bookings page, when a cancellation confirmation popup appears, using the browser Back button does not close the popup","Login User a
+Click Current Bookings
+Click Cancel
+Click Back của web
+",6,Lỗi điều hướng hoặc luồng thao tác,Medium,
+http://qairline.ui-testing.io.vn/,25,"On the Manage Bookings page, filtering bookings for user ""btcong"" shows Results = 2 even though only one booking exists (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click Manage Bookings
+Select User
+Fill btcong
+Click Search",7,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,26,"On the Manage Bookings page, filtering bookings by username ""Btcong"" yields different results compared to ""btcong"", whereas the search function is expected to be case-insensitive.","Login Admin
+Click Manage Bookings
+Select User
+Fill Btcong
+Click Search",7,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,27,"On the Admin Dashboard page, the Total Flights count does not match the actual number of flights.","Login Admin
+Click Manage Flights
+Click Home",5,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+https://www.saucedemo.com/,28,"The sorting functionality on the Product page is not working (login with username ""error_user"" and password ""secret_sauce"")","Open url ""https://www.saucedemo.com/""
+Fill ""error_user"" into Username
+Fill ""secret_sauce"" into Password
+Click Login
+Select ""Price (high to low)""",5,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+https://www.saucedemo.com/,29,"Clicking Finish to complete payment has no effect (login with username ""error_user"" and password ""secret_sauce"")","Open url ""https://www.saucedemo.com/""
+Fill ""error_user"" into Username
+Fill ""secret_sauce"" into Password
+Click Login
+Click Add to cart Sauce Labs Backpack
+Click Shopping-cart
+Cick Checkout
+Fill ""Cong"" into First Name
+Fill ""Bui"" into Last Name
+FIll 100000 into Zip/Postal Code
+Click Continue
+Click Finish",12,Lỗi tương tác và trạng thái phần tử,Hard,
+https://www.saucedemo.com/,30,"Cart icon is not properly aligned with other header elements, affecting layout consistency (login with username ""visual_user"" and password ""secret_sauce"")","Open url ""https://www.saucedemo.com/""
+Fill ""visual_user"" into Username
+Fill ""secret_sauce"" into Password
+Click Login
+",4,Lỗi hiển thị giao diện,Easy,
+http://qairline.ui-testing.io.vn/,31,Users can access promotions page on the Admin page by appending /admin/promotions to the root URL,"Open url ""...../admin/promotions""",1,Lỗi điều hướng hoặc luồng thao tác,Easy,
+http://qairline.ui-testing.io.vn/,32,Users can access manage bookings page on the Admin page by appending /admin/bookings to the root URL,"Open url ""...../admin/bookings""",1,Lỗi điều hướng hoặc luồng thao tác,Easy,
+http://qairline.ui-testing.io.vn/,33,Users can access manage airports page on the Admin page by appending /admin/airports to the root URL,"Open url ""...../admin/airports""",1,Lỗi điều hướng hoặc luồng thao tác,Easy,
+http://qairline.ui-testing.io.vn/,34,The admin sidebar highlights “Manage Flights” even when another admin page is open (login with email: admin@gmail.com / password: Cong23032004*),"Login admin  
+Click Manage Bookings",4,Lỗi tương tác và trạng thái phần tử,Easy,
+http://qairline.ui-testing.io.vn/,35,"In home page, footer award images are broken",Scroll to footer,1,Lỗi hiển thị giao diện,Easy,
+http://qairline.ui-testing.io.vn/,36,"In Manage Bookings,  when the admin filters flights by Flight, the input must exactly match the flight name, with no extra whitespace ","Login Admin
+Click Manage Bookings
+Fiil F1 
+Click Search
+Fill ""F1 "" 
+Click Search",8,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,37,"When the admin filters flights by User, the input must exactly match the username, with no extra whitespace ","Login Admin
+Click Manage Bookings
+Select User
+Fiil ""btcong""
+Click Search
+Fill ""btcong "" 
+Click Search",9,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,38,"When the admin filters flights by departure location, the input must exactly match the departure name, with no extra whitespace. ","Login Admin
+Click Manage Bookings
+Select Departure Location
+Fiil ""Ha Noi""
+Click Search
+Fill ""Ha Noi   "" 
+Click Search",9,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,39,"Edit Flight: The save operation succeeds, but the list is not updated until the page is refreshed (F5). (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click Manage Flights
+Click Edit
+Fill Departure Date & Time
+Fill Arrival Date & Time
+Click Save
+Refresh page
+",9,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,40,"Admin filter user with value 'btcong' done, then clears all filter inputs and re-searches does not reset the results. (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click Manage Bookings
+Select User
+Fiil ""btcong""
+Click Search
+Fill """" 
+Click Search
+Click popup OK",10,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,41,"On the Manage Flights page, clicking Cancel during editing redirects the user to the Home page instead of staying on the same page (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click Manage Flights
+Click Edit
+Click Cancel
+",6,Lỗi điều hướng hoặc luồng thao tác,Medium,
+http://qairline.ui-testing.io.vn/,42,"On the Manage Flights, clicking Clear only resets the UI inputs/dropdowns but does not reset the applied flight number filter ","Login Admin
+Click Manage Flights
+Fill F1
+Click Apply Filter
+Click Clear 
+
+",7,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,43,"On the Manage Flights page, departure sorting (click Departure) uses arrival dates, causing incorrect order","Login Admin
+Click Manage Flights
+Click Departure
+",5,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,44,"On the Promotions page, Admin can enter a discount greater than 100% without validation. (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click Promotions
+Click + New Promotions
+Fill Form Promotions (6 bước)
+Click Save",12,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,45,Admin can create a promotion where the end date is earlier than the start date,"Login Admin
+Click Promotions
+Click + New Promotions
+Fill Form Promotions (6 bước)
+Click Save",12,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,46,Promotion form inputs are not reset after clicking Cancel. (login with email: admin@gmail.com / password: Cong23032004*),"Login Admin
+Click Promotions
+Click + New Promotions
+Fill Form Promotions (6 bước)
+Click Cancel
+Click + New Promotions",13,Lỗi tương tác và trạng thái phần tử,Hard,
+http://qairline.ui-testing.io.vn/,47,"In Manage Flights, flight's status colors are incorrect (e.g., delayed status is displayed the same as scheduled) ","Login Admin
+Click Manage Flights",4,Lỗi hiển thị giao diện,Easy,
+http://qairline.ui-testing.io.vn/,48,"On the Promotion Page, save button allows duplicate submissions on multiple clicks.","Login Admin
+Click Promotions
+Click + New Promotions
+Fill Form Promotions (6 bước)
+Click Save
+Click Save",13,Lỗi tương tác và trạng thái phần tử,Hard,
+http://qairline.ui-testing.io.vn/,49,"After creating a flight, the modal shows multiple spelling errors. (login with email: admin@gmail.com / password: Cong23032004*)","Login Admin
+Click Manage Flights
+Click + New Flights
+Fill Forms Flights (7 bước)
+Click Save
+
+",13,Lỗi hiển thị giao diện,Hard,
+http://qairline.ui-testing.io.vn/,50,"In Manage Flights, after creating a flight, success modal has poor UI: Comic Sans font, red “Close dialog” button, and misaligned button. ","Login Admin
+Click Manage Flights
+Click + New Flights
+Fill Forms Flights (7 bước)
+Click Save
+
+",13,Lỗi hiển thị giao diện,Hard,
+http://qairline.ui-testing.io.vn/,51,Edit Flight success modal contains multiple typos and unprofessional button text (“OK sure”).,"Login Admin 
+Click Manage Flights
+Click Edit
+Fill Edit Form (2 bước)
+Click Save",8,Lỗi hiển thị giao diện,Medium,
+http://qairline.ui-testing.io.vn/,52,"In Book Flight page, swapping departure and destination updates the UI fields but not the search results, which remain based on the previous locations. (For example searching flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)","Click Book Flights
+Fill Search Form (7 bước) 
+Click Search Flights
+Click Swap
+Click Search Flights
+",11,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,53,User can choose a return date earlier than the departure date without validation when searching flight,"Click Book Flights
+Fill Search Form (8 bước) 
+Click Search Flights
+
+",10,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,54,User can search for flights with departure times in the past.,"Click Book Flights
+Fill Search Form (7 bước) 
+Click Search Flights
+
+",9,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,55,"When users search flight, popup message for no matching flights contains spelling errors (searching with departure date in the past 20/1/2021)","Click Book Flights
+Fill Search Form (7 bước) 
+Click Search Flights
+
+",9,Lỗi hiển thị giao diện,Medium,
+http://qairline.ui-testing.io.vn/,56,Clicking the swap button for departure and destination on the Home page has no effect.,"Select From
+Select To
+Click Swap",3,Lỗi tương tác và trạng thái phần tử,Easy,
+http://qairline.ui-testing.io.vn/,57,"When user books flight tickets, selected seats lose their highlight after switching seat type tabs, allowing re-selection and causing the total price to increase incorrectly. (user login with email ""cong@gmail.com"" and password ""Cong23032004*"" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)","Login User a
+Click ""Book Flight""
+Select ""Ha Noi"" from ""From""
+Select ""Ho Chi Minh"" from ""To""
+Set Departure Date ""30/1/2026""
+Set Return Date ""31/1/2026""
+Click ""Passengers/Class""
+Click ""+ Adults""
+Click ""Business""
+Click ""Confirm""
+Click ""Search Flights""
+Click Economy 
+Click Select
+Click B47
+Click Businesses
+Click Economy
+",18,Lỗi tương tác và trạng thái phần tử,Hard,
+http://qairline.ui-testing.io.vn/,58,"When user books flight tickets, fixed tax is always $10 regardless of the number of passengers. (user login with email ""cong@gmail.com"" and password ""Cong23032004*"" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)","Login User a
+Click ""Book Flight""
+Select ""Ha Noi"" from ""From""
+Select ""Ho Chi Minh"" from ""To""
+Set Departure Date ""30/1/2026""
+Set Return Date ""31/1/2026""
+Click ""Passengers/Class""
+Click ""+ Adults""
+Click ""Business""
+Click ""Confirm""
+Click ""Search Flights""
+Click Economy 
+Click Select
+Click B47
+Click B46",17,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Hard,
+http://qairline.ui-testing.io.vn/,59,"After user logs out, the navbar still shows user info until the page is refreshed. ","Login User A
+Click Logout
+Refresh",5,Lỗi tương tác và trạng thái phần tử,Medium,
+http://qairline.ui-testing.io.vn/,60,"On the sign-in page, the password visibility (eye) icon does not change state when toggled.","Click Login
+Fill Password
+Click eye",3,Lỗi tương tác và trạng thái phần tử,Easy,
+http://qairline.ui-testing.io.vn/,61,"On the sign-up page, the password visibility (eye) icon does not change state when toggled.","Click Sign up
+Fill Password
+Click eye",3,Lỗi tương tác và trạng thái phần tử,Easy,
+http://qairline.ui-testing.io.vn/,62,"In Booking Flight page, flight price sorting after search is incorrect, using lexicographical order instead of numeric order.","Click Book Flights
+Fill Search Form (7 bước) 
+Click Search Flights
+Click Sort by Price",10,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,63,Clicking the “Choose your tour!” carousel navigation buttons has no effect.,"Click ->
+Click <-",2,Lỗi tương tác và trạng thái phần tử,Easy,
+http://qairline.ui-testing.io.vn/,64,"The ""Plan your journey"" section shows only one promotion per page instead of four","
+Click ->",2,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+http://qairline.ui-testing.io.vn/,65,"Carousel navigation for ""Plan your journey""  is reversed and incorrectly disabled (prev/next handlers and states are swapped).","Click ->
+Click <-
+Click ->",3,Lỗi tương tác và trạng thái phần tử,Easy,
+http://qairline.ui-testing.io.vn/,66,"In Key Info page, Travel Safe insurance price is shown as 580,000 VND instead of the correct 58,000 VND (10× higher).","Click Key Info
+Click Insurance",2,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+http://qairline.ui-testing.io.vn/,67,"Go to Key Info page, the “See more details here” link in the Travel Insurance card leads to a non-existent page (404 error).","Click Key Info
+Click Insurance
+Click See more details here ",3,"Lỗi sập, treo hoặc không khả dụng",Easy,
+http://qairline.ui-testing.io.vn/,68,"In Key Info page, Xanh SM Taxi hotline number has the last two digits swapped, showing “1900 2079” instead of “1900 2097”.","Click Key Info
+Click Taxi Service",2,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+http://qairline.ui-testing.io.vn/,69,"In Manage Bookings, Total Price does not update with filters and always shows the sum of all bookings.","Login Admin 
+Click Manage Bookings
+Fill F1
+Click Search",6,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+http://qairline.ui-testing.io.vn/,70,All rows in the Aircraft list display the same logo (from the first aircraft).,"Login Admin
+Click Manage Aircrafts",4,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+http://qairline.ui-testing.io.vn/,71,"In Admin dashboard, “Total Bookings” and “Total Aircrafts” stats are swapped, each showing the other’s value","Login Admin
+Click Manage Aircrafts
+Click Manage Bookings",5,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+https://bug-refinedev.vercel.app/,72,"The ""Status"" column in the Blog List displays raw lowercase values without capitalization (login with default values)","Login 
+",3,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+https://bug-refinedev.vercel.app/,73,"The ""Category"" column in the Blog List always displays ""Loading..."" even after the data has finished loading. (login with default values)","Login 
+Wait ",4,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+https://bug-refinedev.vercel.app/,74,"The ""Category"" field in the BlogPost Show displays “[object Object]” instead of the actual content","Login 
+Click Show",4,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+https://bug-refinedev.vercel.app/,75,"In the Category List page, the ""title"" column header is lowercase while other column headers are properly capitalized. (login with default values)","Login 
+Click Categories",4,Lỗi hiển thị giao diện,Easy,
+https://bug-refinedev.vercel.app/,76,The createdAt field in the BlogPost Show displays a raw ISO string instead of a formatted date.,"Login 
+Click Show",4,Lỗi hiển thị giao diện,Easy,
+https://bug-refinedev.vercel.app/,77,"""Status"" field in the BlogPost Show is not displayed (renders as undefined).","Login 
+Click Show",4,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+https://bug-refinedev.vercel.app/,78,"In the Category Show, the ID and Title fields are swapped (ID shows title, Title shows ID).","Login 
+Click Categories
+Click Show",5,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+https://bug-refinedev.vercel.app/,79,"Username overlaps with the avatar, causing a layout issue. (login with default values) ",Login,3,Lỗi hiển thị giao diện,Easy,
+https://bug-refinedev.vercel.app/,80,The Delete button in the BlogPost List is disabled. (login with default values),Login,3,Lỗi tương tác và trạng thái phần tử,Easy,
+https://bug-refinedev.vercel.app/,81,Dark mode switch is not working — toggling does not change the theme.,"Login
+Click toggle theme
+",4,Lỗi tương tác và trạng thái phần tử,Easy,
+https://bug-refinedev.vercel.app/,82,"In the Create BlogPost form, the Title field is disabled and cannot be edited. ","Login
+Click Create
+Fill Title",5,Lỗi tương tác và trạng thái phần tử,Medium,
+https://bug-refinedev.vercel.app/,83,"In BlogPost Create, the Status field always resets to ""draft"" regardless of the selected option. (login with default values)","Login
+Click Create
+Click Status
+Click Published",6,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+https://bug-refinedev.vercel.app/,84,"In Category Create, empty submissions pass validation (validation rules are missing) (login with default values)","Login 
+Click Categories
+Click Create
+Click Save",6,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Medium,
+https://bug-refinedev.vercel.app/,85,"In BlogPost Show, the Delete action does not show a confirmation dialog and deletes immediately.","Login 
+Click Show
+Click Delete",5,Lỗi tương tác và trạng thái phần tử,Medium,
+https://bug-refinedev.vercel.app/,86,"In Category Edit, after saving, the page redirects to the BlogPost List instead of the Category List. (login with default values)","Login 
+Click Categories
+Click Edit
+Fill Title 
+Click Save 
+",7,Lỗi điều hướng hoặc luồng thao tác,Medium,
+https://bug-refinedev.vercel.app/,87,The Content column incorrectly shows the string length alongside the preview text on every row.,Login,3,Lỗi hiển thị giao diện,Easy,
+https://bug-commerce.vercel.app/,88,"The Footer ""About"" link leads to a 404 page.","
+Click About",1,"Lỗi sập, treo hoặc không khả dụng",Easy,
+https://bug-commerce.vercel.app/,89,"The Footer ""FAQ"" link leads to a 404 page.","
+Click FAQ",1,"Lỗi sập, treo hoặc không khả dụng",Easy,
+https://bug-commerce.vercel.app/,90,"The Footer ""Contact"" link leads to a 404 page.",Click Contact,1,"Lỗi sập, treo hoặc không khả dụng",Easy,
+https://bug-commerce.vercel.app/,91,Product name text overflows the container and overlaps the product image.,,1,Lỗi hiển thị giao diện,Easy,
+https://bug-commerce.vercel.app/,92,"In product information details page, users cannot navigate product images using the gallery arrows.","Click Classic White T-Shirt
+Click ->
+Click <-",3,Lỗi tương tác và trạng thái phần tử,Easy,
+https://bug-commerce.vercel.app/,93,"In product information details page, the price component shows € and “EUR” instead of USD on the product detail page.",Click Classic White T-Shirt,1,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+https://bug-commerce.vercel.app/,94,"Clicking “Proceed to Checkout” leads to a 404 page, preventing users from completing the purchase.","Click Classic White T-Shirt
+Click Size S
+Click Color White
+Click Add to cart
+Click +
+Click Proceed to Checkout 
+",6,"Lỗi sập, treo hoặc không khả dụng",Medium,
+https://bug-commerce.vercel.app/,95,Clicking “Accessories” in the navbar leads to a 404 page.,Click “Accessories”,1,"Lỗi sập, treo hoặc không khả dụng",Easy,
+https://bug-commerce.vercel.app/,96,"In product information details page, clicking any related product redirects to the homepage instead of its product detail page.","Click Classic White T-Shirt
+Click Slim Fit Jeans
+",2,Lỗi điều hướng hoặc luồng thao tác,Easy,
+https://bug-commerce.vercel.app/,97,Clicking the Wool Beanie product causes a crash.,Click Wool Beanie,1,"Lỗi sập, treo hoặc không khả dụng",Easy,
+https://bug-commerce.vercel.app/,98,Sorting products by “Trending” on the Apparel page causes a crash.,"Click Apparel 
+Click Trending",2,"Lỗi sập, treo hoặc không khả dụng",Easy,
+https://bug-commerce.vercel.app/,99,Price sorting (low to high) is reversed.,"Click All
+Click Price sorting (low to high)",2,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,
+https://bug-commerce.vercel.app/,100,Price sorting (high to low) is reversed.,"Click All
+Click Price sorting (high to low)",2,Lỗi kết quả chức năng hoặc dữ liệu hiển thị,Easy,

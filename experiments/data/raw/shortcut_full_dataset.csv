@@ -1,0 +1,121 @@
+Root Url,Bug Id,Short Description
+http://qairline.ui-testing.io.vn/,1,"
+
+Admin can create a flight with a departure time in the past (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,2,"
+Admin can create a new flight with an arrival time earlier than the departure time"
+http://qairline.ui-testing.io.vn/,3,"
+Admin can create two flights with the same flight number (FLIGHT NO.) "
+http://qairline.ui-testing.io.vn/,4,"
+Admin can create a flight with a negative base price  (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,5,"
+Admin can create a new flight using an aircraft that is already assigned to another flight at the same time or with overlapping flight schedules  (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,6,"Admin deletes an aircraft on the Manage Aircrafts page. After clicking Delete, but the aircraft is still displayed on the interface. The aircraft only disappears after the page is reloaded (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,7,"
+Admin deletes an aircraft currently assigned to a flight; the Manage Flights page displays a blank screen afterward"
+http://qairline.ui-testing.io.vn/,8,"
+Admin can create a new aircraft with a total number of seats equal to 0 (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,9,"
+Creating a new flight using an aircraft with a total number of seats equal to 0 results in a blank page. (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,10,"
+Creating a new aircraft with an excessively long Aircraft Code breaks the UI layout, causing the ""+ New Aircraft"" button to overflow outside the screen."
+http://qairline.ui-testing.io.vn/,11,"
+After creating an aircraft with an excessively long Aircraft Code, creating a new flight using that aircraft on the Manage Flights page breaks the UI layout, causing columns such as Class Info and Action to overflow outside the screen (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,12,"
+Creating a new aircraft with an excessively long Manufacturer name breaks the UI layout, causing subsequent columns to overflow outside the screen "
+http://qairline.ui-testing.io.vn/,13,"
+Deleting an airport that is assigned to a scheduled flight causes the Manage Flights page to display a blank screen (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,14,"
+The UI fails to redirect to the Home page after admin interacts with any page then clicks Logout as an Admin "
+http://qairline.ui-testing.io.vn/,15,"
+Users can access flight information on the Admin page by appending /admin/flights to the root URL"
+http://qairline.ui-testing.io.vn/,16,"
+Users can access aircraft information on the Admin page by appending /admin/aircrafts to the root URL .
+"
+http://qairline.ui-testing.io.vn/,17,"
+Search information entered on the Book Flight page is lost after navigating to another page and returning to Book Flight"
+http://qairline.ui-testing.io.vn/,18,"
+Users can directly access the successful payment page by appending /checkout-page to the root URL "
+http://qairline.ui-testing.io.vn/,19,The ticket prices for Economy and Business classes are the same when user search for a flight
+http://qairline.ui-testing.io.vn/,20,"The system allows users to enter a future date of birth when filling in passenger information (user login with email ""cong@gmail.com"" and password ""Cong23032004*"")"
+http://qairline.ui-testing.io.vn/,21,"Users can successfully proceed to the next booking step after entering their personal details even without properly agreeing to the terms
+(user login with email ""cong@gmail.com"" and password ""Cong23032004*"")"
+http://qairline.ui-testing.io.vn/,22,"The passport image is lost when the user navigates back to view the selected seats from the Traveller Details page and then returns to Traveller Details (user login with email ""cong@gmail.com"" and password ""Cong23032004*"")"
+http://qairline.ui-testing.io.vn/,23,Airport codes are not displayed on the UI when users search for flight information
+http://qairline.ui-testing.io.vn/,24,"On the Current Bookings page, when a cancellation confirmation popup appears, using the browser Back button does not close the popup"
+http://qairline.ui-testing.io.vn/,25,"On the Manage Bookings page, filtering bookings for user ""btcong"" shows Results = 2 even though only one booking exists (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,26,"On the Manage Bookings page, filtering bookings for user ""Btcong"" returns no results, although the search should be case-insensitive  "
+http://qairline.ui-testing.io.vn/,27,"On the Admin Dashboard page, the Total Flights count does not match the actual number of flights."
+https://www.saucedemo.com/,28,"The sorting functionality on the Product page is not working (login with username ""error_user"" and password ""secret_sauce"")"
+https://www.saucedemo.com/,29,"Clicking Finish to complete payment has no effect (login with username ""error_user"" and password ""secret_sauce"")"
+https://www.saucedemo.com/,30,"Cart icon is not properly aligned with other header elements, affecting layout consistency (login with username ""visual_user"" and password ""secret_sauce"")"
+http://qairline.ui-testing.io.vn/,31,Users can access promotions page on the Admin page by appending /admin/promotions to the root URL
+http://qairline.ui-testing.io.vn/,32,Users can access manage bookings page on the Admin page by appending /admin/bookings to the root URL
+http://qairline.ui-testing.io.vn/,33,Users can access manage airports page on the Admin page by appending /admin/airports to the root URL
+http://qairline.ui-testing.io.vn/,34,The admin sidebar highlights “Manage Flights” even when another admin page is open (login with email: admin@gmail.com / password: Cong23032004*)
+http://qairline.ui-testing.io.vn/,35,"In home page, footer award images are broken"
+http://qairline.ui-testing.io.vn/,36,"When the admin filters flights by Flight, the input must exactly match the flight name, with no extra whitespace "
+http://qairline.ui-testing.io.vn/,37,"When the admin filters flights by User, the input must exactly match the username, with no extra whitespace "
+http://qairline.ui-testing.io.vn/,38,"When the admin filters flights by departure, the input must exactly match the departure name, with no extra whitespace. "
+http://qairline.ui-testing.io.vn/,39,"Edit Flight: The save operation succeeds, but the list is not updated until the page is refreshed (F5). (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,40,"Admin filter user with value 'btcong' done, then clears all filter inputs and re-searches does not reset the results. (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,41,"On the Manage Flights page, clicking Cancel during editing redirects the user to the Home page instead of staying on the same page (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,42,"On the Manage Flights, clicking Clear only resets the UI inputs/dropdowns but does not reset the applied flight number filter "
+http://qairline.ui-testing.io.vn/,43,"On the Manage Flights page, departure sorting (click Departure) uses arrival dates, causing incorrect order"
+http://qairline.ui-testing.io.vn/,44,"On the Promotions page, Admin can enter a discount greater than 100% without validation. (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,45,Admin can create a promotion where the end date is earlier than the start date
+http://qairline.ui-testing.io.vn/,46,Promotion form inputs are not reset after clicking Cancel. (login with email: admin@gmail.com / password: Cong23032004*)
+http://qairline.ui-testing.io.vn/,47,"In Manage Flights, flight's status colors are incorrect (e.g., delayed status is displayed the same as scheduled) "
+http://qairline.ui-testing.io.vn/,48,"On the Promotion Page, save button allows duplicate submissions on multiple clicks."
+http://qairline.ui-testing.io.vn/,49,"After creating a flight, the modal shows multiple spelling errors. (login with email: admin@gmail.com / password: Cong23032004*)"
+http://qairline.ui-testing.io.vn/,50,"After creating a flight, success modal has poor UI: Comic Sans font, red “Close dialog” button, and misaligned button. "
+http://qairline.ui-testing.io.vn/,51,Edit Flight success modal contains multiple typos and unprofessional button text (“OK sure”).
+http://qairline.ui-testing.io.vn/,52,"In Book Flight page, swapping departure and destination updates the UI fields but not the search results, which remain based on the previous locations. (For example searching flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)"
+http://qairline.ui-testing.io.vn/,53,User can choose a return date earlier than the departure date without validation when searching flight
+http://qairline.ui-testing.io.vn/,54,User can search for flights with departure times in the past.
+http://qairline.ui-testing.io.vn/,55,"When users search flight, popup message for no matching flights contains spelling errors."
+http://qairline.ui-testing.io.vn/,56,Clicking the swap button for departure and destination on the Home page has no effect.
+http://qairline.ui-testing.io.vn/,57,"When user books flight tickets, selected seats lose their highlight after switching seat type tabs, allowing re-selection and causing the total price to increase incorrectly. (user login with email ""cong@gmail.com"" and password ""Cong23032004*"")"
+http://qairline.ui-testing.io.vn/,58,"When user books flight tickets, fixed tax is always $10 regardless of the number of passengers. (user login with email ""cong@gmail.com"" and password ""Cong23032004*"")"
+http://qairline.ui-testing.io.vn/,59,"After user logs out, the navbar still shows user info until the page is refreshed. "
+http://qairline.ui-testing.io.vn/,60,"On the sign-in page, the password visibility (eye) icon does not change state when toggled."
+http://qairline.ui-testing.io.vn/,61,"On the sign-up page, the password visibility (eye) icon does not change state when toggled."
+http://qairline.ui-testing.io.vn/,62,"In Booking Flight page, flight price sorting after search is incorrect, using lexicographical order instead of numeric order."
+http://qairline.ui-testing.io.vn/,63,Clicking the “Choose your tour!” carousel navigation buttons has no effect.
+http://qairline.ui-testing.io.vn/,64,"The ""Plan your journey"" section shows only one promotion per page instead of four"
+http://qairline.ui-testing.io.vn/,65,"Carousel navigation for ""Plan your journey""  is reversed and incorrectly disabled (prev/next handlers and states are swapped)."
+http://qairline.ui-testing.io.vn/,66,"In Key Info page, Travel Safe insurance price is shown as 580,000 VND instead of the correct 58,000 VND (10× higher)."
+http://qairline.ui-testing.io.vn/,67,"Go to Key Info page, the “See more details here” link in the Travel Insurance card leads to a non-existent page (404 error)."
+http://qairline.ui-testing.io.vn/,68,"In Key Info page, Xanh SM Taxi hotline number has the last two digits swapped, showing “1900 2079” instead of “1900 2097”."
+http://qairline.ui-testing.io.vn/,69,"In Manage Bookings, Total Price does not update with filters and always shows the sum of all bookings."
+http://qairline.ui-testing.io.vn/,70,All rows in the Aircraft list display the same logo (from the first aircraft).
+http://qairline.ui-testing.io.vn/,71,"In Admin dashboard, “Total Bookings” and “Total Aircrafts” stats are swapped, each showing the other’s value"
+https://bug-refinedev.vercel.app/,72,"The ""Status"" column in the Blog List displays raw lowercase values without capitalization (login with default values)"
+https://bug-refinedev.vercel.app/,73,"The ""Category"" column in the Blog List always displays ""Loading..."" even after the data has finished loading. (login with default values)"
+https://bug-refinedev.vercel.app/,74,"The ""Category"" field in the BlogPost Show displays “[object Object]” instead of the actual content"
+https://bug-refinedev.vercel.app/,75,"In the Category List page, the ""title"" column header is lowercase while other column headers are properly capitalized. (login with default values)"
+https://bug-refinedev.vercel.app/,76,The createdAt field in the BlogPost Show displays a raw ISO string instead of a formatted date. 
+https://bug-refinedev.vercel.app/,77,"""Status"" field in the BlogPost Show is not displayed (renders as undefined)."
+https://bug-refinedev.vercel.app/,78,"In the Category Show, the ID and Title fields are swapped (ID shows title, Title shows ID)."
+https://bug-refinedev.vercel.app/,79,"Username overlaps with the avatar, causing a layout issue. (login with default values) "
+https://bug-refinedev.vercel.app/,80,The Delete button in the BlogPost List is disabled. (login with default values)
+https://bug-refinedev.vercel.app/,81,Dark mode switch is not working — toggling does not change the theme. 
+https://bug-refinedev.vercel.app/,82,"In the Create BlogPost form, the Title field is disabled and cannot be edited. "
+https://bug-refinedev.vercel.app/,83,"In BlogPost Create, the Status field always resets to ""draft"" regardless of the selected option. (login with default values)"
+https://bug-refinedev.vercel.app/,84,"In Category Create, empty submissions pass validation (validation rules are missing) (login with default values)"
+https://bug-refinedev.vercel.app/,85,"In BlogPost Show, the Delete action does not show a confirmation dialog and deletes immediately."
+https://bug-refinedev.vercel.app/,86,"In Category Edit, after saving, the page redirects to the BlogPost List instead of the Category List. (login with default values)"
+https://bug-refinedev.vercel.app/,87,The Content column incorrectly shows the string length alongside the preview text on every row. 
+https://bug-commerce.vercel.app/,88,"The Footer ""About"" link leads to a 404 page."
+https://bug-commerce.vercel.app/,89,"The Footer ""FAQ"" link leads to a 404 page."
+https://bug-commerce.vercel.app/,90,"The Footer ""Contact"" link leads to a 404 page."
+https://bug-commerce.vercel.app/,91,Product name text overflows the container and overlaps the product image.
+https://bug-commerce.vercel.app/,92,"In product information details page, users cannot navigate product images using the gallery arrows."
+https://bug-commerce.vercel.app/,93,"In product information details page, the price component shows € and “EUR” instead of USD on the product detail page."
+https://bug-commerce.vercel.app/,94,"Clicking “Proceed to Checkout” leads to a 404 page, preventing users from completing the purchase."
+https://bug-commerce.vercel.app/,95,Clicking “Accessories” in the navbar leads to a 404 page.
+https://bug-commerce.vercel.app/,96,"In product information details page, clicking any related product redirects to the homepage instead of its product detail page."
+https://bug-commerce.vercel.app/,97,Clicking the Wool Beanie product causes a crash.
+https://bug-commerce.vercel.app/,98,Sorting products by “Trending” on the Apparel page causes a crash.
+https://bug-commerce.vercel.app/,99,Price sorting (low to high) is reversed.
+https://bug-commerce.vercel.app/,100,Price sorting (high to low) is reversed.

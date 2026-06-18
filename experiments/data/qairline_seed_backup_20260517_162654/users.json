@@ -1,0 +1,76 @@
+[
+  {
+    "_id": {
+      "$oid": "6979dd144a5909b513f99959"
+    },
+    "name": "btcong",
+    "email": "cong@gmail.com",
+    "password": "$2b$10$cSgyQgab2nnT3khIcdcRx.8GEaDd8nLVdji1uxcX8FpqKMv.APx6m",
+    "isAdmin": false,
+    "avatar": "",
+    "bookings": [
+      {
+        "$oid": "697b73a3f28eccaeec66ed74"
+      },
+      {
+        "$oid": "69dc85ceaa61887a6a6b13d2"
+      },
+      {
+        "$oid": "69dc863aaa61887a6a6b161e"
+      },
+      {
+        "$oid": "6a00b208aea3c1367cc208df"
+      },
+      {
+        "$oid": "6a018243aea3c1367cc26088"
+      },
+      {
+        "$oid": "6a01f2caaea3c1367cc2c105"
+      }
+    ],
+    "__v": 6
+  },
+  {
+    "_id": {
+      "$oid": "6979dd144a5909b513f91101"
+    },
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "password": "$2b$10$cSgyQgab2nnT3khIcdcRx.8GEaDd8nLVdji1uxcX8FpqKMv.APx6m",
+    "isAdmin": true,
+    "avatar": "",
+    "bookings": [],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "697b7824f28eccaeec66ef69"
+    },
+    "name": "Nguyen Van A",
+    "email": "a@gmail.com",
+    "password": "$2b$10$hDDHRuyb8g/yK3vpc/zQIeqedGVTB14Rr6GznLOOog/qdmiNWgVFC",
+    "isAdmin": false,
+    "avatar": "",
+    "bookings": [
+      {
+        "$oid": "697b8a9df28eccaeec66f452"
+      },
+      {
+        "$oid": "69e050540c6e1dc14c4b0cf6"
+      },
+      {
+        "$oid": "69e05308624b30215ca3af4e"
+      },
+      {
+        "$oid": "6a00b2b5aea3c1367cc20ac3"
+      },
+      {
+        "$oid": "6a0181ddaea3c1367cc25f27"
+      },
+      {
+        "$oid": "6a01f32aaea3c1367cc2c382"
+      }
+    ],
+    "__v": 8
+  }
+]

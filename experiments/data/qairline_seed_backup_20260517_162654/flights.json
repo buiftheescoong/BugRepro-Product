@@ -1,0 +1,4712 @@
+[
+  {
+    "_id": {
+      "$oid": "6a01f1feaea3c1367cc2b9d6"
+    },
+    "flightNumber": "F1",
+    "from": {
+      "$oid": "6a01f1bdaea3c1367cc2b99f"
+    },
+    "to": {
+      "$oid": "6a01f1a4aea3c1367cc2b997"
+    },
+    "departDate": {
+      "date": "2026-05-14",
+      "time": "9:00AM",
+      "_id": {
+        "$oid": "6a01f8b3aea3c1367cc2d013"
+      }
+    },
+    "arriveDate": {
+      "date": "2026-05-14",
+      "time": "12:00PM",
+      "_id": {
+        "$oid": "6a01f8b3aea3c1367cc2d014"
+      }
+    },
+    "price": 200,
+    "seatDetails": [
+      {
+        "classType": "Economy",
+        "seats": [
+          {
+            "seatNumber": "A1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9da"
+            }
+          },
+          {
+            "seatNumber": "A2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9db"
+            }
+          },
+          {
+            "seatNumber": "A3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9dc"
+            }
+          },
+          {
+            "seatNumber": "A4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9dd"
+            }
+          },
+          {
+            "seatNumber": "A5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9de"
+            }
+          },
+          {
+            "seatNumber": "A6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9df"
+            }
+          },
+          {
+            "seatNumber": "A7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9e0"
+            }
+          },
+          {
+            "seatNumber": "A8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9e1"
+            }
+          },
+          {
+            "seatNumber": "A9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9e2"
+            }
+          },
+          {
+            "seatNumber": "A10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9e3"
+            }
+          },
+          {
+            "seatNumber": "A11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9e4"
+            }
+          },
+          {
+            "seatNumber": "A12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9e5"
+            }
+          },
+          {
+            "seatNumber": "A13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9e6"
+            }
+          },
+          {
+            "seatNumber": "A14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9e7"
+            }
+          },
+          {
+            "seatNumber": "A15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9e8"
+            }
+          },
+          {
+            "seatNumber": "A16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9e9"
+            }
+          },
+          {
+            "seatNumber": "A17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9ea"
+            }
+          },
+          {
+            "seatNumber": "A18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9eb"
+            }
+          },
+          {
+            "seatNumber": "A19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9ec"
+            }
+          },
+          {
+            "seatNumber": "A20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9ed"
+            }
+          },
+          {
+            "seatNumber": "A21",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9ee"
+            }
+          },
+          {
+            "seatNumber": "A22",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9ef"
+            }
+          },
+          {
+            "seatNumber": "A23",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9f0"
+            }
+          },
+          {
+            "seatNumber": "A24",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9f1"
+            }
+          },
+          {
+            "seatNumber": "A25",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9f2"
+            }
+          },
+          {
+            "seatNumber": "A26",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9f3"
+            }
+          },
+          {
+            "seatNumber": "A27",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9f4"
+            }
+          },
+          {
+            "seatNumber": "A28",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9f5"
+            }
+          },
+          {
+            "seatNumber": "A29",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9f6"
+            }
+          },
+          {
+            "seatNumber": "A30",
+            "status": "booked",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9f7"
+            }
+          },
+          {
+            "seatNumber": "A31",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9f8"
+            }
+          },
+          {
+            "seatNumber": "A32",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9f9"
+            }
+          },
+          {
+            "seatNumber": "A33",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9fa"
+            }
+          },
+          {
+            "seatNumber": "A34",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9fb"
+            }
+          },
+          {
+            "seatNumber": "A35",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9fc"
+            }
+          },
+          {
+            "seatNumber": "A36",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9fd"
+            }
+          },
+          {
+            "seatNumber": "A37",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9fe"
+            }
+          },
+          {
+            "seatNumber": "A38",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2b9ff"
+            }
+          },
+          {
+            "seatNumber": "A39",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba00"
+            }
+          },
+          {
+            "seatNumber": "A40",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba01"
+            }
+          },
+          {
+            "seatNumber": "A41",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba02"
+            }
+          },
+          {
+            "seatNumber": "A42",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba03"
+            }
+          },
+          {
+            "seatNumber": "A43",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba04"
+            }
+          },
+          {
+            "seatNumber": "A44",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba05"
+            }
+          },
+          {
+            "seatNumber": "A45",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba06"
+            }
+          },
+          {
+            "seatNumber": "A46",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba07"
+            }
+          },
+          {
+            "seatNumber": "A47",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba08"
+            }
+          },
+          {
+            "seatNumber": "A48",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba09"
+            }
+          },
+          {
+            "seatNumber": "A49",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba0a"
+            }
+          },
+          {
+            "seatNumber": "A50",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba0b"
+            }
+          },
+          {
+            "seatNumber": "A51",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba0c"
+            }
+          },
+          {
+            "seatNumber": "A52",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba0d"
+            }
+          },
+          {
+            "seatNumber": "A53",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba0e"
+            }
+          },
+          {
+            "seatNumber": "A54",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba0f"
+            }
+          },
+          {
+            "seatNumber": "A55",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba10"
+            }
+          },
+          {
+            "seatNumber": "A56",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba11"
+            }
+          },
+          {
+            "seatNumber": "A57",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba12"
+            }
+          },
+          {
+            "seatNumber": "A58",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba13"
+            }
+          },
+          {
+            "seatNumber": "A59",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba14"
+            }
+          },
+          {
+            "seatNumber": "A60",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba15"
+            }
+          },
+          {
+            "seatNumber": "A61",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba16"
+            }
+          },
+          {
+            "seatNumber": "A62",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba17"
+            }
+          },
+          {
+            "seatNumber": "A63",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba18"
+            }
+          },
+          {
+            "seatNumber": "A64",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba19"
+            }
+          },
+          {
+            "seatNumber": "A65",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba1a"
+            }
+          },
+          {
+            "seatNumber": "A66",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba1b"
+            }
+          },
+          {
+            "seatNumber": "A67",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba1c"
+            }
+          },
+          {
+            "seatNumber": "A68",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba1d"
+            }
+          },
+          {
+            "seatNumber": "A69",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba1e"
+            }
+          },
+          {
+            "seatNumber": "A70",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba1f"
+            }
+          },
+          {
+            "seatNumber": "A71",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba20"
+            }
+          },
+          {
+            "seatNumber": "A72",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba21"
+            }
+          },
+          {
+            "seatNumber": "A73",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba22"
+            }
+          },
+          {
+            "seatNumber": "A74",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba23"
+            }
+          },
+          {
+            "seatNumber": "A75",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba24"
+            }
+          },
+          {
+            "seatNumber": "A76",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba25"
+            }
+          },
+          {
+            "seatNumber": "A77",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba26"
+            }
+          },
+          {
+            "seatNumber": "A78",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba27"
+            }
+          },
+          {
+            "seatNumber": "A79",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba28"
+            }
+          },
+          {
+            "seatNumber": "A80",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba29"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a01f1feaea3c1367cc2b9d9"
+        }
+      },
+      {
+        "classType": "Business",
+        "seats": [
+          {
+            "seatNumber": "B1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba2b"
+            }
+          },
+          {
+            "seatNumber": "B2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba2c"
+            }
+          },
+          {
+            "seatNumber": "B3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba2d"
+            }
+          },
+          {
+            "seatNumber": "B4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba2e"
+            }
+          },
+          {
+            "seatNumber": "B5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba2f"
+            }
+          },
+          {
+            "seatNumber": "B6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba30"
+            }
+          },
+          {
+            "seatNumber": "B7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba31"
+            }
+          },
+          {
+            "seatNumber": "B8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba32"
+            }
+          },
+          {
+            "seatNumber": "B9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba33"
+            }
+          },
+          {
+            "seatNumber": "B10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba34"
+            }
+          },
+          {
+            "seatNumber": "B11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba35"
+            }
+          },
+          {
+            "seatNumber": "B12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba36"
+            }
+          },
+          {
+            "seatNumber": "B13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba37"
+            }
+          },
+          {
+            "seatNumber": "B14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba38"
+            }
+          },
+          {
+            "seatNumber": "B15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba39"
+            }
+          },
+          {
+            "seatNumber": "B16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba3a"
+            }
+          },
+          {
+            "seatNumber": "B17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba3b"
+            }
+          },
+          {
+            "seatNumber": "B18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba3c"
+            }
+          },
+          {
+            "seatNumber": "B19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba3d"
+            }
+          },
+          {
+            "seatNumber": "B20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f1feaea3c1367cc2ba3e"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a01f1feaea3c1367cc2ba2a"
+        }
+      }
+    ],
+    "status": "Delayed",
+    "airline": {
+      "$oid": "6a01ae13aea3c1367cc29123"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a01f26daea3c1367cc2bbe2"
+    },
+    "flightNumber": "F3",
+    "from": {
+      "$oid": "6a01f1aeaea3c1367cc2b99b"
+    },
+    "to": {
+      "$oid": "6a01f1a4aea3c1367cc2b997"
+    },
+    "departDate": {
+      "date": "2026-05-13",
+      "time": "5:15AM",
+      "_id": {
+        "$oid": "6a022ce8aea3c1367cc2ee6c"
+      }
+    },
+    "arriveDate": {
+      "date": "2026-05-13",
+      "time": "7:15AM",
+      "_id": {
+        "$oid": "6a022ce8aea3c1367cc2ee6d"
+      }
+    },
+    "price": 100,
+    "seatDetails": [
+      {
+        "classType": "Economy",
+        "seats": [
+          {
+            "seatNumber": "A1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbe6"
+            }
+          },
+          {
+            "seatNumber": "A2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbe7"
+            }
+          },
+          {
+            "seatNumber": "A3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbe8"
+            }
+          },
+          {
+            "seatNumber": "A4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbe9"
+            }
+          },
+          {
+            "seatNumber": "A5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbea"
+            }
+          },
+          {
+            "seatNumber": "A6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbeb"
+            }
+          },
+          {
+            "seatNumber": "A7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbec"
+            }
+          },
+          {
+            "seatNumber": "A8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbed"
+            }
+          },
+          {
+            "seatNumber": "A9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbee"
+            }
+          },
+          {
+            "seatNumber": "A10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbef"
+            }
+          },
+          {
+            "seatNumber": "A11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbf0"
+            }
+          },
+          {
+            "seatNumber": "A12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbf1"
+            }
+          },
+          {
+            "seatNumber": "A13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbf2"
+            }
+          },
+          {
+            "seatNumber": "A14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbf3"
+            }
+          },
+          {
+            "seatNumber": "A15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbf4"
+            }
+          },
+          {
+            "seatNumber": "A16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbf5"
+            }
+          },
+          {
+            "seatNumber": "A17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbf6"
+            }
+          },
+          {
+            "seatNumber": "A18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbf7"
+            }
+          },
+          {
+            "seatNumber": "A19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbf8"
+            }
+          },
+          {
+            "seatNumber": "A20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbf9"
+            }
+          },
+          {
+            "seatNumber": "A21",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbfa"
+            }
+          },
+          {
+            "seatNumber": "A22",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbfb"
+            }
+          },
+          {
+            "seatNumber": "A23",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbfc"
+            }
+          },
+          {
+            "seatNumber": "A24",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbfd"
+            }
+          },
+          {
+            "seatNumber": "A25",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbfe"
+            }
+          },
+          {
+            "seatNumber": "A26",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bbff"
+            }
+          },
+          {
+            "seatNumber": "A27",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc00"
+            }
+          },
+          {
+            "seatNumber": "A28",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc01"
+            }
+          },
+          {
+            "seatNumber": "A29",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc02"
+            }
+          },
+          {
+            "seatNumber": "A30",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc03"
+            }
+          },
+          {
+            "seatNumber": "A31",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc04"
+            }
+          },
+          {
+            "seatNumber": "A32",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc05"
+            }
+          },
+          {
+            "seatNumber": "A33",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc06"
+            }
+          },
+          {
+            "seatNumber": "A34",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc07"
+            }
+          },
+          {
+            "seatNumber": "A35",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc08"
+            }
+          },
+          {
+            "seatNumber": "A36",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc09"
+            }
+          },
+          {
+            "seatNumber": "A37",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc0a"
+            }
+          },
+          {
+            "seatNumber": "A38",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc0b"
+            }
+          },
+          {
+            "seatNumber": "A39",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc0c"
+            }
+          },
+          {
+            "seatNumber": "A40",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc0d"
+            }
+          },
+          {
+            "seatNumber": "A41",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc0e"
+            }
+          },
+          {
+            "seatNumber": "A42",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc0f"
+            }
+          },
+          {
+            "seatNumber": "A43",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc10"
+            }
+          },
+          {
+            "seatNumber": "A44",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc11"
+            }
+          },
+          {
+            "seatNumber": "A45",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc12"
+            }
+          },
+          {
+            "seatNumber": "A46",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc13"
+            }
+          },
+          {
+            "seatNumber": "A47",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc14"
+            }
+          },
+          {
+            "seatNumber": "A48",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc15"
+            }
+          },
+          {
+            "seatNumber": "A49",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc16"
+            }
+          },
+          {
+            "seatNumber": "A50",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc17"
+            }
+          },
+          {
+            "seatNumber": "A51",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc18"
+            }
+          },
+          {
+            "seatNumber": "A52",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc19"
+            }
+          },
+          {
+            "seatNumber": "A53",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc1a"
+            }
+          },
+          {
+            "seatNumber": "A54",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc1b"
+            }
+          },
+          {
+            "seatNumber": "A55",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc1c"
+            }
+          },
+          {
+            "seatNumber": "A56",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc1d"
+            }
+          },
+          {
+            "seatNumber": "A57",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc1e"
+            }
+          },
+          {
+            "seatNumber": "A58",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc1f"
+            }
+          },
+          {
+            "seatNumber": "A59",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc20"
+            }
+          },
+          {
+            "seatNumber": "A60",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc21"
+            }
+          },
+          {
+            "seatNumber": "A61",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc22"
+            }
+          },
+          {
+            "seatNumber": "A62",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc23"
+            }
+          },
+          {
+            "seatNumber": "A63",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc24"
+            }
+          },
+          {
+            "seatNumber": "A64",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc25"
+            }
+          },
+          {
+            "seatNumber": "A65",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc26"
+            }
+          },
+          {
+            "seatNumber": "A66",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc27"
+            }
+          },
+          {
+            "seatNumber": "A67",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc28"
+            }
+          },
+          {
+            "seatNumber": "A68",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc29"
+            }
+          },
+          {
+            "seatNumber": "A69",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc2a"
+            }
+          },
+          {
+            "seatNumber": "A70",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc2b"
+            }
+          },
+          {
+            "seatNumber": "A71",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc2c"
+            }
+          },
+          {
+            "seatNumber": "A72",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc2d"
+            }
+          },
+          {
+            "seatNumber": "A73",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc2e"
+            }
+          },
+          {
+            "seatNumber": "A74",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc2f"
+            }
+          },
+          {
+            "seatNumber": "A75",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc30"
+            }
+          },
+          {
+            "seatNumber": "A76",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc31"
+            }
+          },
+          {
+            "seatNumber": "A77",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc32"
+            }
+          },
+          {
+            "seatNumber": "A78",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc33"
+            }
+          },
+          {
+            "seatNumber": "A79",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc34"
+            }
+          },
+          {
+            "seatNumber": "A80",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc35"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a01f26daea3c1367cc2bbe5"
+        }
+      },
+      {
+        "classType": "Business",
+        "seats": [
+          {
+            "seatNumber": "B1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc37"
+            }
+          },
+          {
+            "seatNumber": "B2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc38"
+            }
+          },
+          {
+            "seatNumber": "B3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc39"
+            }
+          },
+          {
+            "seatNumber": "B4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc3a"
+            }
+          },
+          {
+            "seatNumber": "B5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc3b"
+            }
+          },
+          {
+            "seatNumber": "B6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc3c"
+            }
+          },
+          {
+            "seatNumber": "B7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc3d"
+            }
+          },
+          {
+            "seatNumber": "B8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc3e"
+            }
+          },
+          {
+            "seatNumber": "B9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc3f"
+            }
+          },
+          {
+            "seatNumber": "B10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc40"
+            }
+          },
+          {
+            "seatNumber": "B11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc41"
+            }
+          },
+          {
+            "seatNumber": "B12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc42"
+            }
+          },
+          {
+            "seatNumber": "B13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc43"
+            }
+          },
+          {
+            "seatNumber": "B14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc44"
+            }
+          },
+          {
+            "seatNumber": "B15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc45"
+            }
+          },
+          {
+            "seatNumber": "B16",
+            "status": "booked",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc46"
+            }
+          },
+          {
+            "seatNumber": "B17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc47"
+            }
+          },
+          {
+            "seatNumber": "B18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc48"
+            }
+          },
+          {
+            "seatNumber": "B19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc49"
+            }
+          },
+          {
+            "seatNumber": "B20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a01f26daea3c1367cc2bc4a"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a01f26daea3c1367cc2bc36"
+        }
+      }
+    ],
+    "status": "Delayed",
+    "airline": {
+      "$oid": "6a01ae13aea3c1367cc29123"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a022bedaea3c1367cc2e6c3"
+    },
+    "flightNumber": "F4",
+    "from": {
+      "$oid": "6a018109aea3c1367cc25951"
+    },
+    "to": {
+      "$oid": "6a0180fcaea3c1367cc2594d"
+    },
+    "departDate": {
+      "date": "2026-05-13",
+      "time": "5:00AM",
+      "_id": {
+        "$oid": "6a022bedaea3c1367cc2e6c4"
+      }
+    },
+    "arriveDate": {
+      "date": "2026-05-13",
+      "time": "7:00AM",
+      "_id": {
+        "$oid": "6a022bedaea3c1367cc2e6c5"
+      }
+    },
+    "price": 240,
+    "seatDetails": [
+      {
+        "classType": "Economy",
+        "seats": [
+          {
+            "seatNumber": "A1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6c7"
+            }
+          },
+          {
+            "seatNumber": "A2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6c8"
+            }
+          },
+          {
+            "seatNumber": "A3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6c9"
+            }
+          },
+          {
+            "seatNumber": "A4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6ca"
+            }
+          },
+          {
+            "seatNumber": "A5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6cb"
+            }
+          },
+          {
+            "seatNumber": "A6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6cc"
+            }
+          },
+          {
+            "seatNumber": "A7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6cd"
+            }
+          },
+          {
+            "seatNumber": "A8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6ce"
+            }
+          },
+          {
+            "seatNumber": "A9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6cf"
+            }
+          },
+          {
+            "seatNumber": "A10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6d0"
+            }
+          },
+          {
+            "seatNumber": "A11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6d1"
+            }
+          },
+          {
+            "seatNumber": "A12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6d2"
+            }
+          },
+          {
+            "seatNumber": "A13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6d3"
+            }
+          },
+          {
+            "seatNumber": "A14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6d4"
+            }
+          },
+          {
+            "seatNumber": "A15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6d5"
+            }
+          },
+          {
+            "seatNumber": "A16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6d6"
+            }
+          },
+          {
+            "seatNumber": "A17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6d7"
+            }
+          },
+          {
+            "seatNumber": "A18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6d8"
+            }
+          },
+          {
+            "seatNumber": "A19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6d9"
+            }
+          },
+          {
+            "seatNumber": "A20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6da"
+            }
+          },
+          {
+            "seatNumber": "A21",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6db"
+            }
+          },
+          {
+            "seatNumber": "A22",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6dc"
+            }
+          },
+          {
+            "seatNumber": "A23",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6dd"
+            }
+          },
+          {
+            "seatNumber": "A24",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6de"
+            }
+          },
+          {
+            "seatNumber": "A25",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6df"
+            }
+          },
+          {
+            "seatNumber": "A26",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6e0"
+            }
+          },
+          {
+            "seatNumber": "A27",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6e1"
+            }
+          },
+          {
+            "seatNumber": "A28",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6e2"
+            }
+          },
+          {
+            "seatNumber": "A29",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6e3"
+            }
+          },
+          {
+            "seatNumber": "A30",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6e4"
+            }
+          },
+          {
+            "seatNumber": "A31",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6e5"
+            }
+          },
+          {
+            "seatNumber": "A32",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6e6"
+            }
+          },
+          {
+            "seatNumber": "A33",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6e7"
+            }
+          },
+          {
+            "seatNumber": "A34",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6e8"
+            }
+          },
+          {
+            "seatNumber": "A35",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6e9"
+            }
+          },
+          {
+            "seatNumber": "A36",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6ea"
+            }
+          },
+          {
+            "seatNumber": "A37",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6eb"
+            }
+          },
+          {
+            "seatNumber": "A38",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6ec"
+            }
+          },
+          {
+            "seatNumber": "A39",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6ed"
+            }
+          },
+          {
+            "seatNumber": "A40",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6ee"
+            }
+          },
+          {
+            "seatNumber": "A41",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6ef"
+            }
+          },
+          {
+            "seatNumber": "A42",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6f0"
+            }
+          },
+          {
+            "seatNumber": "A43",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6f1"
+            }
+          },
+          {
+            "seatNumber": "A44",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6f2"
+            }
+          },
+          {
+            "seatNumber": "A45",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6f3"
+            }
+          },
+          {
+            "seatNumber": "A46",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6f4"
+            }
+          },
+          {
+            "seatNumber": "A47",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6f5"
+            }
+          },
+          {
+            "seatNumber": "A48",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6f6"
+            }
+          },
+          {
+            "seatNumber": "A49",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6f7"
+            }
+          },
+          {
+            "seatNumber": "A50",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6f8"
+            }
+          },
+          {
+            "seatNumber": "A51",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6f9"
+            }
+          },
+          {
+            "seatNumber": "A52",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6fa"
+            }
+          },
+          {
+            "seatNumber": "A53",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6fb"
+            }
+          },
+          {
+            "seatNumber": "A54",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6fc"
+            }
+          },
+          {
+            "seatNumber": "A55",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6fd"
+            }
+          },
+          {
+            "seatNumber": "A56",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6fe"
+            }
+          },
+          {
+            "seatNumber": "A57",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e6ff"
+            }
+          },
+          {
+            "seatNumber": "A58",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e700"
+            }
+          },
+          {
+            "seatNumber": "A59",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e701"
+            }
+          },
+          {
+            "seatNumber": "A60",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e702"
+            }
+          },
+          {
+            "seatNumber": "A61",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e703"
+            }
+          },
+          {
+            "seatNumber": "A62",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e704"
+            }
+          },
+          {
+            "seatNumber": "A63",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e705"
+            }
+          },
+          {
+            "seatNumber": "A64",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e706"
+            }
+          },
+          {
+            "seatNumber": "A65",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e707"
+            }
+          },
+          {
+            "seatNumber": "A66",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e708"
+            }
+          },
+          {
+            "seatNumber": "A67",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e709"
+            }
+          },
+          {
+            "seatNumber": "A68",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e70a"
+            }
+          },
+          {
+            "seatNumber": "A69",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e70b"
+            }
+          },
+          {
+            "seatNumber": "A70",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e70c"
+            }
+          },
+          {
+            "seatNumber": "A71",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e70d"
+            }
+          },
+          {
+            "seatNumber": "A72",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e70e"
+            }
+          },
+          {
+            "seatNumber": "A73",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e70f"
+            }
+          },
+          {
+            "seatNumber": "A74",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e710"
+            }
+          },
+          {
+            "seatNumber": "A75",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e711"
+            }
+          },
+          {
+            "seatNumber": "A76",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e712"
+            }
+          },
+          {
+            "seatNumber": "A77",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e713"
+            }
+          },
+          {
+            "seatNumber": "A78",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e714"
+            }
+          },
+          {
+            "seatNumber": "A79",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e715"
+            }
+          },
+          {
+            "seatNumber": "A80",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e716"
+            }
+          },
+          {
+            "seatNumber": "A81",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e717"
+            }
+          },
+          {
+            "seatNumber": "A82",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e718"
+            }
+          },
+          {
+            "seatNumber": "A83",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e719"
+            }
+          },
+          {
+            "seatNumber": "A84",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e71a"
+            }
+          },
+          {
+            "seatNumber": "A85",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e71b"
+            }
+          },
+          {
+            "seatNumber": "A86",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e71c"
+            }
+          },
+          {
+            "seatNumber": "A87",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e71d"
+            }
+          },
+          {
+            "seatNumber": "A88",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e71e"
+            }
+          },
+          {
+            "seatNumber": "A89",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e71f"
+            }
+          },
+          {
+            "seatNumber": "A90",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e720"
+            }
+          },
+          {
+            "seatNumber": "A91",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e721"
+            }
+          },
+          {
+            "seatNumber": "A92",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e722"
+            }
+          },
+          {
+            "seatNumber": "A93",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e723"
+            }
+          },
+          {
+            "seatNumber": "A94",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e724"
+            }
+          },
+          {
+            "seatNumber": "A95",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e725"
+            }
+          },
+          {
+            "seatNumber": "A96",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e726"
+            }
+          },
+          {
+            "seatNumber": "A97",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e727"
+            }
+          },
+          {
+            "seatNumber": "A98",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e728"
+            }
+          },
+          {
+            "seatNumber": "A99",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e729"
+            }
+          },
+          {
+            "seatNumber": "A100",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e72a"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a022bedaea3c1367cc2e6c6"
+        }
+      },
+      {
+        "classType": "Business",
+        "seats": [
+          {
+            "seatNumber": "B1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e72c"
+            }
+          },
+          {
+            "seatNumber": "B2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e72d"
+            }
+          },
+          {
+            "seatNumber": "B3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e72e"
+            }
+          },
+          {
+            "seatNumber": "B4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e72f"
+            }
+          },
+          {
+            "seatNumber": "B5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e730"
+            }
+          },
+          {
+            "seatNumber": "B6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e731"
+            }
+          },
+          {
+            "seatNumber": "B7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e732"
+            }
+          },
+          {
+            "seatNumber": "B8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e733"
+            }
+          },
+          {
+            "seatNumber": "B9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e734"
+            }
+          },
+          {
+            "seatNumber": "B10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e735"
+            }
+          },
+          {
+            "seatNumber": "B11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e736"
+            }
+          },
+          {
+            "seatNumber": "B12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e737"
+            }
+          },
+          {
+            "seatNumber": "B13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e738"
+            }
+          },
+          {
+            "seatNumber": "B14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e739"
+            }
+          },
+          {
+            "seatNumber": "B15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e73a"
+            }
+          },
+          {
+            "seatNumber": "B16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e73b"
+            }
+          },
+          {
+            "seatNumber": "B17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e73c"
+            }
+          },
+          {
+            "seatNumber": "B18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e73d"
+            }
+          },
+          {
+            "seatNumber": "B19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e73e"
+            }
+          },
+          {
+            "seatNumber": "B20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e73f"
+            }
+          },
+          {
+            "seatNumber": "B21",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e740"
+            }
+          },
+          {
+            "seatNumber": "B22",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e741"
+            }
+          },
+          {
+            "seatNumber": "B23",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e742"
+            }
+          },
+          {
+            "seatNumber": "B24",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e743"
+            }
+          },
+          {
+            "seatNumber": "B25",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e744"
+            }
+          },
+          {
+            "seatNumber": "B26",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e745"
+            }
+          },
+          {
+            "seatNumber": "B27",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e746"
+            }
+          },
+          {
+            "seatNumber": "B28",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e747"
+            }
+          },
+          {
+            "seatNumber": "B29",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e748"
+            }
+          },
+          {
+            "seatNumber": "B30",
+            "status": "available",
+            "_id": {
+              "$oid": "6a022bedaea3c1367cc2e749"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a022bedaea3c1367cc2e72b"
+        }
+      }
+    ],
+    "status": "Scheduled",
+    "airline": {
+      "$oid": "6a01ac8caea3c1367cc28c60"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a0752579b6ffe05491ebfe2"
+    },
+    "flightNumber": "F2",
+    "from": {
+      "$oid": "6a01f1a4aea3c1367cc2b997"
+    },
+    "to": {
+      "$oid": "6a01f1bdaea3c1367cc2b99f"
+    },
+    "departDate": {
+      "date": "2026-04-22",
+      "time": "12:05AM",
+      "_id": {
+        "$oid": "6a0752579b6ffe05491ebfe3"
+      }
+    },
+    "arriveDate": {
+      "date": "2026-04-22",
+      "time": "4:05AM",
+      "_id": {
+        "$oid": "6a0752579b6ffe05491ebfe4"
+      }
+    },
+    "price": 150,
+    "seatDetails": [
+      {
+        "classType": "Economy",
+        "seats": [
+          {
+            "seatNumber": "A1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfe6"
+            }
+          },
+          {
+            "seatNumber": "A2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfe7"
+            }
+          },
+          {
+            "seatNumber": "A3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfe8"
+            }
+          },
+          {
+            "seatNumber": "A4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfe9"
+            }
+          },
+          {
+            "seatNumber": "A5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfea"
+            }
+          },
+          {
+            "seatNumber": "A6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfeb"
+            }
+          },
+          {
+            "seatNumber": "A7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfec"
+            }
+          },
+          {
+            "seatNumber": "A8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfed"
+            }
+          },
+          {
+            "seatNumber": "A9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfee"
+            }
+          },
+          {
+            "seatNumber": "A10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfef"
+            }
+          },
+          {
+            "seatNumber": "A11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebff0"
+            }
+          },
+          {
+            "seatNumber": "A12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebff1"
+            }
+          },
+          {
+            "seatNumber": "A13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebff2"
+            }
+          },
+          {
+            "seatNumber": "A14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebff3"
+            }
+          },
+          {
+            "seatNumber": "A15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebff4"
+            }
+          },
+          {
+            "seatNumber": "A16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebff5"
+            }
+          },
+          {
+            "seatNumber": "A17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebff6"
+            }
+          },
+          {
+            "seatNumber": "A18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebff7"
+            }
+          },
+          {
+            "seatNumber": "A19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebff8"
+            }
+          },
+          {
+            "seatNumber": "A20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebff9"
+            }
+          },
+          {
+            "seatNumber": "A21",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebffa"
+            }
+          },
+          {
+            "seatNumber": "A22",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebffb"
+            }
+          },
+          {
+            "seatNumber": "A23",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebffc"
+            }
+          },
+          {
+            "seatNumber": "A24",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebffd"
+            }
+          },
+          {
+            "seatNumber": "A25",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebffe"
+            }
+          },
+          {
+            "seatNumber": "A26",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ebfff"
+            }
+          },
+          {
+            "seatNumber": "A27",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec000"
+            }
+          },
+          {
+            "seatNumber": "A28",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec001"
+            }
+          },
+          {
+            "seatNumber": "A29",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec002"
+            }
+          },
+          {
+            "seatNumber": "A30",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec003"
+            }
+          },
+          {
+            "seatNumber": "A31",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec004"
+            }
+          },
+          {
+            "seatNumber": "A32",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec005"
+            }
+          },
+          {
+            "seatNumber": "A33",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec006"
+            }
+          },
+          {
+            "seatNumber": "A34",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec007"
+            }
+          },
+          {
+            "seatNumber": "A35",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec008"
+            }
+          },
+          {
+            "seatNumber": "A36",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec009"
+            }
+          },
+          {
+            "seatNumber": "A37",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec00a"
+            }
+          },
+          {
+            "seatNumber": "A38",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec00b"
+            }
+          },
+          {
+            "seatNumber": "A39",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec00c"
+            }
+          },
+          {
+            "seatNumber": "A40",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec00d"
+            }
+          },
+          {
+            "seatNumber": "A41",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec00e"
+            }
+          },
+          {
+            "seatNumber": "A42",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec00f"
+            }
+          },
+          {
+            "seatNumber": "A43",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec010"
+            }
+          },
+          {
+            "seatNumber": "A44",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec011"
+            }
+          },
+          {
+            "seatNumber": "A45",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec012"
+            }
+          },
+          {
+            "seatNumber": "A46",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec013"
+            }
+          },
+          {
+            "seatNumber": "A47",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec014"
+            }
+          },
+          {
+            "seatNumber": "A48",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec015"
+            }
+          },
+          {
+            "seatNumber": "A49",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec016"
+            }
+          },
+          {
+            "seatNumber": "A50",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec017"
+            }
+          },
+          {
+            "seatNumber": "A51",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec018"
+            }
+          },
+          {
+            "seatNumber": "A52",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec019"
+            }
+          },
+          {
+            "seatNumber": "A53",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec01a"
+            }
+          },
+          {
+            "seatNumber": "A54",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec01b"
+            }
+          },
+          {
+            "seatNumber": "A55",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec01c"
+            }
+          },
+          {
+            "seatNumber": "A56",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec01d"
+            }
+          },
+          {
+            "seatNumber": "A57",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec01e"
+            }
+          },
+          {
+            "seatNumber": "A58",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec01f"
+            }
+          },
+          {
+            "seatNumber": "A59",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec020"
+            }
+          },
+          {
+            "seatNumber": "A60",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec021"
+            }
+          },
+          {
+            "seatNumber": "A61",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec022"
+            }
+          },
+          {
+            "seatNumber": "A62",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec023"
+            }
+          },
+          {
+            "seatNumber": "A63",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec024"
+            }
+          },
+          {
+            "seatNumber": "A64",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec025"
+            }
+          },
+          {
+            "seatNumber": "A65",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec026"
+            }
+          },
+          {
+            "seatNumber": "A66",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec027"
+            }
+          },
+          {
+            "seatNumber": "A67",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec028"
+            }
+          },
+          {
+            "seatNumber": "A68",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec029"
+            }
+          },
+          {
+            "seatNumber": "A69",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec02a"
+            }
+          },
+          {
+            "seatNumber": "A70",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec02b"
+            }
+          },
+          {
+            "seatNumber": "A71",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec02c"
+            }
+          },
+          {
+            "seatNumber": "A72",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec02d"
+            }
+          },
+          {
+            "seatNumber": "A73",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec02e"
+            }
+          },
+          {
+            "seatNumber": "A74",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec02f"
+            }
+          },
+          {
+            "seatNumber": "A75",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec030"
+            }
+          },
+          {
+            "seatNumber": "A76",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec031"
+            }
+          },
+          {
+            "seatNumber": "A77",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec032"
+            }
+          },
+          {
+            "seatNumber": "A78",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec033"
+            }
+          },
+          {
+            "seatNumber": "A79",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec034"
+            }
+          },
+          {
+            "seatNumber": "A80",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec035"
+            }
+          },
+          {
+            "seatNumber": "A81",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec036"
+            }
+          },
+          {
+            "seatNumber": "A82",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec037"
+            }
+          },
+          {
+            "seatNumber": "A83",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec038"
+            }
+          },
+          {
+            "seatNumber": "A84",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec039"
+            }
+          },
+          {
+            "seatNumber": "A85",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec03a"
+            }
+          },
+          {
+            "seatNumber": "A86",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec03b"
+            }
+          },
+          {
+            "seatNumber": "A87",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec03c"
+            }
+          },
+          {
+            "seatNumber": "A88",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec03d"
+            }
+          },
+          {
+            "seatNumber": "A89",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec03e"
+            }
+          },
+          {
+            "seatNumber": "A90",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec03f"
+            }
+          },
+          {
+            "seatNumber": "A91",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec040"
+            }
+          },
+          {
+            "seatNumber": "A92",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec041"
+            }
+          },
+          {
+            "seatNumber": "A93",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec042"
+            }
+          },
+          {
+            "seatNumber": "A94",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec043"
+            }
+          },
+          {
+            "seatNumber": "A95",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec044"
+            }
+          },
+          {
+            "seatNumber": "A96",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec045"
+            }
+          },
+          {
+            "seatNumber": "A97",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec046"
+            }
+          },
+          {
+            "seatNumber": "A98",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec047"
+            }
+          },
+          {
+            "seatNumber": "A99",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec048"
+            }
+          },
+          {
+            "seatNumber": "A100",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec049"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a0752579b6ffe05491ebfe5"
+        }
+      },
+      {
+        "classType": "Business",
+        "seats": [
+          {
+            "seatNumber": "B1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec04b"
+            }
+          },
+          {
+            "seatNumber": "B2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec04c"
+            }
+          },
+          {
+            "seatNumber": "B3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec04d"
+            }
+          },
+          {
+            "seatNumber": "B4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec04e"
+            }
+          },
+          {
+            "seatNumber": "B5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec04f"
+            }
+          },
+          {
+            "seatNumber": "B6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec050"
+            }
+          },
+          {
+            "seatNumber": "B7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec051"
+            }
+          },
+          {
+            "seatNumber": "B8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec052"
+            }
+          },
+          {
+            "seatNumber": "B9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec053"
+            }
+          },
+          {
+            "seatNumber": "B10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec054"
+            }
+          },
+          {
+            "seatNumber": "B11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec055"
+            }
+          },
+          {
+            "seatNumber": "B12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec056"
+            }
+          },
+          {
+            "seatNumber": "B13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec057"
+            }
+          },
+          {
+            "seatNumber": "B14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec058"
+            }
+          },
+          {
+            "seatNumber": "B15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec059"
+            }
+          },
+          {
+            "seatNumber": "B16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec05a"
+            }
+          },
+          {
+            "seatNumber": "B17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec05b"
+            }
+          },
+          {
+            "seatNumber": "B18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec05c"
+            }
+          },
+          {
+            "seatNumber": "B19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec05d"
+            }
+          },
+          {
+            "seatNumber": "B20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752579b6ffe05491ec05e"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a0752579b6ffe05491ec04a"
+        }
+      }
+    ],
+    "status": "Scheduled",
+    "airline": {
+      "$oid": "6a00db23aea3c1367cc24700"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a07529b9b6ffe05491ec243"
+    },
+    "flightNumber": "F5",
+    "from": {
+      "$oid": "6a01f1aeaea3c1367cc2b99b"
+    },
+    "to": {
+      "$oid": "6a01f1a4aea3c1367cc2b997"
+    },
+    "departDate": {
+      "date": "2026-05-14",
+      "time": "12:00AM",
+      "_id": {
+        "$oid": "6a07529b9b6ffe05491ec244"
+      }
+    },
+    "arriveDate": {
+      "date": "2026-05-14",
+      "time": "4:00AM",
+      "_id": {
+        "$oid": "6a07529b9b6ffe05491ec245"
+      }
+    },
+    "price": 1000,
+    "seatDetails": [
+      {
+        "classType": "Economy",
+        "seats": [
+          {
+            "seatNumber": "A1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec247"
+            }
+          },
+          {
+            "seatNumber": "A2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec248"
+            }
+          },
+          {
+            "seatNumber": "A3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec249"
+            }
+          },
+          {
+            "seatNumber": "A4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec24a"
+            }
+          },
+          {
+            "seatNumber": "A5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec24b"
+            }
+          },
+          {
+            "seatNumber": "A6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec24c"
+            }
+          },
+          {
+            "seatNumber": "A7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec24d"
+            }
+          },
+          {
+            "seatNumber": "A8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec24e"
+            }
+          },
+          {
+            "seatNumber": "A9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec24f"
+            }
+          },
+          {
+            "seatNumber": "A10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec250"
+            }
+          },
+          {
+            "seatNumber": "A11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec251"
+            }
+          },
+          {
+            "seatNumber": "A12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec252"
+            }
+          },
+          {
+            "seatNumber": "A13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec253"
+            }
+          },
+          {
+            "seatNumber": "A14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec254"
+            }
+          },
+          {
+            "seatNumber": "A15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec255"
+            }
+          },
+          {
+            "seatNumber": "A16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec256"
+            }
+          },
+          {
+            "seatNumber": "A17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec257"
+            }
+          },
+          {
+            "seatNumber": "A18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec258"
+            }
+          },
+          {
+            "seatNumber": "A19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec259"
+            }
+          },
+          {
+            "seatNumber": "A20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec25a"
+            }
+          },
+          {
+            "seatNumber": "A21",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec25b"
+            }
+          },
+          {
+            "seatNumber": "A22",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec25c"
+            }
+          },
+          {
+            "seatNumber": "A23",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec25d"
+            }
+          },
+          {
+            "seatNumber": "A24",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec25e"
+            }
+          },
+          {
+            "seatNumber": "A25",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec25f"
+            }
+          },
+          {
+            "seatNumber": "A26",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec260"
+            }
+          },
+          {
+            "seatNumber": "A27",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec261"
+            }
+          },
+          {
+            "seatNumber": "A28",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec262"
+            }
+          },
+          {
+            "seatNumber": "A29",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec263"
+            }
+          },
+          {
+            "seatNumber": "A30",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec264"
+            }
+          },
+          {
+            "seatNumber": "A31",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec265"
+            }
+          },
+          {
+            "seatNumber": "A32",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec266"
+            }
+          },
+          {
+            "seatNumber": "A33",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec267"
+            }
+          },
+          {
+            "seatNumber": "A34",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec268"
+            }
+          },
+          {
+            "seatNumber": "A35",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec269"
+            }
+          },
+          {
+            "seatNumber": "A36",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec26a"
+            }
+          },
+          {
+            "seatNumber": "A37",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec26b"
+            }
+          },
+          {
+            "seatNumber": "A38",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec26c"
+            }
+          },
+          {
+            "seatNumber": "A39",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec26d"
+            }
+          },
+          {
+            "seatNumber": "A40",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec26e"
+            }
+          },
+          {
+            "seatNumber": "A41",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec26f"
+            }
+          },
+          {
+            "seatNumber": "A42",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec270"
+            }
+          },
+          {
+            "seatNumber": "A43",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec271"
+            }
+          },
+          {
+            "seatNumber": "A44",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec272"
+            }
+          },
+          {
+            "seatNumber": "A45",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec273"
+            }
+          },
+          {
+            "seatNumber": "A46",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec274"
+            }
+          },
+          {
+            "seatNumber": "A47",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec275"
+            }
+          },
+          {
+            "seatNumber": "A48",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec276"
+            }
+          },
+          {
+            "seatNumber": "A49",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec277"
+            }
+          },
+          {
+            "seatNumber": "A50",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec278"
+            }
+          },
+          {
+            "seatNumber": "A51",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec279"
+            }
+          },
+          {
+            "seatNumber": "A52",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec27a"
+            }
+          },
+          {
+            "seatNumber": "A53",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec27b"
+            }
+          },
+          {
+            "seatNumber": "A54",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec27c"
+            }
+          },
+          {
+            "seatNumber": "A55",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec27d"
+            }
+          },
+          {
+            "seatNumber": "A56",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec27e"
+            }
+          },
+          {
+            "seatNumber": "A57",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec27f"
+            }
+          },
+          {
+            "seatNumber": "A58",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec280"
+            }
+          },
+          {
+            "seatNumber": "A59",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec281"
+            }
+          },
+          {
+            "seatNumber": "A60",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec282"
+            }
+          },
+          {
+            "seatNumber": "A61",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec283"
+            }
+          },
+          {
+            "seatNumber": "A62",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec284"
+            }
+          },
+          {
+            "seatNumber": "A63",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec285"
+            }
+          },
+          {
+            "seatNumber": "A64",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec286"
+            }
+          },
+          {
+            "seatNumber": "A65",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec287"
+            }
+          },
+          {
+            "seatNumber": "A66",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec288"
+            }
+          },
+          {
+            "seatNumber": "A67",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec289"
+            }
+          },
+          {
+            "seatNumber": "A68",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec28a"
+            }
+          },
+          {
+            "seatNumber": "A69",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec28b"
+            }
+          },
+          {
+            "seatNumber": "A70",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec28c"
+            }
+          },
+          {
+            "seatNumber": "A71",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec28d"
+            }
+          },
+          {
+            "seatNumber": "A72",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec28e"
+            }
+          },
+          {
+            "seatNumber": "A73",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec28f"
+            }
+          },
+          {
+            "seatNumber": "A74",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec290"
+            }
+          },
+          {
+            "seatNumber": "A75",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec291"
+            }
+          },
+          {
+            "seatNumber": "A76",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec292"
+            }
+          },
+          {
+            "seatNumber": "A77",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec293"
+            }
+          },
+          {
+            "seatNumber": "A78",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec294"
+            }
+          },
+          {
+            "seatNumber": "A79",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec295"
+            }
+          },
+          {
+            "seatNumber": "A80",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec296"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a07529b9b6ffe05491ec246"
+        }
+      },
+      {
+        "classType": "Business",
+        "seats": [
+          {
+            "seatNumber": "B1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec298"
+            }
+          },
+          {
+            "seatNumber": "B2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec299"
+            }
+          },
+          {
+            "seatNumber": "B3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec29a"
+            }
+          },
+          {
+            "seatNumber": "B4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec29b"
+            }
+          },
+          {
+            "seatNumber": "B5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec29c"
+            }
+          },
+          {
+            "seatNumber": "B6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec29d"
+            }
+          },
+          {
+            "seatNumber": "B7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec29e"
+            }
+          },
+          {
+            "seatNumber": "B8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec29f"
+            }
+          },
+          {
+            "seatNumber": "B9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2a0"
+            }
+          },
+          {
+            "seatNumber": "B10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2a1"
+            }
+          },
+          {
+            "seatNumber": "B11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2a2"
+            }
+          },
+          {
+            "seatNumber": "B12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2a3"
+            }
+          },
+          {
+            "seatNumber": "B13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2a4"
+            }
+          },
+          {
+            "seatNumber": "B14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2a5"
+            }
+          },
+          {
+            "seatNumber": "B15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2a6"
+            }
+          },
+          {
+            "seatNumber": "B16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2a7"
+            }
+          },
+          {
+            "seatNumber": "B17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2a8"
+            }
+          },
+          {
+            "seatNumber": "B18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2a9"
+            }
+          },
+          {
+            "seatNumber": "B19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2aa"
+            }
+          },
+          {
+            "seatNumber": "B20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a07529b9b6ffe05491ec2ab"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a07529b9b6ffe05491ec297"
+        }
+      }
+    ],
+    "status": "Scheduled",
+    "airline": {
+      "$oid": "6a00aee5aea3c1367cc1fa16"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a0752d49b6ffe05491ec4f6"
+    },
+    "flightNumber": "F6",
+    "from": {
+      "$oid": "6a01f1bdaea3c1367cc2b99f"
+    },
+    "to": {
+      "$oid": "6a01f1a4aea3c1367cc2b997"
+    },
+    "departDate": {
+      "date": "2026-05-14",
+      "time": "7:30AM",
+      "_id": {
+        "$oid": "6a0752d49b6ffe05491ec4f7"
+      }
+    },
+    "arriveDate": {
+      "date": "2026-05-14",
+      "time": "1:31PM",
+      "_id": {
+        "$oid": "6a0752d49b6ffe05491ec4f8"
+      }
+    },
+    "price": 250,
+    "seatDetails": [
+      {
+        "classType": "Economy",
+        "seats": [
+          {
+            "seatNumber": "A1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec4fa"
+            }
+          },
+          {
+            "seatNumber": "A2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec4fb"
+            }
+          },
+          {
+            "seatNumber": "A3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec4fc"
+            }
+          },
+          {
+            "seatNumber": "A4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec4fd"
+            }
+          },
+          {
+            "seatNumber": "A5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec4fe"
+            }
+          },
+          {
+            "seatNumber": "A6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec4ff"
+            }
+          },
+          {
+            "seatNumber": "A7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec500"
+            }
+          },
+          {
+            "seatNumber": "A8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec501"
+            }
+          },
+          {
+            "seatNumber": "A9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec502"
+            }
+          },
+          {
+            "seatNumber": "A10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec503"
+            }
+          },
+          {
+            "seatNumber": "A11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec504"
+            }
+          },
+          {
+            "seatNumber": "A12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec505"
+            }
+          },
+          {
+            "seatNumber": "A13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec506"
+            }
+          },
+          {
+            "seatNumber": "A14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec507"
+            }
+          },
+          {
+            "seatNumber": "A15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec508"
+            }
+          },
+          {
+            "seatNumber": "A16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec509"
+            }
+          },
+          {
+            "seatNumber": "A17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec50a"
+            }
+          },
+          {
+            "seatNumber": "A18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec50b"
+            }
+          },
+          {
+            "seatNumber": "A19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec50c"
+            }
+          },
+          {
+            "seatNumber": "A20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec50d"
+            }
+          },
+          {
+            "seatNumber": "A21",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec50e"
+            }
+          },
+          {
+            "seatNumber": "A22",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec50f"
+            }
+          },
+          {
+            "seatNumber": "A23",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec510"
+            }
+          },
+          {
+            "seatNumber": "A24",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec511"
+            }
+          },
+          {
+            "seatNumber": "A25",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec512"
+            }
+          },
+          {
+            "seatNumber": "A26",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec513"
+            }
+          },
+          {
+            "seatNumber": "A27",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec514"
+            }
+          },
+          {
+            "seatNumber": "A28",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec515"
+            }
+          },
+          {
+            "seatNumber": "A29",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec516"
+            }
+          },
+          {
+            "seatNumber": "A30",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec517"
+            }
+          },
+          {
+            "seatNumber": "A31",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec518"
+            }
+          },
+          {
+            "seatNumber": "A32",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec519"
+            }
+          },
+          {
+            "seatNumber": "A33",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec51a"
+            }
+          },
+          {
+            "seatNumber": "A34",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec51b"
+            }
+          },
+          {
+            "seatNumber": "A35",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec51c"
+            }
+          },
+          {
+            "seatNumber": "A36",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec51d"
+            }
+          },
+          {
+            "seatNumber": "A37",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec51e"
+            }
+          },
+          {
+            "seatNumber": "A38",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec51f"
+            }
+          },
+          {
+            "seatNumber": "A39",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec520"
+            }
+          },
+          {
+            "seatNumber": "A40",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec521"
+            }
+          },
+          {
+            "seatNumber": "A41",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec522"
+            }
+          },
+          {
+            "seatNumber": "A42",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec523"
+            }
+          },
+          {
+            "seatNumber": "A43",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec524"
+            }
+          },
+          {
+            "seatNumber": "A44",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec525"
+            }
+          },
+          {
+            "seatNumber": "A45",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec526"
+            }
+          },
+          {
+            "seatNumber": "A46",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec527"
+            }
+          },
+          {
+            "seatNumber": "A47",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec528"
+            }
+          },
+          {
+            "seatNumber": "A48",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec529"
+            }
+          },
+          {
+            "seatNumber": "A49",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec52a"
+            }
+          },
+          {
+            "seatNumber": "A50",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec52b"
+            }
+          },
+          {
+            "seatNumber": "A51",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec52c"
+            }
+          },
+          {
+            "seatNumber": "A52",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec52d"
+            }
+          },
+          {
+            "seatNumber": "A53",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec52e"
+            }
+          },
+          {
+            "seatNumber": "A54",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec52f"
+            }
+          },
+          {
+            "seatNumber": "A55",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d49b6ffe05491ec530"
+            }
+          },
+          {
+            "seatNumber": "A56",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec531"
+            }
+          },
+          {
+            "seatNumber": "A57",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec532"
+            }
+          },
+          {
+            "seatNumber": "A58",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec533"
+            }
+          },
+          {
+            "seatNumber": "A59",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec534"
+            }
+          },
+          {
+            "seatNumber": "A60",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec535"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a0752d49b6ffe05491ec4f9"
+        }
+      },
+      {
+        "classType": "Business",
+        "seats": [
+          {
+            "seatNumber": "B1",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec537"
+            }
+          },
+          {
+            "seatNumber": "B2",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec538"
+            }
+          },
+          {
+            "seatNumber": "B3",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec539"
+            }
+          },
+          {
+            "seatNumber": "B4",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec53a"
+            }
+          },
+          {
+            "seatNumber": "B5",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec53b"
+            }
+          },
+          {
+            "seatNumber": "B6",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec53c"
+            }
+          },
+          {
+            "seatNumber": "B7",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec53d"
+            }
+          },
+          {
+            "seatNumber": "B8",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec53e"
+            }
+          },
+          {
+            "seatNumber": "B9",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec53f"
+            }
+          },
+          {
+            "seatNumber": "B10",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec540"
+            }
+          },
+          {
+            "seatNumber": "B11",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec541"
+            }
+          },
+          {
+            "seatNumber": "B12",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec542"
+            }
+          },
+          {
+            "seatNumber": "B13",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec543"
+            }
+          },
+          {
+            "seatNumber": "B14",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec544"
+            }
+          },
+          {
+            "seatNumber": "B15",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec545"
+            }
+          },
+          {
+            "seatNumber": "B16",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec546"
+            }
+          },
+          {
+            "seatNumber": "B17",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec547"
+            }
+          },
+          {
+            "seatNumber": "B18",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec548"
+            }
+          },
+          {
+            "seatNumber": "B19",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec549"
+            }
+          },
+          {
+            "seatNumber": "B20",
+            "status": "available",
+            "_id": {
+              "$oid": "6a0752d59b6ffe05491ec54a"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "6a0752d59b6ffe05491ec536"
+        }
+      }
+    ],
+    "status": "Scheduled",
+    "airline": {
+      "$oid": "6a01adffaea3c1367cc29111"
+    },
+    "__v": 0
+  }
+]

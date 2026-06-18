@@ -1,0 +1,38 @@
+{
+  "bug_id": 30,
+  "desc_en": "Cart icon is not properly aligned with other header elements, affecting layout consistency (login with username \"visual_user\" and password \"secret_sauce\")",
+  "root_url": "saucedemo",
+  "total_actions": 3,
+  "actions": [
+    {
+      "step": 1,
+      "action_type": "fill",
+      "target": {
+        "label": "Username",
+        "xpath": "//*[@id=\"user-name\"]"
+      },
+      "value": "visual_user",
+      "value_constraint": null
+    },
+    {
+      "step": 2,
+      "action_type": "fill",
+      "target": {
+        "label": "Password",
+        "xpath": "//*[@id=\"password\"]"
+      },
+      "value": "secret_sauce",
+      "value_constraint": null
+    },
+    {
+      "step": 3,
+      "action_type": "click",
+      "target": {
+        "label": "Login",
+        "xpath": "//*[@id=\"login-button\"]"
+      },
+      "value": null,
+      "value_constraint": null
+    }
+  ]
+}

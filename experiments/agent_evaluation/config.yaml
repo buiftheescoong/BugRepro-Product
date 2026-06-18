@@ -1,0 +1,145 @@
+common:
+  root_url: "http://qairline.ui-testing.io.vn"  
+  max_steps: 66
+  temperature: 0.2
+  headless: false
+  screenshots_dir: "../data/screenshots"
+  screenshot_map: "../data/screenshot_map.json"
+  bug_corpus: "../data/bug_corpus_full.json"
+
+db_reset:
+  enabled: true
+  hosts: ["qairline.ui-testing.io.vn"]
+  mongo_uri_env: "QAIRLINE_MONGO_URI"
+  database_env: "QAIRLINE_DB_NAME"
+  fixture_dir: "../data/qairline_seed"
+  exclude_collections: []
+  drop_extra_collections: true
+  fail_on_error: true
+
+execution:
+  unattended: false
+  need_input_skip_log: "./need_input_skips.jsonl"
+  remove_skipped_run_log: true
+
+planner_ablation:
+  critic_enabled: false
+  rag_enabled: false
+  bug_ids: [1, 4, 6, 8, 9, 11, 13, 15, 16, 25, 29, 30, 34, 39, 40, 41, 43, 46, 51, 65, 71, 73, 75, 79, 80, 81, 83, 84, 86, 88, 91, 96, 97, 98, 99]
+  models:
+    - "gemini-2.5-flash"
+    - "gemini-3.1-flash-lite"
+    - "gpt-5.4-mini"
+    - "gpt-5.4-nano"
+    - "qwen3.5-9b"
+    - "qwen3.5-397b-a17b"
+    - "gemma-4-31b-it"
+  results_dir: "../results/planner_ablation"
+
+critic_ablation:
+  planner_model: gemini-2.5-flash   
+  rag_enabled: false
+  bug_ids: [1, 4, 6, 8, 9, 11, 13, 15, 16, 25, 29, 30, 34, 39, 40, 41, 43, 46, 51, 65, 71, 73, 75, 79, 80, 81, 83, 84, 86, 88, 91, 96, 97, 98, 99]  # Same 35 bugs as planner_ablation
+  critic_models:
+    - "gemini-2.5-flash"
+    - "gemini-2.5-flash-lite"
+    - "gemma-4-31b-it"
+    - "qwen3.5-9b"
+    - "gemini-3.1-flash-lite"
+    - "gpt-4.1-mini"
+  results_dir: "../results/critic_ablation"
+
+full_system:
+  planner_model: gemini-2.5-flash 
+  critic_model: gemini-2.5-flash 
+  bug_ids: []        # Run on all bugs in the corpus
+  configs:
+    - name: "planner_only"
+      critic_enabled: false
+      rag_enabled: false
+    - name: "planner_rag"
+      critic_enabled: false
+      rag_enabled: true
+      rag_memory_dir: "./data/chroma_db_planner_rag"
+      rag_search_k: 3
+      rag_min_similarity: 0.72
+      rag_max_success_cases: 1
+    - name: "planner_critic"
+      critic_enabled: true
+      rag_enabled: false
+    - name: "full"
+      critic_enabled: true
+      rag_enabled: true
+      rag_memory_dir: "./data/chroma_db_planner_rag_critic"
+      rag_search_k: 3
+      rag_min_similarity: 0.72
+      rag_max_success_cases: 1
+  results_dir: "../results/full_system"
+
+model_registry:
+  gemini-2.5-flash:
+    provider: "google"
+    model_id: "gemini-2.5-flash"
+  openrouter/gemini-2.5-flash:
+    provider: "openrouter"
+    model_id: "google/gemini-2.5-flash"
+  gemini-2.5-flash-lite:
+    provider: "google"
+    model_id: "gemini-2.5-flash-lite"
+  openrouter/gemini-2.5-flash-lite:
+    provider: "openrouter"
+    model_id: "google/gemini-2.5-flash-lite"
+  gemini-3.1-flash-lite:
+    provider: "google"
+    model_id: "gemini-3.1-flash-lite"
+  claude-sonnet-4-6:
+    provider: "anthropic"
+    model_id: "claude-sonnet-4-6"
+  claude-opus-4-7:
+    provider: "anthropic"
+    model_id: "claude-opus-4-7"
+  claude-haiku-4-5-20251001:
+    provider: "anthropic"
+    model_id: "claude-haiku-4-5-20251001"
+  gpt-4.1:
+    provider: "openai"
+    model_id: "gpt-4.1"
+  gpt-4.1-mini:
+    provider: "openai"
+    model_id: "gpt-4.1-mini"
+  gpt-4o-mini:
+    provider: "openai"
+    model_id: "gpt-4o-mini"
+  gpt-5.4-mini:
+    provider: "openai"
+    model_id: "gpt-5.4-mini"
+  openai/gpt-5.4-mini:
+    provider: "openrouter"
+    model_id: "openai/gpt-5.4-mini"
+  gpt-5.4-nano:
+    provider: "openai"
+    model_id: "gpt-5.4-nano"
+  openai/gpt-5.4-nano:
+    provider: "openrouter"
+    model_id: "openai/gpt-5.4-nano"
+  qwen3.5-9b:
+    provider: "together"
+    model_id: "Qwen/Qwen3.5-9B"
+    base_url: "https://api.together.xyz/v1"
+  qwen3.5-397b-a17b:
+    provider: "together"
+    model_id: "Qwen/Qwen3.5-397B-A17B"
+    base_url: "https://api.together.xyz/v1"
+  gemma-4-31b-it:
+    provider: "together"
+    model_id: "google/gemma-4-31B-it"
+    base_url: "https://api.together.xyz/v1"
+  qwen3-vl-32b-instruct:
+    provider: "openrouter"
+    model_id: "qwen/qwen3-vl-32b-instruct"
+  qwen2.5-vl-72b-instruct:
+    provider: "openrouter"
+    model_id: "qwen/qwen2.5-vl-72b-instruct"
+  qwen2.5-vl-7b:
+    provider: "openrouter"
+    model_id: "qwen/qwen-2.5-vl-7b-instruct"

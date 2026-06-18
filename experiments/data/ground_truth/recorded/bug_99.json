@@ -1,0 +1,30 @@
+{
+  "bug_id": 99,
+  "desc_en": "Price sorting (low to high) is reversed.",
+  "root_url": "commerce",
+  "total_actions": 2,
+  "actions": [
+    {
+      "step": 1,
+      "action_type": "click",
+      "target": {
+        "label": "All",
+        "xpath": "//a[normalize-space()=\"All\"]"
+      },
+      "value": null,
+      "value_constraint": null,
+      "critical": true
+    },
+    {
+      "step": 2,
+      "action_type": "click",
+      "target": {
+        "label": "Price: Low to high",
+        "xpath": "//a[normalize-space()=\"Price: Low to high\"]"
+      },
+      "value": null,
+      "value_constraint": null,
+      "critical": true
+    }
+  ]
+}

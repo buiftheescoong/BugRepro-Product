@@ -1,0 +1,19 @@
+{
+  "bug_id": 97,
+  "desc_en": "Clicking the Wool Beanie product causes a crash.",
+  "root_url": "commerce",
+  "total_actions": 1,
+  "actions": [
+    {
+      "step": 1,
+      "action_type": "click",
+      "target": {
+        "label": "Merino Wool Beanie\n\n$34.99USD",
+        "xpath": "/html[1]/body[1]/main[1]/div[1]/ul[1]/li[2]/a[1]"
+      },
+      "value": null,
+      "value_constraint": null,
+      "critical": true
+    }
+  ]
+}

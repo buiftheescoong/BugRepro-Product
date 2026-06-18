@@ -1,0 +1,52 @@
+{
+  "bug_id": 84,
+  "desc_en": "In Category Create, empty submissions pass validation (validation rules are missing).",
+  "root_url": "refinedev",
+  "total_actions": 4,
+  "actions": [
+    {
+      "step": 1,
+      "action_type": "click",
+      "target": {
+        "label": "Sign in",
+        "xpath": "//button[normalize-space()=\"Sign in\"]"
+      },
+      "value": null,
+      "value_constraint": null,
+      "critical": true
+    },
+    {
+      "step": 2,
+      "action_type": "click",
+      "target": {
+        "label": "Categories",
+        "xpath": "//a[normalize-space()=\"Categories\"]"
+      },
+      "value": null,
+      "value_constraint": null,
+      "critical": true
+    },
+    {
+      "step": 3,
+      "action_type": "click",
+      "target": {
+        "label": "Create",
+        "xpath": "//button[normalize-space()=\"Create\"]"
+      },
+      "value": null,
+      "value_constraint": null,
+      "critical": true
+    },
+    {
+      "step": 4,
+      "action_type": "click",
+      "target": {
+        "label": "Save",
+        "xpath": "//button[normalize-space()=\"Save\"]"
+      },
+      "value": null,
+      "value_constraint": null,
+      "critical": true
+    }
+  ]
+}

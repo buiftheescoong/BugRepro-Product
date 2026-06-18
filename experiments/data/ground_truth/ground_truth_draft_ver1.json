@@ -1,0 +1,1566 @@
+{
+  "metadata": {
+    "version": "draft-1.0",
+    "created": "2026-05-02",
+    "total_bugs": 35,
+    "bugs_with_actions": 20,
+    "bugs_pending_actions": 15,
+    "pending_bug_ids": [39, 43, 52, 73, 78, 80, 83, 84, 85, 86, 94, 96, 97, 98, 99],
+    "note": "XPath fields are approximations — must verify on live app before final version"
+  },
+  "bugs": [
+    {
+      "bug_id": 1,
+      "desc_en": "Admin can create a flight with a departure time in the past",
+      "root_url": "qairline",
+      "difficulty": "medium",
+      "bug_type": "Validation Bypass",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Flight with past departure time is created successfully (system does not block it)",
+        "check": "flight_created_with_past_departure"
+      },
+      "total_actions": 11,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Flights", "xpath": "//a[contains(text(),'Manage Flights')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {"label": "+ New Flight", "xpath": "//button[contains(text(),'New Flight')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 4,
+          "action_type": "fill",
+          "target": {"label": "Flight Number", "xpath": "//input[@name='flightNo' or @placeholder='Flight Number']"},
+          "value": "F2",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 5,
+          "action_type": "select",
+          "target": {"label": "Aircraft", "xpath": "//select[contains(@name,'aircraft') or contains(@id,'aircraft')]"},
+          "value": "BOE-787-9 Dreamliner",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 6,
+          "action_type": "fill",
+          "target": {"label": "Base Price", "xpath": "//input[@name='basePrice' or @placeholder='Base Price']"},
+          "value": "80",
+          "value_constraint": "x > 0"
+        },
+        {
+          "step": 7,
+          "action_type": "select",
+          "target": {"label": "Departure Location", "xpath": "//select[contains(@name,'departure') or contains(@id,'departure')]"},
+          "value": "Ha Noi (GL-HN)",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 8,
+          "action_type": "select",
+          "target": {"label": "Arrival Location", "xpath": "//select[contains(@name,'arrival') or contains(@id,'arrival')]"},
+          "value": "Da Nang (DN-DN)",
+          "value_constraint": "any_valid_option AND different_from_step(7)"
+        },
+        {
+          "step": 9,
+          "action_type": "set_datetime",
+          "target": {"label": "Departure Date/Time", "xpath": "//input[@type='datetime-local' and (contains(@name,'departure') or contains(@id,'departure'))]"},
+          "value": "2026-01-28T15:31",
+          "value_constraint": "datetime < now()"
+        },
+        {
+          "step": 10,
+          "action_type": "set_datetime",
+          "target": {"label": "Arrival Date/Time", "xpath": "//input[@type='datetime-local' and (contains(@name,'arrival') or contains(@id,'arrival'))]"},
+          "value": "2026-01-30T15:31",
+          "value_constraint": "valid_datetime AND after_step(9)"
+        },
+        {
+          "step": 11,
+          "action_type": "click",
+          "target": {"label": "Save", "xpath": "//button[text()='Save' or text()='Create']"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 4,
+      "desc_en": "Admin can create a flight with a negative base price",
+      "root_url": "qairline",
+      "difficulty": "medium",
+      "bug_type": "Validation Bypass",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Flight with negative Base Price is created successfully (system does not block it)",
+        "check": "flight_created_with_negative_price"
+      },
+      "total_actions": 11,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Flights", "xpath": "//a[contains(text(),'Manage Flights')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {"label": "+ New Flight", "xpath": "//button[contains(text(),'New Flight')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 4,
+          "action_type": "fill",
+          "target": {"label": "Flight Number", "xpath": "//input[@name='flightNo' or @placeholder='Flight Number']"},
+          "value": "F4",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 5,
+          "action_type": "select",
+          "target": {"label": "Aircraft", "xpath": "//select[contains(@name,'aircraft') or contains(@id,'aircraft')]"},
+          "value": "AB_A350",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 6,
+          "action_type": "fill",
+          "target": {"label": "Base Price", "xpath": "//input[@name='basePrice' or @placeholder='Base Price']"},
+          "value": "-10",
+          "value_constraint": "x < 0"
+        },
+        {
+          "step": 7,
+          "action_type": "select",
+          "target": {"label": "Departure Location", "xpath": "//select[contains(@name,'departure') or contains(@id,'departure')]"},
+          "value": "Ha Noi (GB-HN)",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 8,
+          "action_type": "select",
+          "target": {"label": "Arrival Location", "xpath": "//select[contains(@name,'arrival') or contains(@id,'arrival')]"},
+          "value": "London (LD-UK)",
+          "value_constraint": "any_valid_option AND different_from_step(7)"
+        },
+        {
+          "step": 9,
+          "action_type": "set_datetime",
+          "target": {"label": "Departure Date/Time", "xpath": "//input[@type='datetime-local' and (contains(@name,'departure') or contains(@id,'departure'))]"},
+          "value": "2026-01-30T16:00",
+          "value_constraint": "valid_datetime AND datetime > now()"
+        },
+        {
+          "step": 10,
+          "action_type": "set_datetime",
+          "target": {"label": "Arrival Date/Time", "xpath": "//input[@type='datetime-local' and (contains(@name,'arrival') or contains(@id,'arrival'))]"},
+          "value": "2026-01-30T20:00",
+          "value_constraint": "valid_datetime AND after_step(9)"
+        },
+        {
+          "step": 11,
+          "action_type": "click",
+          "target": {"label": "Save", "xpath": "//button[text()='Save' or text()='Create']"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 5,
+      "desc_en": "Admin can create a new flight using an aircraft already assigned to another flight at the same or overlapping time",
+      "root_url": "qairline",
+      "difficulty": "medium",
+      "bug_type": "Validation Bypass",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Flight using already-assigned aircraft (AB_A350) is created without conflict warning",
+        "check": "flight_created_with_conflicting_aircraft"
+      },
+      "total_actions": 11,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Flights", "xpath": "//a[contains(text(),'Manage Flights')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {"label": "+ New Flight", "xpath": "//button[contains(text(),'New Flight')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 4,
+          "action_type": "fill",
+          "target": {"label": "Flight Number", "xpath": "//input[@name='flightNo' or @placeholder='Flight Number']"},
+          "value": "F5",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 5,
+          "action_type": "select",
+          "target": {"label": "Aircraft", "xpath": "//select[contains(@name,'aircraft') or contains(@id,'aircraft')]"},
+          "value": "AB_A350",
+          "value_constraint": "exact:AB_A350 (already assigned aircraft)"
+        },
+        {
+          "step": 6,
+          "action_type": "fill",
+          "target": {"label": "Base Price", "xpath": "//input[@name='basePrice' or @placeholder='Base Price']"},
+          "value": "50",
+          "value_constraint": "x > 0"
+        },
+        {
+          "step": 7,
+          "action_type": "select",
+          "target": {"label": "Departure Location", "xpath": "//select[contains(@name,'departure') or contains(@id,'departure')]"},
+          "value": "Ha Noi (GL-HN)",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 8,
+          "action_type": "select",
+          "target": {"label": "Arrival Location", "xpath": "//select[contains(@name,'arrival') or contains(@id,'arrival')]"},
+          "value": "Da Nang (DN-DN)",
+          "value_constraint": "any_valid_option AND different_from_step(7)"
+        },
+        {
+          "step": 9,
+          "action_type": "set_datetime",
+          "target": {"label": "Departure Date/Time", "xpath": "//input[@type='datetime-local' and (contains(@name,'departure') or contains(@id,'departure'))]"},
+          "value": "2026-01-30T16:30",
+          "value_constraint": "datetime overlaps with existing AB_A350 flight schedule"
+        },
+        {
+          "step": 10,
+          "action_type": "set_datetime",
+          "target": {"label": "Arrival Date/Time", "xpath": "//input[@type='datetime-local' and (contains(@name,'arrival') or contains(@id,'arrival'))]"},
+          "value": "2026-01-30T19:00",
+          "value_constraint": "valid_datetime AND after_step(9)"
+        },
+        {
+          "step": 11,
+          "action_type": "click",
+          "target": {"label": "Save", "xpath": "//button[text()='Save' or text()='Create']"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 6,
+      "desc_en": "Admin deletes an aircraft but it remains visible on the UI until the page is manually reloaded",
+      "root_url": "qairline",
+      "difficulty": "easy",
+      "bug_type": "Data Persistence",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "After clicking Delete and confirming OK, BOE-777 still appears in the aircraft list without page reload",
+        "check": "deleted_item_still_visible_without_reload"
+      },
+      "total_actions": 4,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Aircrafts", "xpath": "//a[contains(text(),'Manage Aircrafts')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {"label": "Delete BOE-777", "xpath": "//button[contains(text(),'Delete') and ancestor::tr[contains(.,'BOE-777')]]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 4,
+          "action_type": "click",
+          "target": {"label": "OK (browser popup confirm)", "xpath": null},
+          "value": null,
+          "value_constraint": "browser_dialog:accept"
+        }
+      ]
+    },
+    {
+      "bug_id": 8,
+      "desc_en": "Admin can create a new aircraft with a total number of seats equal to 0",
+      "root_url": "qairline",
+      "difficulty": "medium",
+      "bug_type": "Validation Bypass",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Aircraft with Economy Seats=0 and Business Seats=0 is created successfully (no validation error)",
+        "check": "aircraft_created_with_zero_seats"
+      },
+      "total_actions": 8,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Aircrafts", "xpath": "//a[contains(text(),'Manage Aircrafts')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {"label": "+ New Aircraft", "xpath": "//button[contains(text(),'New Aircraft')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 4,
+          "action_type": "fill",
+          "target": {"label": "Aircraft Code", "xpath": "//input[@name='code' or @placeholder='Aircraft Code']"},
+          "value": "BOE-777",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 5,
+          "action_type": "fill",
+          "target": {"label": "Manufacturer", "xpath": "//input[@name='manufacturer' or @placeholder='Manufacturer']"},
+          "value": "Boeing",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 6,
+          "action_type": "fill",
+          "target": {"label": "Economy Seats", "xpath": "//input[@name='economySeats' or @placeholder='Economy Seats']"},
+          "value": "0",
+          "value_constraint": "x == 0"
+        },
+        {
+          "step": 7,
+          "action_type": "fill",
+          "target": {"label": "Business Seats", "xpath": "//input[@name='businessSeats' or @placeholder='Business Seats']"},
+          "value": "0",
+          "value_constraint": "x == 0"
+        },
+        {
+          "step": 8,
+          "action_type": "click",
+          "target": {"label": "Save", "xpath": "//button[text()='Save' or text()='Create']"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 9,
+      "desc_en": "Creating a new flight using an aircraft with total seats equal to 0 results in a blank page",
+      "root_url": "qairline",
+      "difficulty": "hard",
+      "bug_type": "Cascade/Blank",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Manage Flights page goes blank after creating a flight that uses an aircraft with 0 seats",
+        "check": "page_blank_after_flight_creation"
+      },
+      "total_actions": 18,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Aircrafts", "xpath": "//a[contains(text(),'Manage Aircrafts')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {"label": "+ New Aircraft", "xpath": "//button[contains(text(),'New Aircraft')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 4,
+          "action_type": "fill",
+          "target": {"label": "Aircraft Code", "xpath": "//input[@name='code' or @placeholder='Aircraft Code']"},
+          "value": "BOE-777",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 5,
+          "action_type": "fill",
+          "target": {"label": "Manufacturer", "xpath": "//input[@name='manufacturer' or @placeholder='Manufacturer']"},
+          "value": "Boeing",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 6,
+          "action_type": "fill",
+          "target": {"label": "Economy Seats", "xpath": "//input[@name='economySeats' or @placeholder='Economy Seats']"},
+          "value": "0",
+          "value_constraint": "x == 0"
+        },
+        {
+          "step": 7,
+          "action_type": "fill",
+          "target": {"label": "Business Seats", "xpath": "//input[@name='businessSeats' or @placeholder='Business Seats']"},
+          "value": "0",
+          "value_constraint": "x == 0"
+        },
+        {
+          "step": 8,
+          "action_type": "click",
+          "target": {"label": "Save", "xpath": "//button[text()='Save' or text()='Create']"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 9,
+          "action_type": "click",
+          "target": {"label": "Manage Flights", "xpath": "//a[contains(text(),'Manage Flights')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 10,
+          "action_type": "click",
+          "target": {"label": "+ New Flight", "xpath": "//button[contains(text(),'New Flight')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 11,
+          "action_type": "fill",
+          "target": {"label": "Flight Number", "xpath": "//input[@name='flightNo' or @placeholder='Flight Number']"},
+          "value": "F6",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 12,
+          "action_type": "select",
+          "target": {"label": "Aircraft", "xpath": "//select[contains(@name,'aircraft') or contains(@id,'aircraft')]"},
+          "value": "BOE-777",
+          "value_constraint": "exact:BOE-777 (the zero-seat aircraft just created)"
+        },
+        {
+          "step": 13,
+          "action_type": "fill",
+          "target": {"label": "Base Price", "xpath": "//input[@name='basePrice' or @placeholder='Base Price']"},
+          "value": "100",
+          "value_constraint": "x > 0"
+        },
+        {
+          "step": 14,
+          "action_type": "select",
+          "target": {"label": "Departure Location", "xpath": "//select[contains(@name,'departure') or contains(@id,'departure')]"},
+          "value": "Ha Noi (GL-HN)",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 15,
+          "action_type": "select",
+          "target": {"label": "Arrival Location", "xpath": "//select[contains(@name,'arrival') or contains(@id,'arrival')]"},
+          "value": "Da Nang (DN-DN)",
+          "value_constraint": "any_valid_option AND different_from_step(14)"
+        },
+        {
+          "step": 16,
+          "action_type": "set_datetime",
+          "target": {"label": "Departure Date/Time", "xpath": "//input[@type='datetime-local' and (contains(@name,'departure') or contains(@id,'departure'))]"},
+          "value": "2026-01-30T18:00",
+          "value_constraint": "valid_datetime AND datetime > now()"
+        },
+        {
+          "step": 17,
+          "action_type": "set_datetime",
+          "target": {"label": "Arrival Date/Time", "xpath": "//input[@type='datetime-local' and (contains(@name,'arrival') or contains(@id,'arrival'))]"},
+          "value": "2026-01-30T20:00",
+          "value_constraint": "valid_datetime AND after_step(16)"
+        },
+        {
+          "step": 18,
+          "action_type": "click",
+          "target": {"label": "Save", "xpath": "//button[text()='Save' or text()='Create']"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 10,
+      "desc_en": "Creating a new aircraft with an excessively long Aircraft Code breaks the UI layout, causing the '+ New Aircraft' button to overflow outside the screen",
+      "root_url": "qairline",
+      "difficulty": "medium",
+      "bug_type": "Broken Layout",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "After saving aircraft with very long code, the Manage Aircrafts page layout is broken — '+ New Aircraft' button overflows off-screen",
+        "check": "layout_broken_new_aircraft_button_overflow"
+      },
+      "total_actions": 8,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Aircrafts", "xpath": "//a[contains(text(),'Manage Aircrafts')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {"label": "+ New Aircraft", "xpath": "//button[contains(text(),'New Aircraft')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 4,
+          "action_type": "fill",
+          "target": {"label": "Aircraft Code", "xpath": "//input[@name='code' or @placeholder='Aircraft Code']"},
+          "value": "BOE-7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777",
+          "value_constraint": "len(x) > 50"
+        },
+        {
+          "step": 5,
+          "action_type": "fill",
+          "target": {"label": "Manufacturer", "xpath": "//input[@name='manufacturer' or @placeholder='Manufacturer']"},
+          "value": "Boeing",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 6,
+          "action_type": "fill",
+          "target": {"label": "Economy Seats", "xpath": "//input[@name='economySeats' or @placeholder='Economy Seats']"},
+          "value": "10",
+          "value_constraint": "x > 0"
+        },
+        {
+          "step": 7,
+          "action_type": "fill",
+          "target": {"label": "Business Seats", "xpath": "//input[@name='businessSeats' or @placeholder='Business Seats']"},
+          "value": "50",
+          "value_constraint": "x > 0"
+        },
+        {
+          "step": 8,
+          "action_type": "click",
+          "target": {"label": "Save", "xpath": "//button[text()='Save' or text()='Create']"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 11,
+      "desc_en": "After creating an aircraft with an excessively long Aircraft Code, creating a new flight using that aircraft breaks the UI layout on Manage Flights page",
+      "root_url": "qairline",
+      "difficulty": "hard",
+      "bug_type": "Cascade Layout",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Manage Flights page layout is broken — Class Info and Action columns overflow off-screen after flight uses the long-code aircraft",
+        "check": "layout_broken_flights_columns_overflow"
+      },
+      "total_actions": 16,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Aircrafts", "xpath": "//a[contains(text(),'Manage Aircrafts')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {"label": "+ New Aircraft", "xpath": "//button[contains(text(),'New Aircraft')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 4,
+          "action_type": "fill",
+          "target": {"label": "Aircraft Code", "xpath": "//input[@name='code' or @placeholder='Aircraft Code']"},
+          "value": "BOE-7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777",
+          "value_constraint": "len(x) > 50"
+        },
+        {
+          "step": 5,
+          "action_type": "fill",
+          "target": {"label": "Manufacturer", "xpath": "//input[@name='manufacturer' or @placeholder='Manufacturer']"},
+          "value": "Boeing",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 6,
+          "action_type": "fill",
+          "target": {"label": "Economy Seats", "xpath": "//input[@name='economySeats' or @placeholder='Economy Seats']"},
+          "value": "10",
+          "value_constraint": "x > 0"
+        },
+        {
+          "step": 7,
+          "action_type": "fill",
+          "target": {"label": "Business Seats", "xpath": "//input[@name='businessSeats' or @placeholder='Business Seats']"},
+          "value": "50",
+          "value_constraint": "x > 0"
+        },
+        {
+          "step": 8,
+          "action_type": "click",
+          "target": {"label": "Save", "xpath": "//button[text()='Save' or text()='Create']"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 9,
+          "action_type": "click",
+          "target": {"label": "Manage Flights", "xpath": "//a[contains(text(),'Manage Flights')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 10,
+          "action_type": "click",
+          "target": {"label": "+ New Flight", "xpath": "//button[contains(text(),'New Flight')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 11,
+          "action_type": "fill",
+          "target": {"label": "Flight Number", "xpath": "//input[@name='flightNo' or @placeholder='Flight Number']"},
+          "value": "F7",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 12,
+          "action_type": "select",
+          "target": {"label": "Aircraft (long-code)", "xpath": "//select[contains(@name,'aircraft') or contains(@id,'aircraft')]"},
+          "value": "BOE-7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777",
+          "value_constraint": "exact: the long-code aircraft created in steps 2-8"
+        },
+        {
+          "step": 13,
+          "action_type": "fill",
+          "target": {"label": "Base Price", "xpath": "//input[@name='basePrice' or @placeholder='Base Price']"},
+          "value": "100",
+          "value_constraint": "x > 0"
+        },
+        {
+          "step": 14,
+          "action_type": "select",
+          "target": {"label": "Departure Location", "xpath": "//select[contains(@name,'departure') or contains(@id,'departure')]"},
+          "value": "Ho Chi Minh (TSN-HCM)",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 15,
+          "action_type": "select",
+          "target": {"label": "Arrival Location", "xpath": "//select[contains(@name,'arrival') or contains(@id,'arrival')]"},
+          "value": "Ha Noi (GB-HN)",
+          "value_constraint": "any_valid_option AND different_from_step(14)"
+        },
+        {
+          "step": 16,
+          "action_type": "click",
+          "target": {"label": "Save", "xpath": "//button[text()='Save' or text()='Create']"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 13,
+      "desc_en": "Deleting an airport that is assigned to a scheduled flight causes the Manage Flights page to display a blank screen",
+      "root_url": "qairline",
+      "difficulty": "easy",
+      "bug_type": "Cascade/Blank",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Manage Flights page is completely blank after deleting Da Nang airport (which is used in a scheduled flight)",
+        "check": "manage_flights_page_blank"
+      },
+      "total_actions": 4,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Airport", "xpath": "//a[contains(text(),'Manage Airport') or contains(text(),'Airports')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {"label": "Delete Da Nang", "xpath": "//button[contains(text(),'Delete') and ancestor::tr[contains(.,'Da Nang')]]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 4,
+          "action_type": "click",
+          "target": {"label": "Manage Flights", "xpath": "//a[contains(text(),'Manage Flights')]"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 15,
+      "desc_en": "Users can access flight information on the Admin page by directly navigating to /admin/flights URL",
+      "root_url": "qairline",
+      "difficulty": "easy",
+      "bug_type": "Security/Access",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Non-admin user can view admin flight data by navigating directly to /admin/flights — no authentication redirect",
+        "check": "admin_page_accessible_without_auth"
+      },
+      "total_actions": 1,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "navigate_to",
+          "target": {"label": "/admin/flights URL", "xpath": null},
+          "value": "/admin/flights",
+          "value_constraint": "exact: root_url + '/admin/flights'"
+        }
+      ]
+    },
+    {
+      "bug_id": 17,
+      "desc_en": "Search information entered on the Book Flight page is lost after navigating to another page and returning",
+      "root_url": "qairline",
+      "difficulty": "medium",
+      "bug_type": "Data Persistence",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "After selecting From/To on Book Flight, navigating away, and returning — the selections are gone",
+        "check": "search_form_data_lost_on_navigation"
+      },
+      "total_actions": 6,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "navigate_to",
+          "target": {"label": "homepage", "xpath": null},
+          "value": "/",
+          "value_constraint": "root_url"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Book Flight", "xpath": "//a[contains(text(),'Book Flight')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "select",
+          "target": {"label": "From", "xpath": "//select[contains(@name,'from') or contains(@id,'from')]"},
+          "value": "Ha Noi",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 4,
+          "action_type": "select",
+          "target": {"label": "To", "xpath": "//select[contains(@name,'to') or contains(@id,'to')]"},
+          "value": "Ho Chi Minh",
+          "value_constraint": "any_valid_option AND different_from_step(3)"
+        },
+        {
+          "step": 5,
+          "action_type": "click",
+          "target": {"label": "Booking Guide", "xpath": "//a[contains(text(),'Booking Guide')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 6,
+          "action_type": "click",
+          "target": {"label": "Book Flight", "xpath": "//a[contains(text(),'Book Flight')]"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 19,
+      "desc_en": "The ticket prices for Economy and Business classes are the same when searching for a flight",
+      "root_url": "qairline",
+      "difficulty": "hard",
+      "bug_type": "Wrong Display",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Search results show identical price for Economy and Business class seats on the same flight",
+        "check": "economy_and_business_prices_equal"
+      },
+      "total_actions": 10,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "user login", "xpath": null},
+          "value": "cong",
+          "value_constraint": "role:user"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Book Flight", "xpath": "//a[contains(text(),'Book Flight')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "select",
+          "target": {"label": "From", "xpath": "//select[contains(@name,'from') or contains(@id,'from')]"},
+          "value": "Ha Noi",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 4,
+          "action_type": "select",
+          "target": {"label": "To", "xpath": "//select[contains(@name,'to') or contains(@id,'to')]"},
+          "value": "Ho Chi Minh",
+          "value_constraint": "any_valid_option AND different_from_step(3)"
+        },
+        {
+          "step": 5,
+          "action_type": "set_datetime",
+          "target": {"label": "Departure Date", "xpath": "//input[@type='date' and (contains(@name,'departure') or contains(@id,'departure'))]"},
+          "value": "2026-01-30",
+          "value_constraint": "valid_date AND datetime > now()"
+        },
+        {
+          "step": 6,
+          "action_type": "click",
+          "target": {"label": "Search Flights", "xpath": "//button[contains(text(),'Search')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 7,
+          "action_type": "click",
+          "target": {"label": "+ Adults", "xpath": "//button[contains(text(),'Adults') or contains(text(),'+')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 8,
+          "action_type": "click",
+          "target": {"label": "Business class tab", "xpath": "//button[contains(text(),'Business')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 9,
+          "action_type": "click",
+          "target": {"label": "Confirm", "xpath": "//button[contains(text(),'Confirm')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 10,
+          "action_type": "click",
+          "target": {"label": "Search Flights (again)", "xpath": "//button[contains(text(),'Search')]"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 20,
+      "desc_en": "The system allows users to enter a future date of birth when filling in passenger information",
+      "root_url": "qairline",
+      "difficulty": "hard",
+      "bug_type": "Validation Bypass",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Future DOB (2026-03-02) is accepted and user can proceed to next booking step without error",
+        "check": "future_dob_accepted_booking_proceeds"
+      },
+      "total_actions": 20,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "user login", "xpath": null},
+          "value": "a",
+          "value_constraint": "role:user"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Book Flight", "xpath": "//a[contains(text(),'Book Flight')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "select",
+          "target": {"label": "From", "xpath": "//select[contains(@name,'from') or contains(@id,'from')]"},
+          "value": "Ha Noi",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 4,
+          "action_type": "select",
+          "target": {"label": "To", "xpath": "//select[contains(@name,'to') or contains(@id,'to')]"},
+          "value": "Ho Chi Minh",
+          "value_constraint": "any_valid_option AND different_from_step(3)"
+        },
+        {
+          "step": 5,
+          "action_type": "set_datetime",
+          "target": {"label": "Departure Date", "xpath": "//input[@type='date' and (contains(@name,'departure') or contains(@id,'departure'))]"},
+          "value": "2026-01-30",
+          "value_constraint": "valid_date AND datetime > now()"
+        },
+        {
+          "step": 6,
+          "action_type": "set_datetime",
+          "target": {"label": "Return Date", "xpath": "//input[@type='date' and (contains(@name,'return') or contains(@id,'return'))]"},
+          "value": "2026-01-31",
+          "value_constraint": "valid_date AND after_step(5)"
+        },
+        {
+          "step": 7,
+          "action_type": "click",
+          "target": {"label": "Search Flights", "xpath": "//button[contains(text(),'Search')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 8,
+          "action_type": "click",
+          "target": {"label": "+ Adults", "xpath": "//button[contains(text(),'Adults') or contains(text(),'+')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 9,
+          "action_type": "click",
+          "target": {"label": "Business class tab", "xpath": "//button[contains(text(),'Business')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 10,
+          "action_type": "click",
+          "target": {"label": "Confirm", "xpath": "//button[contains(text(),'Confirm')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 11,
+          "action_type": "click",
+          "target": {"label": "Search Flights (again)", "xpath": "//button[contains(text(),'Search')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 12,
+          "action_type": "click",
+          "target": {"label": "Flight B47 (select flight)", "xpath": "//button[contains(text(),'B47') or contains(@id,'B47')]"},
+          "value": "B47",
+          "value_constraint": "any_available_flight"
+        },
+        {
+          "step": 13,
+          "action_type": "fill",
+          "target": {"label": "First Name", "xpath": "//input[@name='firstName' or @placeholder='First Name']"},
+          "value": "Van A",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 14,
+          "action_type": "fill",
+          "target": {"label": "Last Name", "xpath": "//input[@name='lastName' or @placeholder='Last Name']"},
+          "value": "Nguyen",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 15,
+          "action_type": "set_datetime",
+          "target": {"label": "Date of Birth", "xpath": "//input[@type='date' and (contains(@name,'dob') or contains(@name,'birth') or contains(@placeholder,'birth'))]"},
+          "value": "2026-03-02",
+          "value_constraint": "datetime > now()"
+        },
+        {
+          "step": 16,
+          "action_type": "fill",
+          "target": {"label": "Passport Number", "xpath": "//input[@name='passport' or @placeholder='Passport Number']"},
+          "value": "123456789",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 17,
+          "action_type": "select",
+          "target": {"label": "Country", "xpath": "//select[contains(@name,'country')]"},
+          "value": "Vietnam",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 18,
+          "action_type": "fill",
+          "target": {"label": "Province", "xpath": "//input[@name='province' or @placeholder='Province']"},
+          "value": "Bac Ninh",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 19,
+          "action_type": "fill",
+          "target": {"label": "Phone Number", "xpath": "//input[@name='phone' or @placeholder='Phone Number']"},
+          "value": "0976543218",
+          "value_constraint": "any_valid_phone"
+        },
+        {
+          "step": 20,
+          "action_type": "click",
+          "target": {"label": "Next", "xpath": "//button[contains(text(),'Next')]"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 22,
+      "desc_en": "The passport image is lost when the user navigates back to view the selected seats and then returns to Traveller Details",
+      "root_url": "qairline",
+      "difficulty": "hard",
+      "bug_type": "Data Persistence",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "After uploading passport image and navigating back then forward, the uploaded image field is empty",
+        "check": "passport_image_lost_on_back_navigation"
+      },
+      "total_actions": 19,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "user login", "xpath": null},
+          "value": "a",
+          "value_constraint": "role:user"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Book Flight", "xpath": "//a[contains(text(),'Book Flight')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "select",
+          "target": {"label": "From", "xpath": "//select[contains(@name,'from') or contains(@id,'from')]"},
+          "value": "Ha Noi",
+          "value_constraint": "any_valid_option"
+        },
+        {
+          "step": 4,
+          "action_type": "select",
+          "target": {"label": "To", "xpath": "//select[contains(@name,'to') or contains(@id,'to')]"},
+          "value": "Ho Chi Minh",
+          "value_constraint": "any_valid_option AND different_from_step(3)"
+        },
+        {
+          "step": 5,
+          "action_type": "set_datetime",
+          "target": {"label": "Departure Date", "xpath": "//input[@type='date' and (contains(@name,'departure') or contains(@id,'departure'))]"},
+          "value": "2026-01-30",
+          "value_constraint": "valid_date AND datetime > now()"
+        },
+        {
+          "step": 6,
+          "action_type": "set_datetime",
+          "target": {"label": "Return Date", "xpath": "//input[@type='date' and (contains(@name,'return') or contains(@id,'return'))]"},
+          "value": "2026-01-31",
+          "value_constraint": "valid_date AND after_step(5)"
+        },
+        {
+          "step": 7,
+          "action_type": "click",
+          "target": {"label": "Search Flights", "xpath": "//button[contains(text(),'Search')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 8,
+          "action_type": "click",
+          "target": {"label": "+ Adults", "xpath": "//button[contains(text(),'Adults') or contains(text(),'+')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 9,
+          "action_type": "click",
+          "target": {"label": "Business class tab", "xpath": "//button[contains(text(),'Business')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 10,
+          "action_type": "click",
+          "target": {"label": "Confirm", "xpath": "//button[contains(text(),'Confirm')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 11,
+          "action_type": "click",
+          "target": {"label": "Search Flights (again)", "xpath": "//button[contains(text(),'Search')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 12,
+          "action_type": "click",
+          "target": {"label": "Flight B47", "xpath": "//button[contains(text(),'B47') or contains(@id,'B47')]"},
+          "value": "B47",
+          "value_constraint": "any_available_flight"
+        },
+        {
+          "step": 13,
+          "action_type": "fill",
+          "target": {"label": "First Name", "xpath": "//input[@name='firstName' or @placeholder='First Name']"},
+          "value": "Van A",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 14,
+          "action_type": "fill",
+          "target": {"label": "Last Name", "xpath": "//input[@name='lastName' or @placeholder='Last Name']"},
+          "value": "Nguyen",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 15,
+          "action_type": "fill",
+          "target": {"label": "Passport Number", "xpath": "//input[@name='passport' or @placeholder='Passport Number']"},
+          "value": "123456789",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 16,
+          "action_type": "fill",
+          "target": {"label": "Phone Number", "xpath": "//input[@name='phone' or @placeholder='Phone Number']"},
+          "value": "0976543218",
+          "value_constraint": "any_valid_phone"
+        },
+        {
+          "step": 17,
+          "action_type": "fill",
+          "target": {"label": "Email", "xpath": "//input[@name='email' or @type='email']"},
+          "value": "a@gmail.com",
+          "value_constraint": "any_valid_email"
+        },
+        {
+          "step": 18,
+          "action_type": "click",
+          "target": {"label": "Previous (go back to seat selection)", "xpath": "//button[contains(text(),'Previous') or contains(text(),'Back')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 19,
+          "action_type": "click",
+          "target": {"label": "Next (return to Traveller Details)", "xpath": "//button[contains(text(),'Next')]"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 24,
+      "desc_en": "On the Current Bookings page, using the browser Back button does not close the cancellation confirmation popup",
+      "root_url": "qairline",
+      "difficulty": "medium",
+      "bug_type": "UI Interaction",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "After clicking Cancel and browser Back, the confirmation popup remains visible on the page",
+        "check": "popup_persists_after_browser_back"
+      },
+      "total_actions": 4,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "user login", "xpath": null},
+          "value": "a",
+          "value_constraint": "role:user"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Current Bookings", "xpath": "//a[contains(text(),'Current Bookings') or contains(text(),'My Bookings')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {"label": "Cancel (booking)", "xpath": "//button[contains(text(),'Cancel')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 4,
+          "action_type": "go_back",
+          "target": {"label": "browser back button", "xpath": null},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 25,
+      "desc_en": "On the Manage Bookings page, filtering bookings for user 'btcong' shows Results = 2 even though only one booking exists",
+      "root_url": "qairline",
+      "difficulty": "medium",
+      "bug_type": "Wrong Display",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Search results count shows 2 but only 1 booking exists for user 'btcong'",
+        "check": "wrong_results_count_for_user"
+      },
+      "total_actions": 5,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Bookings", "xpath": "//a[contains(text(),'Manage Bookings')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "select",
+          "target": {"label": "Filter by User dropdown", "xpath": "//select[contains(@name,'user') or contains(@id,'user')]"},
+          "value": "User",
+          "value_constraint": "select_filter_type:User"
+        },
+        {
+          "step": 4,
+          "action_type": "fill",
+          "target": {"label": "Search input", "xpath": "//input[@type='text' or @type='search']"},
+          "value": "btcong",
+          "value_constraint": "exact:btcong (lowercase)"
+        },
+        {
+          "step": 5,
+          "action_type": "click",
+          "target": {"label": "Search", "xpath": "//button[contains(text(),'Search')]"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 26,
+      "desc_en": "On the Manage Bookings page, filtering bookings for user 'Btcong' (capitalized) returns no results, although the search should be case-insensitive",
+      "root_url": "qairline",
+      "difficulty": "medium",
+      "bug_type": "Function Failure",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Search for 'Btcong' (capital B) returns 0 results — system is case-sensitive when it should not be",
+        "check": "case_sensitive_search_returns_empty"
+      },
+      "total_actions": 5,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "login",
+          "target": {"label": "admin login", "xpath": null},
+          "value": "admin",
+          "value_constraint": "role:admin"
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {"label": "Manage Bookings", "xpath": "//a[contains(text(),'Manage Bookings')]"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 3,
+          "action_type": "select",
+          "target": {"label": "Filter by User dropdown", "xpath": "//select[contains(@name,'user') or contains(@id,'user')]"},
+          "value": "User",
+          "value_constraint": "select_filter_type:User"
+        },
+        {
+          "step": 4,
+          "action_type": "fill",
+          "target": {"label": "Search input", "xpath": "//input[@type='text' or @type='search']"},
+          "value": "Btcong",
+          "value_constraint": "exact:Btcong (capital B)"
+        },
+        {
+          "step": 5,
+          "action_type": "click",
+          "target": {"label": "Search", "xpath": "//button[contains(text(),'Search')]"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 28,
+      "desc_en": "The sorting functionality on the Product page is not working (Price high to low has no effect)",
+      "root_url": "saucedemo",
+      "difficulty": "medium",
+      "bug_type": "Function Failure",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "After selecting 'Price (high to low)', product order does not change",
+        "check": "sort_order_unchanged_after_selection"
+      },
+      "total_actions": 4,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "navigate_to",
+          "target": {"label": "SauceDemo", "xpath": null},
+          "value": "https://www.saucedemo.com/",
+          "value_constraint": null
+        },
+        {
+          "step": 2,
+          "action_type": "fill",
+          "target": {"label": "Username", "xpath": "//input[@id='user-name' or @name='user-name']"},
+          "value": "error_user",
+          "value_constraint": "exact:error_user"
+        },
+        {
+          "step": 3,
+          "action_type": "fill",
+          "target": {"label": "Password", "xpath": "//input[@id='password' or @name='password']"},
+          "value": "secret_sauce",
+          "value_constraint": "exact:secret_sauce"
+        },
+        {
+          "step": 4,
+          "action_type": "select",
+          "target": {"label": "Sort dropdown", "xpath": "//select[@class='product_sort_container']"},
+          "value": "Price (high to low)",
+          "value_constraint": "exact:Price (high to low)"
+        }
+      ]
+    },
+    {
+      "bug_id": 29,
+      "desc_en": "Clicking Finish to complete payment has no effect",
+      "root_url": "saucedemo",
+      "difficulty": "hard",
+      "bug_type": "Function Failure",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "Clicking Finish button on checkout overview does nothing — no order confirmation, no redirect",
+        "check": "finish_button_no_effect_no_redirect"
+      },
+      "total_actions": 10,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "navigate_to",
+          "target": {"label": "SauceDemo", "xpath": null},
+          "value": "https://www.saucedemo.com/",
+          "value_constraint": null
+        },
+        {
+          "step": 2,
+          "action_type": "fill",
+          "target": {"label": "Username", "xpath": "//input[@id='user-name' or @name='user-name']"},
+          "value": "error_user",
+          "value_constraint": "exact:error_user"
+        },
+        {
+          "step": 3,
+          "action_type": "fill",
+          "target": {"label": "Password", "xpath": "//input[@id='password' or @name='password']"},
+          "value": "secret_sauce",
+          "value_constraint": "exact:secret_sauce"
+        },
+        {
+          "step": 4,
+          "action_type": "click",
+          "target": {"label": "Add to cart (Sauce Labs Backpack)", "xpath": "//button[@id='add-to-cart-sauce-labs-backpack']"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 5,
+          "action_type": "click",
+          "target": {"label": "Shopping cart icon", "xpath": "//a[@class='shopping_cart_link']"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 6,
+          "action_type": "click",
+          "target": {"label": "Checkout", "xpath": "//button[@id='checkout']"},
+          "value": null,
+          "value_constraint": null
+        },
+        {
+          "step": 7,
+          "action_type": "fill",
+          "target": {"label": "First Name", "xpath": "//input[@id='first-name']"},
+          "value": "Cong",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 8,
+          "action_type": "fill",
+          "target": {"label": "Last Name", "xpath": "//input[@id='last-name']"},
+          "value": "Bui",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 9,
+          "action_type": "fill",
+          "target": {"label": "Zip/Postal Code", "xpath": "//input[@id='postal-code']"},
+          "value": "100000",
+          "value_constraint": "any_non_empty_string"
+        },
+        {
+          "step": 10,
+          "action_type": "click",
+          "target": {"label": "Finish", "xpath": "//button[@id='finish']"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    },
+    {
+      "bug_id": 30,
+      "desc_en": "Cart icon is not properly aligned with other header elements, affecting layout consistency (visual_user)",
+      "root_url": "saucedemo",
+      "difficulty": "medium",
+      "bug_type": "Broken Layout",
+      "assertion": {
+        "type": "bug_reproduced",
+        "description": "After logging in as visual_user, the cart icon in the header is misaligned compared to normal users",
+        "check": "cart_icon_misaligned_in_header"
+      },
+      "total_actions": 4,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "navigate_to",
+          "target": {"label": "SauceDemo", "xpath": null},
+          "value": "https://www.saucedemo.com/",
+          "value_constraint": null
+        },
+        {
+          "step": 2,
+          "action_type": "fill",
+          "target": {"label": "Username", "xpath": "//input[@id='user-name' or @name='user-name']"},
+          "value": "visual_user",
+          "value_constraint": "exact:visual_user"
+        },
+        {
+          "step": 3,
+          "action_type": "fill",
+          "target": {"label": "Password", "xpath": "//input[@id='password' or @name='password']"},
+          "value": "secret_sauce",
+          "value_constraint": "exact:secret_sauce"
+        },
+        {
+          "step": 4,
+          "action_type": "click",
+          "target": {"label": "Login", "xpath": "//input[@id='login-button']"},
+          "value": null,
+          "value_constraint": null
+        }
+      ]
+    }
+  ]
+}

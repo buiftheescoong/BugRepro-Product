@@ -1,0 +1,14 @@
+{
+  "database": "test",
+  "collections": {
+    "airlines": 7,
+    "bookings": 2,
+    "classtypes": 2,
+    "flights": 6,
+    "locationmoves": 5,
+    "promotions": 6,
+    "tickets": 12,
+    "users": 3
+  },
+  "exclude_collections": []
+}

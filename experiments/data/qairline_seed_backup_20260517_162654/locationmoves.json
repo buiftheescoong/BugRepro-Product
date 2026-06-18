@@ -1,0 +1,47 @@
+[
+  {
+    "_id": {
+      "$oid": "6a0180fcaea3c1367cc2594d"
+    },
+    "nameLocation": "Da Lat",
+    "airport": "Da Lat",
+    "airportCode": "DL",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a018109aea3c1367cc25951"
+    },
+    "nameLocation": "Da Nang",
+    "airport": "Da Nang",
+    "airportCode": "DN",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a01f1a4aea3c1367cc2b997"
+    },
+    "nameLocation": "Ho Chi Minh",
+    "airport": "Tan Son Nhat",
+    "airportCode": "TSN-HCM",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a01f1aeaea3c1367cc2b99b"
+    },
+    "nameLocation": "Ha Noi",
+    "airport": "Noi Bai ",
+    "airportCode": "NB-HN",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a01f1bdaea3c1367cc2b99f"
+    },
+    "nameLocation": "Ha Noi",
+    "airport": "Gia Lam",
+    "airportCode": "GL-HN",
+    "__v": 0
+  }
+]

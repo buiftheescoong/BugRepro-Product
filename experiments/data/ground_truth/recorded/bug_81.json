@@ -1,0 +1,30 @@
+{
+  "bug_id": 81,
+  "desc_en": "Dark mode switch is not working — toggling does not change the theme.",
+  "root_url": "refinedev",
+  "total_actions": 2,
+  "actions": [
+    {
+      "step": 1,
+      "action_type": "click",
+      "target": {
+        "label": "Sign in",
+        "xpath": "//button[normalize-space()=\"Sign in\"]"
+      },
+      "value": null,
+      "value_constraint": null,
+      "critical": true
+    },
+    {
+      "step": 2,
+      "action_type": "click",
+      "target": {
+        "label": "🌛\n🔆",
+        "xpath": "//button[@type=\"button\"]"
+      },
+      "value": null,
+      "value_constraint": null,
+      "critical": true
+    }
+  ]
+}

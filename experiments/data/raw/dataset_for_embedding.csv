@@ -1,0 +1,116 @@
+Bug Id,Short Description
+1,"Admin tạo được chuyến bay có giờ khởi hành trong quá khứ//
+
+
+Admin can create a flight with a departure time in the past "
+2,"Admin tạo được chuyến bay mới có giờ đến sớm hơn giờ khởi hành//
+
+Admin can create a new flight with an arrival time earlier than the departure time"
+3,"Admin tạo được 2 chuyến bay có cùng mã số (FLIGHT NO.) là F1//
+
+Admin can create two flights with the same flight number (FLIGHT NO.)"
+4,"Admin tạo được chuyến bay có Base Price có giá trị âm (-10)//
+
+Admin can create a flight with a negative base price"
+5,"Admin tạo mới 1 chuyến sử dụng máy bay có mã  đã tồn tại (AB_A350) trong chuyến bay khác cùng thời điểm hoặc mâu thuẫn về thời gian//
+
+Admin can create a new flight using an aircraft that is already assigned to another flight at the same time or with overlapping flight schedules "
+6,"Admin thực hiện xóa máy bay có (mã BOE-777) ở trang Manage Aircrafts, sau khi click Delete thì popup thông báo xóa thành công nhưng trên giao diện vẫn thấy có máy bay đó, khi load lại trang thì máy bay đó (BOE-777) mới biến mất //
+
+Admin deletes an aircraft on the Manage Aircrafts page. After clicking Delete, a success notification popup appears, but the aircraft is still displayed on the interface. The aircraft only disappears after the page is reloaded"
+7,"Khi ở trang Manage Aircrafts thực hiện xóa 1 máy bay đang trong tồn tại trong 1 chuyến bay, chuyển sang trang Manage Flights thì màn hình bị trắng xóa//
+
+Admin deletes an aircraft currently assigned to a flight; the Manage Flights page displays a blank screen afterward."
+8,"Admin tạo thêm 1 máy bay mới có tổng số ghế = 0//
+
+Admin can create a new aircraft with a total number of seats equal to 0"
+9,"Sau khi tạo 1 máy bay (mã BOE-777 ) có tổng ghế = 0, chuyển sang tạo mới 1 chuyến bay sử dụng máy bay đó thì bị trắng trang//
+
+Creating a new flight using an aircraft with a total number of seats equal to 0 results in a blank page."
+10,"Tạo mới 1 máy bay có mã (Aircraft Code) quá dài khiến giao diện bị vỡ, nút ""+ New Aircraft"" văng ra khỏi phạm vi màn hình//
+
+Creating a new aircraft with an excessively long Aircraft Code breaks the UI layout, causing the ""+ New Aircraft"" button to overflow outside the screen."
+11,"Sau khi tạo mới 1 máy bay có mã (Aircraft Code) quá dài, vào trang Manage  Flights, tạo mới 1 chuyến bay sử dụng máy bay vừa được tạo, giao diện cũng bị vỡ, các cột sau đó như Class Info, Action bị văng ra khỏi màn hình/ /
+
+After creating an aircraft with an excessively long Aircraft Code, creating a new flight using that aircraft on the Manage Flights page breaks the UI layout, causing columns such as Class Info and Action to overflow outside the screen
+"
+12,"Tạo mới 1 máy bay có Manufacturer quá dài khiến giao diện bị vỡ, các cột đằng sau bị văng ra khỏi màn hình//
+
+Creating a new aircraft with an excessively long Manufacturer name breaks the UI layout, causing subsequent columns to overflow outside the screen"
+13,"Xóa san bay (Da Nang) đã tồn tại trong 1 chuyến bay được lên lịch thì màn hình Manage Flights bị trắng xóa//
+
+Deleting an airport that is assigned to a scheduled flight causes the Manage Flights page to display a blank screen"
+14,"Giao diện bị lỗi không trở về trang Home khi click Logout với vai trò Admin//
+
+The UI fails to redirect to the Home page after clicking Logout as an Admin"
+15,"User có thể xem thông tin các chuyến bay trong trang Admin khi nhập thẳng url  ""..../admin/flights"" //
+
+Users can access flight information on the Admin page by appending /admin/flights to the root URL"
+16,"User có thể xem thông tin các máy bay trong trang Admin khi nhập thẳng url  ""..../admin/aircrafts"" //
+
+Users can access aircraft information on the Admin page by appending /admin/aircrafts to the root URL .
+"
+17,"User nhập thông tin tìm kiếm chuyến bay ở trang Book Flight rồi chuyển sang trang khác, quay về trang Book Flight thì bị mất hết thông tin tìm kiếm //
+
+Search information entered on the Book Flight page is lost after navigating to another page and returning to Book Flight"
+18,"User có thể đến trực tiếp trang thanh toán thành công bằng cách nhập thẳng url "".../checkout-page"" //
+
+Users can directly access the successful payment page by appending /checkout-page to the root URL "
+19,"Giá vé 2 hạng Economy và Business là như nhau khi tìm kiếm 1 chuyến bay //
+
+The ticket prices for Economy and Business classes are the same when searching for a flight"
+20,"Hệ thống cho user nhập ngày sinh là 1 ngày tương lai //
+
+The system allows users to enter a future date of birth when filling in passenger information"
+21,"User chỉ click đồng ý phần terms nhưng vẫn click Next đặt vé thành công được //
+
+Users can successfully proceed to the next booking step even without properly agreeing to the terms
+"
+22,"Khi user đang nhập thông tin cá nhân Traveller Details  có back lại để xem ghế đã chọn rồi quay lại trang Traveller Details thì phần thông tin ảnh passport bị mất //
+
+The passport image is lost when the user navigates back to view the selected seats from the Traveller Details page and then returns to Traveller Details "
+23,"Khi user tìm kiếm thông tin chuyến bay, trên giao diện không hiện mã code của các sân bay //
+
+Airport codes are not displayed on the UI when users search for flight information"
+24,"Ở trang Current Bookings, user muốn hủy vé 1 chuyến bay, khi popup yêu cầu xác nhận hiện lên, user dùng nút back của trình duyệt, popup vẫn ko mất biến mất //
+
+On the Current Bookings page, when a cancellation confirmation popup appears, using the browser Back button does not close the popup"
+25,"Ở trang Manage Bookings, khi admin lọc các vé của user ""btcong"" thì Results = 2 dù chỉ có 1 vé //
+
+On the Manage Bookings page, filtering bookings for user ""btcong"" shows Results = 2 even though only one booking exists"
+26,"Ở trang Manage Bookings, khi admin lọc các vé của user ""Btcong"" thì kết quả không có vé nào //
+
+On the Manage Bookings page, filtering bookings for user ""Btcong"" returns no results, although the search should be case-insensitive "
+27,"On the Admin Dashboard page, the Total Flights count does not match the actual number of flights."
+28,Users can access promotions page on the Admin page by appending /admin/promotions to the root URL
+29,Users can access promotions page on the Admin page by appending /admin/bookings to the root URL
+30,Users can access promotions page on the Admin page by appending /admin/airports to the root URL
+31,The admin sidebar highlights “Manage Flights” even when another admin page is open.
+32,Some aircraft logos are broken
+33,"When the admin filters flights by Flight, the input must exactly match the flight name, with no extra whitespace"
+34,"When the admin filters flights by User, the input must exactly match the username, with no extra whitespace"
+35,"When the admin filters flights by departure, the input must exactly match the departure name, with no extra whitespace."
+36,"Edit Flight: The save operation succeeds, but the list is not updated until the page is refreshed (F5)."
+37,When admin clears all filter inputs and re-searches does not reset the results.
+38,"On the Manage Flights page, clicking Cancel during editing redirects the user to the Home page instead of staying on the same page."
+39,Clicking Clear only resets the UI inputs/dropdowns but does not reset the applied flight number filter
+40,"On the Manage Flights page, departure sorting uses arrival dates, causing incorrect order"
+41,"On the Promotions page, Admin can enter a discount greater than 100% without validation."
+42,Admin can create a promotion where the end date is earlier than the start date.
+43,Promotion form inputs are not reset after clicking Cancel.
+44,"In Manage Flights, flight's status colors are incorrect (e.g., delayed status is displayed the same as scheduled)"
+45,"On the Promotion Page, save button allows duplicate submissions on multiple clicks."
+46,"After creating a flight, the modal shows multiple spelling errors."
+47,"After creating a flight, success modal has poor UI: Comic Sans font, red “Close dialog” button, and misaligned button."
+48,Edit Flight success modal contains multiple typos and unprofessional button text (“OK sure”).
+49,"Swapping departure and destination updates the UI fields but not the search results, which remain based on the previous locations."
+50,User can choose a return date earlier than the departure date without validation.
+51,User can search for flights with departure/arrival times in the past.
+52,Popup message for no matching flights contains spelling errors.
+53,Clicking the swap button for departure and destination on the Home page has no effect.
+54,"Selected seats lose their highlight after switching seat type tabs, allowing re-selection and causing the total price to increase incorrectly."
+55,Fixed tax is always $10 regardless of the number of passengers.
+56,"After logout, the navbar still shows user info until the page is refreshed."
+57,"On the sign-in page, the password visibility (eye) icon does not change state when toggled."
+58,"On the sign-up page, the password visibility (eye) icon does not change state when toggled."
+59,"Flight price sorting after search is incorrect, using lexicographical order instead of numeric order."

@@ -1,0 +1,108 @@
+{
+  "bug_id": 29,
+  "desc_en": "Clicking Finish to complete payment has no effect (login with username \"error_user\" and password \"secret_sauce\")",
+  "root_url": "saucedemo",
+  "total_actions": 10,
+  "actions": [
+    {
+      "step": 1,
+      "action_type": "fill",
+      "target": {
+        "label": "Username",
+        "xpath": "//*[@id=\"user-name\"]"
+      },
+      "value": "error_user",
+      "value_constraint": null
+    },
+    {
+      "step": 2,
+      "action_type": "fill",
+      "target": {
+        "label": "Password",
+        "xpath": "//*[@id=\"password\"]"
+      },
+      "value": "secret_sauce",
+      "value_constraint": null
+    },
+    {
+      "step": 3,
+      "action_type": "click",
+      "target": {
+        "label": "Login",
+        "xpath": "//*[@id=\"login-button\"]"
+      },
+      "value": null,
+      "value_constraint": null
+    },
+    {
+      "step": 4,
+      "action_type": "click",
+      "target": {
+        "label": "Add to cart",
+        "xpath": "//*[@id=\"add-to-cart-sauce-labs-backpack\"]"
+      },
+      "value": null,
+      "value_constraint": null
+    },
+    {
+      "step": 5,
+      "action_type": "click",
+      "target": {
+        "label": "1",
+        "xpath": "//a[normalize-space()=\"1\"]"
+      },
+      "value": null,
+      "value_constraint": null
+    },
+    {
+      "step": 6,
+      "action_type": "click",
+      "target": {
+        "label": "Checkout",
+        "xpath": "//*[@id=\"checkout\"]"
+      },
+      "value": null,
+      "value_constraint": null
+    },
+    {
+      "step": 7,
+      "action_type": "fill",
+      "target": {
+        "label": "First Name",
+        "xpath": "//*[@id=\"first-name\"]"
+      },
+      "value": "bui",
+      "value_constraint": null
+    },
+    {
+      "step": 8,
+      "action_type": "fill",
+      "target": {
+        "label": "Zip/Postal Code",
+        "xpath": "//*[@id=\"postal-code\"]"
+      },
+      "value": "10000",
+      "value_constraint": null
+    },
+    {
+      "step": 9,
+      "action_type": "click",
+      "target": {
+        "label": "Continue",
+        "xpath": "//*[@id=\"continue\"]"
+      },
+      "value": null,
+      "value_constraint": null
+    },
+    {
+      "step": 10,
+      "action_type": "click",
+      "target": {
+        "label": "Finish",
+        "xpath": "//*[@id=\"finish\"]"
+      },
+      "value": null,
+      "value_constraint": null
+    }
+  ]
+}

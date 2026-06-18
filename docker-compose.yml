@@ -1,0 +1,27 @@
+# Từ thư mục gốc repo: docker compose up --build
+services:
+  rebugger-api:
+    build:
+      context: ./rebugger-agent
+      dockerfile: Dockerfile
+    container_name: rebugger-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./rebugger-agent/.env
+    volumes:
+      - ./rebugger-agent/data:/app/data
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        VITE_API_URL: http://localhost:8000
+    container_name: rebugger-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - rebugger-api
+    restart: unless-stopped

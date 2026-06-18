@@ -1,0 +1,19 @@
+{
+  "bug_id": 88,
+  "desc_en": "The Footer \"About\" link leads to a 404 page.",
+  "root_url": "commerce",
+  "total_actions": 1,
+  "actions": [
+    {
+      "step": 1,
+      "action_type": "click",
+      "target": {
+        "label": "About",
+        "xpath": "//a[normalize-space()=\"About\"]"
+      },
+      "value": null,
+      "value_constraint": null,
+      "critical": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Giảm context khi build service frontend (context = .)
+.git
+rebugger-agent
+debug-agent
+frontend/node_modules
+**/__pycache__
+*.pyc
+.env
+.env.*

@@ -1,0 +1,567 @@
+{
+  "metadata": {
+    "version": "draft-1.0",
+    "created": "2026-05-03",
+    "total_bugs": 35,
+    "bugs_with_actions": 13,
+    "bugs_pending_actions": 0,
+    "pending_bug_ids": [],
+    "note": "XPath fields are approximations — verify on live app before final version"
+  },
+  "bugs": [
+    {
+      "bug_id": 29,
+      "desc_en": "Clicking Finish to complete payment has no effect (login with username \"error_user\" and password \"secret_sauce\")",
+      "root_url": "saucedemo",
+      "total_actions": 11,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "fill",
+          "target": {
+            "label": "Username",
+            "xpath": "//*[@id=\"user-name\"]"
+          },
+          "value": "error_user",
+          "value_constraint": "exact:error_user",
+          "critical": true
+        },
+        {
+          "step": 2,
+          "action_type": "fill",
+          "target": {
+            "label": "Password",
+            "xpath": "//*[@id=\"password\"]"
+          },
+          "value": "secret_sauce",
+          "value_constraint": "exact:secret_sauce",
+          "critical": true
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {
+            "label": "Login",
+            "xpath": "//*[@id=\"login-button\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 4,
+          "action_type": "click",
+          "target": {
+            "label": "Add to cart",
+            "xpath": "//*[@id=\"add-to-cart-sauce-labs-backpack\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": false
+        },
+        {
+          "step": 5,
+          "action_type": "click",
+          "target": {
+            "label": "1",
+            "xpath": "//a[normalize-space()=\"1\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 6,
+          "action_type": "click",
+          "target": {
+            "label": "Checkout",
+            "xpath": "//*[@id=\"checkout\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 7,
+          "action_type": "fill",
+          "target": {
+            "label": "First Name",
+            "xpath": "//*[@id=\"first-name\"]"
+          },
+          "value": "bui",
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 8,
+          "action_type": "fill",
+          "target": {
+            "label": "Last Name",
+            "xpath": "//*[@id=\"last-name\"]"
+          },
+          "value": "cong",
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 9,
+          "action_type": "fill",
+          "target": {
+            "label": "Zip/Postal Code",
+            "xpath": "//*[@id=\"postal-code\"]"
+          },
+          "value": "10000",
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 10,
+          "action_type": "click",
+          "target": {
+            "label": "Continue",
+            "xpath": "//*[@id=\"continue\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 11,
+          "action_type": "click",
+          "target": {
+            "label": "Finish",
+            "xpath": "//*[@id=\"finish\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 30,
+      "desc_en": "Cart icon is not properly aligned with other header elements, affecting layout consistency (login with username \"visual_user\" and password \"secret_sauce\")",
+      "root_url": "saucedemo",
+      "total_actions": 3,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "fill",
+          "target": {
+            "label": "Username",
+            "xpath": "//*[@id=\"user-name\"]"
+          },
+          "value": "visual_user",
+          "value_constraint": "exact:visual_user",
+          "critical": true
+        },
+        {
+          "step": 2,
+          "action_type": "fill",
+          "target": {
+            "label": "Password",
+            "xpath": "//*[@id=\"password\"]"
+          },
+          "value": "secret_sauce",
+          "value_constraint": "exact:secret_sauce",
+          "critical": true
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {
+            "label": "Login",
+            "xpath": "//*[@id=\"login-button\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 75,
+      "desc_en": "In the Category List page, the \"title\" column header is lowercase while other column headers are properly capitalized.",
+      "root_url": "refinedev",
+      "total_actions": 3,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "fill",
+          "target": {
+            "label": "●●●●●●●●",
+            "xpath": "//*[@id=\"password\"]"
+          },
+          "value": "123456789",
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {
+            "label": "Sign in",
+            "xpath": "//button[normalize-space()=\"Sign in\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {
+            "label": "Categories",
+            "xpath": "//a[normalize-space()=\"Categories\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 81,
+      "desc_en": "Dark mode switch is not working — toggling does not change the theme.",
+      "root_url": "refinedev",
+      "total_actions": 2,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "click",
+          "target": {
+            "label": "Sign in",
+            "xpath": "//button[normalize-space()=\"Sign in\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {
+            "label": "🌛\n🔆",
+            "xpath": "//button[@type=\"button\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 83,
+      "desc_en": "In BlogPost Create, the Status field always resets to \"draft\" regardless of the selected option.",
+      "root_url": "refinedev",
+      "total_actions": 4,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "click",
+          "target": {
+            "label": "Sign in",
+            "xpath": "//button[normalize-space()=\"Sign in\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {
+            "label": "Create",
+            "xpath": "//button[normalize-space()=\"Create\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {
+            "label": "Draft",
+            "xpath": "//span[normalize-space()=\"Draft\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 4,
+          "action_type": "click",
+          "target": {
+            "label": "Published",
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 84,
+      "desc_en": "In Category Create, empty submissions pass validation (validation rules are missing).",
+      "root_url": "refinedev",
+      "total_actions": 4,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "click",
+          "target": {
+            "label": "Sign in",
+            "xpath": "//button[normalize-space()=\"Sign in\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {
+            "label": "Categories",
+            "xpath": "//a[normalize-space()=\"Categories\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {
+            "label": "Create",
+            "xpath": "//button[normalize-space()=\"Create\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 4,
+          "action_type": "click",
+          "target": {
+            "label": "Save",
+            "xpath": "//button[normalize-space()=\"Save\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 86,
+      "desc_en": "In Category Edit, after saving, the page redirects to the BlogPost List instead of the Category List.",
+      "root_url": "refinedev",
+      "total_actions": 6,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "click",
+          "target": {
+            "label": "Sign in",
+            "xpath": "//button[normalize-space()=\"Sign in\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {
+            "label": "Categories",
+            "xpath": "//a[normalize-space()=\"Categories\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 3,
+          "action_type": "click",
+          "target": {
+            "label": "button",
+            "xpath": "//button[@type=\"button\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 4,
+          "action_type": "click",
+          "target": {
+            "label": "Title",
+            "xpath": "//*[@id=\"title\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 5,
+          "action_type": "fill",
+          "target": {
+            "label": "Title",
+            "xpath": "//*[@id=\"title\"]"
+          },
+          "value": "Edited Title",
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 6,
+          "action_type": "click",
+          "target": {
+            "label": "Save",
+            "xpath": "//button[normalize-space()=\"Save\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 88,
+      "desc_en": "The Footer \"About\" link leads to a 404 page.",
+      "root_url": "commerce",
+      "total_actions": 1,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "click",
+          "target": {
+            "label": "About",
+            "xpath": "//a[normalize-space()=\"About\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 91,
+      "desc_en": "Product name text overflows the container and overlaps the product image.",
+      "root_url": "commerce",
+      "total_actions": 0,
+      "actions": []
+    },
+    {
+      "bug_id": 96,
+      "desc_en": "Clicking any related product redirects to the homepage instead of its product detail page.",
+      "root_url": "commerce",
+      "total_actions": 2,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "click",
+          "target": {
+            "label": "Classic White T-Shirt",
+            "xpath": "/html[1]/body[1]/main[1]/section[1]/div[1]/a[1]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": false
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {
+            "label": "Slim Fit Jeans",
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 97,
+      "desc_en": "Clicking the Wool Beanie product causes a crash.",
+      "root_url": "commerce",
+      "total_actions": 1,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "click",
+          "target": {
+            "label": "Merino Wool Beanie\n\n$34.99USD",
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 98,
+      "desc_en": "Sorting products by “Trending” on the Apparel page causes a crash.",
+      "root_url": "commerce",
+      "total_actions": 2,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "click",
+          "target": {
+            "label": "Apparel",
+            "xpath": "//a[normalize-space()=\"Apparel\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {
+            "label": "Trending",
+            "xpath": "//a[normalize-space()=\"Trending\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "bug_id": 99,
+      "desc_en": "Price sorting (low to high) is reversed.",
+      "root_url": "commerce",
+      "total_actions": 2,
+      "actions": [
+        {
+          "step": 1,
+          "action_type": "click",
+          "target": {
+            "label": "All",
+            "xpath": "//a[normalize-space()=\"All\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        },
+        {
+          "step": 2,
+          "action_type": "click",
+          "target": {
+            "label": "Price: Low to high",
+            "xpath": "//a[normalize-space()=\"Price: Low to high\"]"
+          },
+          "value": null,
+          "value_constraint": null,
+          "critical": true
+        }
+      ]
+    }
+  ]
+}

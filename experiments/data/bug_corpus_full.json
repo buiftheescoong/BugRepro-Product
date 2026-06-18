@@ -1,0 +1,718 @@
+{
+  "metadata": {
+    "total_bugs": 100,
+    "bilingual_count": 0,
+    "english_only_count": 86,
+    "vietnamese_only_count": 14,
+    "unique_root_urls": 4,
+    "root_urls": [
+      "http://qairline.ui-testing.io.vn/",
+      "https://bug-commerce.vercel.app/",
+      "https://bug-refinedev.vercel.app/",
+      "https://www.saucedemo.com/"
+    ],
+    "source": "shortcut_full_dataset.csv"
+  },
+  "bugs": [
+    {
+      "bug_id": 1,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Admin can create a flight with a departure time in the past (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "Admin can create a flight with a departure time in the past (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 2,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Admin can create a new flight with an arrival time earlier than the departure time",
+      "desc_full": "Admin can create a new flight with an arrival time earlier than the departure time"
+    },
+    {
+      "bug_id": 3,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Admin can create two flights with the same flight number (FLIGHT NO.)",
+      "desc_full": "Admin can create two flights with the same flight number (FLIGHT NO.)"
+    },
+    {
+      "bug_id": 4,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Admin can create a flight with a negative base price  (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "Admin can create a flight with a negative base price  (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 5,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Admin can create a new flight using an aircraft that is already assigned to another flight at the same time or with overlapping flight schedules  (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "Admin can create a new flight using an aircraft that is already assigned to another flight at the same time or with overlapping flight schedules  (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 6,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Admin deletes an aircraft on the Manage Aircrafts page. After clicking Delete, but the aircraft is still displayed on the interface. The aircraft only disappears after the page is reloaded (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "Admin deletes an aircraft on the Manage Aircrafts page. After clicking Delete, but the aircraft is still displayed on the interface. The aircraft only disappears after the page is reloaded (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 7,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Admin deletes an aircraft currently assigned to a flight; the Manage Flights page displays a blank screen afterward",
+      "desc_full": "Admin deletes an aircraft currently assigned to a flight; the Manage Flights page displays a blank screen afterward"
+    },
+    {
+      "bug_id": 8,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Admin can create a new aircraft with a total number of seats equal to 0 (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "Admin can create a new aircraft with a total number of seats equal to 0 (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 9,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Creating a new flight using an aircraft with a total number of seats equal to 0 results in a blank page. (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "Creating a new flight using an aircraft with a total number of seats equal to 0 results in a blank page. (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 10,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Creating a new aircraft with long Aircraft Code (length = 100 characters) breaks the UI layout, causing the \"+ New Aircraft\" button to overflow outside the screen.",
+      "desc_full": "Creating a new aircraft with long Aircraft Code (length = 100 characters) breaks the UI layout, causing the \"+ New Aircraft\" button to overflow outside the screen."
+    },
+    {
+      "bug_id": 11,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "After creating an aircraft with long Aircraft Code (length = 100 characters), creating a new flight using that aircraft on the Manage Flights page breaks the UI layout, causing columns such as Class Info and Action to overflow outside the screen (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "After creating an aircraft with long Aircraft Code (length = 100 characters), creating a new flight using that aircraft on the Manage Flights page breaks the UI layout, causing columns such as Class Info and Action to overflow outside the screen (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 12,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Creating a new aircraft with long Manufacturer name (length = 100 characters) breaks the UI layout, causing subsequent columns to overflow outside the screen",
+      "desc_full": "Creating a new aircraft with long Manufacturer name (length = 100 characters) breaks the UI layout, causing subsequent columns to overflow outside the screen"
+    },
+    {
+      "bug_id": 13,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Deleting an airport that is assigned to a scheduled flight causes the Manage Flights page to display a blank screen (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "Deleting an airport that is assigned to a scheduled flight causes the Manage Flights page to display a blank screen (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 14,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "The UI fails to redirect to the Home page after admin interacts with any page then clicks Logout as an Admin",
+      "desc_full": "The UI fails to redirect to the Home page after admin interacts with any page then clicks Logout as an Admin"
+    },
+    {
+      "bug_id": 15,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Users can access flight information on the Admin page by appending /admin/flights to the root URL",
+      "desc_full": "Users can access flight information on the Admin page by appending /admin/flights to the root URL"
+    },
+    {
+      "bug_id": 16,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Users can access aircraft information on the Admin page by appending /admin/aircrafts to the root URL .",
+      "desc_full": "Users can access aircraft information on the Admin page by appending /admin/aircrafts to the root URL ."
+    },
+    {
+      "bug_id": 17,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Search information entered on the Book Flight page is lost after navigating to another page and returning to Book Flight",
+      "desc_full": "Search information entered on the Book Flight page is lost after navigating to another page and returning to Book Flight"
+    },
+    {
+      "bug_id": 18,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Users can directly access the successful payment page by appending /checkout-page to the root URL",
+      "desc_full": "Users can directly access the successful payment page by appending /checkout-page to the root URL"
+    },
+    {
+      "bug_id": 19,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "The ticket prices for Economy and Business classes are the same when user search for a flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026",
+      "desc_full": "The ticket prices for Economy and Business classes are the same when user search for a flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026"
+    },
+    {
+      "bug_id": 20,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "The system allows users to enter a future date of birth when filling in passenger information (user login with email \"cong@gmail.com\" and password \"Cong23032004*\" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)",
+      "desc_full": "The system allows users to enter a future date of birth when filling in passenger information (user login with email \"cong@gmail.com\" and password \"Cong23032004*\" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)"
+    },
+    {
+      "bug_id": 21,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Users can successfully proceed to the next booking step after entering their personal details even without properly agreeing to the terms\n(user login with email \"cong@gmail.com\" and password \"Cong23032004*\" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)",
+      "desc_full": "Users can successfully proceed to the next booking step after entering their personal details even without properly agreeing to the terms\n(user login with email \"cong@gmail.com\" and password \"Cong23032004*\" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)"
+    },
+    {
+      "bug_id": 22,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "The passport image is lost when the user navigates back to view the selected seats from the Traveller Details page and then returns to Traveller Details (user login with email \"cong@gmail.com\" and password \"Cong23032004*\" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)",
+      "desc_full": "The passport image is lost when the user navigates back to view the selected seats from the Traveller Details page and then returns to Traveller Details (user login with email \"cong@gmail.com\" and password \"Cong23032004*\" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)"
+    },
+    {
+      "bug_id": 23,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Airport codes are not displayed on the UI when users search for flight information (such as searching Ha Noi, Ho Chi Minh,..)",
+      "desc_full": "Airport codes are not displayed on the UI when users search for flight information (such as searching Ha Noi, Ho Chi Minh,..)"
+    },
+    {
+      "bug_id": 24,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the Current Bookings page, when a cancellation confirmation popup appears, using the browser Back button does not close the popup (user login with email 'cong@gmail.com' and password 'Cong23032004*')",
+      "desc_full": "On the Current Bookings page, when a cancellation confirmation popup appears, using the browser Back button does not close the popup (user login with email 'cong@gmail.com' and password 'Cong23032004*')"
+    },
+    {
+      "bug_id": 25,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the Manage Bookings page, filtering bookings for user \"btcong\" shows Results = 2 even though only one booking exists (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "On the Manage Bookings page, filtering bookings for user \"btcong\" shows Results = 2 even though only one booking exists (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 26,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the Manage Bookings page, filtering bookings by username \"Btcong\" yields different results compared to \"btcong\", whereas the search function is expected to be case-insensitive.",
+      "desc_full": "On the Manage Bookings page, filtering bookings by username \"Btcong\" yields different results compared to \"btcong\", whereas the search function is expected to be case-insensitive."
+    },
+    {
+      "bug_id": 27,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the Admin Dashboard page, the Total Flights count does not match the actual number of flights.",
+      "desc_full": "On the Admin Dashboard page, the Total Flights count does not match the actual number of flights."
+    },
+    {
+      "bug_id": 28,
+      "root_url": "https://www.saucedemo.com/",
+      "desc_vi": "",
+      "desc_en": "The sorting functionality on the Product page is not working (login with username \"error_user\" and password \"secret_sauce\")",
+      "desc_full": "The sorting functionality on the Product page is not working (login with username \"error_user\" and password \"secret_sauce\")"
+    },
+    {
+      "bug_id": 29,
+      "root_url": "https://www.saucedemo.com/",
+      "desc_vi": "",
+      "desc_en": "Clicking Finish to complete payment has no effect (login with username \"error_user\" and password \"secret_sauce\")",
+      "desc_full": "Clicking Finish to complete payment has no effect (login with username \"error_user\" and password \"secret_sauce\")"
+    },
+    {
+      "bug_id": 30,
+      "root_url": "https://www.saucedemo.com/",
+      "desc_vi": "",
+      "desc_en": "Cart icon is not properly aligned with other header elements, affecting layout consistency (login with username \"visual_user\" and password \"secret_sauce\")",
+      "desc_full": "Cart icon is not properly aligned with other header elements, affecting layout consistency (login with username \"visual_user\" and password \"secret_sauce\")"
+    },
+    {
+      "bug_id": 31,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Users can access promotions page on the Admin page by appending /admin/promotions to the root URL",
+      "desc_full": "Users can access promotions page on the Admin page by appending /admin/promotions to the root URL"
+    },
+    {
+      "bug_id": 32,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Users can access manage bookings page on the Admin page by appending /admin/bookings to the root URL",
+      "desc_full": "Users can access manage bookings page on the Admin page by appending /admin/bookings to the root URL"
+    },
+    {
+      "bug_id": 33,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Users can access manage airports page on the Admin page by appending /admin/airports to the root URL",
+      "desc_full": "Users can access manage airports page on the Admin page by appending /admin/airports to the root URL"
+    },
+    {
+      "bug_id": 34,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "The admin sidebar highlights “Manage Flights” even when another admin page is open (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_en": "",
+      "desc_full": "The admin sidebar highlights “Manage Flights” even when another admin page is open (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 35,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "In home page, footer award images are broken",
+      "desc_full": "In home page, footer award images are broken"
+    },
+    {
+      "bug_id": 36,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "When the admin filters flights by Flight, the input must exactly match the flight name, with no extra whitespace",
+      "desc_full": "When the admin filters flights by Flight, the input must exactly match the flight name, with no extra whitespace"
+    },
+    {
+      "bug_id": 37,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "When the admin filters flights by User, the input must exactly match the username, with no extra whitespace",
+      "desc_full": "When the admin filters flights by User, the input must exactly match the username, with no extra whitespace"
+    },
+    {
+      "bug_id": 38,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "When the admin filters flights by departure, the input must exactly match the departure name, with no extra whitespace.",
+      "desc_full": "When the admin filters flights by departure, the input must exactly match the departure name, with no extra whitespace."
+    },
+    {
+      "bug_id": 39,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Edit Flight: The save operation succeeds, but the list is not updated until the page is refreshed (F5). (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "Edit Flight: The save operation succeeds, but the list is not updated until the page is refreshed (F5). (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 40,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Admin filter user with value 'btcong' done, then clears all filter inputs and re-searches does not reset the results. (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "Admin filter user with value 'btcong' done, then clears all filter inputs and re-searches does not reset the results. (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 41,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the Manage Flights page, clicking Cancel during editing redirects the user to the Home page instead of staying on the same page (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "On the Manage Flights page, clicking Cancel during editing redirects the user to the Home page instead of staying on the same page (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 42,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the Manage Flights, clicking Clear only resets the UI inputs/dropdowns but does not reset the applied flight number filter",
+      "desc_full": "On the Manage Flights, clicking Clear only resets the UI inputs/dropdowns but does not reset the applied flight number filter"
+    },
+    {
+      "bug_id": 43,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the Manage Flights page, departure sorting (click Departure) uses arrival dates, causing incorrect order",
+      "desc_full": "On the Manage Flights page, departure sorting (click Departure) uses arrival dates, causing incorrect order"
+    },
+    {
+      "bug_id": 44,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the Promotions page, Admin can enter a discount greater than 100% without validation. (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "On the Promotions page, Admin can enter a discount greater than 100% without validation. (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 45,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Admin can create a promotion where the end date is earlier than the start date",
+      "desc_full": "Admin can create a promotion where the end date is earlier than the start date"
+    },
+    {
+      "bug_id": 46,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Promotion form inputs are not reset after clicking Cancel. (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "Promotion form inputs are not reset after clicking Cancel. (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 47,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "In Manage Flights, flight's status colors are incorrect (e.g., delayed status is displayed the same as scheduled)",
+      "desc_full": "In Manage Flights, flight's status colors are incorrect (e.g., delayed status is displayed the same as scheduled)"
+    },
+    {
+      "bug_id": 48,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the Promotion Page, save button allows duplicate submissions on multiple clicks.",
+      "desc_full": "On the Promotion Page, save button allows duplicate submissions on multiple clicks."
+    },
+    {
+      "bug_id": 49,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "After creating a flight, the modal shows multiple spelling errors. (login with email: admin@gmail.com / password: Cong23032004*)",
+      "desc_full": "After creating a flight, the modal shows multiple spelling errors. (login with email: admin@gmail.com / password: Cong23032004*)"
+    },
+    {
+      "bug_id": 50,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "In Manage Flights, after creating a flight, success modal has poor UI: Comic Sans font, red “Close dialog” button, and misaligned button.",
+      "desc_en": "",
+      "desc_full": "In Manage Flights, after creating a flight, success modal has poor UI: Comic Sans font, red “Close dialog” button, and misaligned button."
+    },
+    {
+      "bug_id": 51,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "In Manage Flights, Edit Flight success modal contains multiple typos and unprofessional button text (“OK sure”).",
+      "desc_en": "",
+      "desc_full": "Edit Flight success modal contains multiple typos and unprofessional button text (“OK sure”)."
+    },
+    {
+      "bug_id": 52,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "In Book Flight page, swapping departure and destination updates the UI fields but not the search results, which remain based on the previous locations. (For example searching flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)",
+      "desc_full": "In Book Flight page, swapping departure and destination updates the UI fields but not the search results, which remain based on the previous locations. (For example searching flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)"
+    },
+    {
+      "bug_id": 53,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "User can choose a return date earlier than the departure date without validation when searching flight",
+      "desc_full": "User can choose a return date earlier than the departure date without validation when searching flight"
+    },
+    {
+      "bug_id": 54,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "User can search for flights with departure times in the past.",
+      "desc_full": "User can search for flights with departure times in the past."
+    },
+    {
+      "bug_id": 55,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "When users search flight, popup message for no matching flights contains spelling errors (searching with departure date in the past 20/1/2021).",
+      "desc_full": "When users search flight, popup message for no matching flights contains spelling errors (searching with departure date in the past 20/1/2021)."
+    },
+    {
+      "bug_id": 56,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Clicking the swap button for departure and destination on the Home page has no effect.",
+      "desc_full": "Clicking the swap button for departure and destination on the Home page has no effect."
+    },
+    {
+      "bug_id": 57,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "When user books flight tickets, selected seats lose their highlight after switching seat type tabs, allowing re-selection and causing the total price to increase incorrectly. (user login with email \"cong@gmail.com\" and password \"Cong23032004*\" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)",
+      "desc_full": "When user books flight tickets, selected seats lose their highlight after switching seat type tabs, allowing re-selection and causing the total price to increase incorrectly. (user login with email \"cong@gmail.com\" and password \"Cong23032004*\" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)"
+    },
+    {
+      "bug_id": 58,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "When user books flight tickets, fixed tax is always $10 regardless of the number of passengers. (user login with email \"cong@gmail.com\" and password \"Cong23032004*\" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)",
+      "desc_full": "When user books flight tickets, fixed tax is always $10 regardless of the number of passengers. (user login with email \"cong@gmail.com\" and password \"Cong23032004*\" and book flight from Ho Chi Minh to Ha Noi with departure date 22/04/2026)"
+    },
+    {
+      "bug_id": 59,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "After user logs out, the navbar still shows user info until the page is refreshed. (user login with email 'cong@gmail.com' and password 'Cong23032004*')",
+      "desc_full": "After user logs out, the navbar still shows user info until the page is refreshed. (user login with email 'cong@gmail.com' and password 'Cong23032004*')"
+    },
+    {
+      "bug_id": 60,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the sign-in page, the password visibility (eye) icon does not change state when toggled.",
+      "desc_full": "On the sign-in page, the password visibility (eye) icon does not change state when toggled."
+    },
+    {
+      "bug_id": 61,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "On the sign-up page, the password visibility (eye) icon does not change state when toggled.",
+      "desc_full": "On the sign-up page, the password visibility (eye) icon does not change state when toggled."
+    },
+    {
+      "bug_id": 62,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "In Booking Flight page, flight price sorting after search is incorrect, using lexicographical order instead of numeric order.",
+      "desc_full": "In Booking Flight page, flight price sorting after search is incorrect, using lexicographical order instead of numeric order."
+    },
+    {
+      "bug_id": 63,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "Clicking the “Choose your tour!” carousel navigation buttons has no effect.",
+      "desc_en": "",
+      "desc_full": "Clicking the “Choose your tour!” carousel navigation buttons has no effect."
+    },
+    {
+      "bug_id": 64,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "The \"Plan your journey\" section shows only one promotion per page instead of four",
+      "desc_full": "The \"Plan your journey\" section shows only one promotion per page instead of four"
+    },
+    {
+      "bug_id": 65,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "Carousel navigation for \"Plan your journey\"  is reversed and incorrectly disabled (prev/next handlers and states are swapped).",
+      "desc_full": "Carousel navigation for \"Plan your journey\"  is reversed and incorrectly disabled (prev/next handlers and states are swapped)."
+    },
+    {
+      "bug_id": 66,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "In Key Info page, Travel Safe insurance price is shown as 580,000 VND instead of the correct 58,000 VND (10× higher).",
+      "desc_en": "",
+      "desc_full": "In Key Info page, Travel Safe insurance price is shown as 580,000 VND instead of the correct 58,000 VND (10× higher)."
+    },
+    {
+      "bug_id": 67,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "Go to Key Info page, the “See more details here” link in the Travel Insurance card leads to a non-existent page (404 error).",
+      "desc_en": "",
+      "desc_full": "Go to Key Info page, the “See more details here” link in the Travel Insurance card leads to a non-existent page (404 error)."
+    },
+    {
+      "bug_id": 68,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "In Key Info page, Xanh SM Taxi hotline number has the last two digits swapped, showing “1900 2079” instead of “1900 2097”.",
+      "desc_en": "",
+      "desc_full": "In Key Info page, Xanh SM Taxi hotline number has the last two digits swapped, showing “1900 2079” instead of “1900 2097”."
+    },
+    {
+      "bug_id": 69,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "In Manage Bookings, Total Price does not update with filters and always shows the sum of all bookings.",
+      "desc_full": "In Manage Bookings, Total Price does not update with filters and always shows the sum of all bookings."
+    },
+    {
+      "bug_id": 70,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "",
+      "desc_en": "All rows in the Aircraft list display the same logo (from the first aircraft).",
+      "desc_full": "All rows in the Aircraft list display the same logo (from the first aircraft)."
+    },
+    {
+      "bug_id": 71,
+      "root_url": "http://qairline.ui-testing.io.vn/",
+      "desc_vi": "In Admin dashboard, “Total Bookings” and “Total Aircrafts” stats are swapped, each showing the other’s value",
+      "desc_en": "",
+      "desc_full": "In Admin dashboard, “Total Bookings” and “Total Aircrafts” stats are swapped, each showing the other’s value"
+    },
+    {
+      "bug_id": 72,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "The \"Status\" column in the Blog List displays raw lowercase values without capitalization (login with default values)",
+      "desc_full": "The \"Status\" column in the Blog List displays raw lowercase values without capitalization (login with default values)"
+    },
+    {
+      "bug_id": 73,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "The \"Category\" column in the Blog List always displays \"Loading...\" even after the data has finished loading. (login with default values)",
+      "desc_full": "The \"Category\" column in the Blog List always displays \"Loading...\" even after the data has finished loading. (login with default values)"
+    },
+    {
+      "bug_id": 74,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "The \"Category\" field in the BlogPost Show displays “[object Object]” instead of the actual content",
+      "desc_en": "",
+      "desc_full": "The \"Category\" field in the BlogPost Show displays “[object Object]” instead of the actual content"
+    },
+    {
+      "bug_id": 75,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "In the Category List page, the \"title\" column header is lowercase while other column headers are properly capitalized. (login with default values)",
+      "desc_full": "In the Category List page, the \"title\" column header is lowercase while other column headers are properly capitalized. (login with default values)"
+    },
+    {
+      "bug_id": 76,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "The createdAt field in the BlogPost Show displays a raw ISO string instead of a formatted date.",
+      "desc_full": "The createdAt field in the BlogPost Show displays a raw ISO string instead of a formatted date."
+    },
+    {
+      "bug_id": 77,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "\"Status\" field in the BlogPost Show is not displayed (renders as undefined).",
+      "desc_full": "\"Status\" field in the BlogPost Show is not displayed (renders as undefined)."
+    },
+    {
+      "bug_id": 78,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "In the Category Show, the ID and Title fields are swapped (ID shows title, Title shows ID).",
+      "desc_full": "In the Category Show, the ID and Title fields are swapped (ID shows title, Title shows ID)."
+    },
+    {
+      "bug_id": 79,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "Username overlaps with the avatar, causing a layout issue. (login with default values)",
+      "desc_full": "Username overlaps with the avatar, causing a layout issue. (login with default values)"
+    },
+    {
+      "bug_id": 80,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "The Delete button in the BlogPost List is disabled. (login with default values)",
+      "desc_full": "The Delete button in the BlogPost List is disabled. (login with default values)"
+    },
+    {
+      "bug_id": 81,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "Dark mode switch is not working — toggling does not change the theme.",
+      "desc_en": "",
+      "desc_full": "Dark mode switch is not working — toggling does not change the theme."
+    },
+    {
+      "bug_id": 82,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "In the Create BlogPost form, the Title field is disabled and cannot be edited.",
+      "desc_full": "In the Create BlogPost form, the Title field is disabled and cannot be edited."
+    },
+    {
+      "bug_id": 83,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "In BlogPost Create, the Status field always resets to \"draft\" regardless of the selected option. (login with default values)",
+      "desc_full": "In BlogPost Create, the Status field always resets to \"draft\" regardless of the selected option. (login with default values)"
+    },
+    {
+      "bug_id": 84,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "In Category Create, empty submissions pass validation (validation rules are missing) (login with default values)",
+      "desc_full": "In Category Create, empty submissions pass validation (validation rules are missing) (login with default values)"
+    },
+    {
+      "bug_id": 85,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "In BlogPost Show, the Delete action does not show a confirmation dialog and deletes immediately.",
+      "desc_full": "In BlogPost Show, the Delete action does not show a confirmation dialog and deletes immediately."
+    },
+    {
+      "bug_id": 86,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "In Category Edit, after saving, the page redirects to the BlogPost List instead of the Category List. (login with default values)",
+      "desc_full": "In Category Edit, after saving, the page redirects to the BlogPost List instead of the Category List. (login with default values)"
+    },
+    {
+      "bug_id": 87,
+      "root_url": "https://bug-refinedev.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "The Content column incorrectly shows the string length alongside the preview text on every row.",
+      "desc_full": "The Content column incorrectly shows the string length alongside the preview text on every row."
+    },
+    {
+      "bug_id": 88,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "The Footer \"About\" link leads to a 404 page.",
+      "desc_full": "The Footer \"About\" link leads to a 404 page."
+    },
+    {
+      "bug_id": 89,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "The Footer \"FAQ\" link leads to a 404 page.",
+      "desc_full": "The Footer \"FAQ\" link leads to a 404 page."
+    },
+    {
+      "bug_id": 90,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "The Footer \"Contact\" link leads to a 404 page.",
+      "desc_full": "The Footer \"Contact\" link leads to a 404 page."
+    },
+    {
+      "bug_id": 91,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "Product name text overflows the container and overlaps the product image.",
+      "desc_full": "Product name text overflows the container and overlaps the product image."
+    },
+    {
+      "bug_id": 92,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "In product information details page, users cannot navigate product images using the gallery arrows.",
+      "desc_full": "In product information details page, users cannot navigate product images using the gallery arrows."
+    },
+    {
+      "bug_id": 93,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "In product information details page, the price component shows € and “EUR” instead of USD on the product detail page.",
+      "desc_en": "",
+      "desc_full": "In product information details page, the price component shows € and “EUR” instead of USD on the product detail page."
+    },
+    {
+      "bug_id": 94,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "Clicking “Proceed to Checkout” leads to a 404 page, preventing users from completing the purchase.",
+      "desc_en": "",
+      "desc_full": "Clicking “Proceed to Checkout” leads to a 404 page, preventing users from completing the purchase."
+    },
+    {
+      "bug_id": 95,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "Clicking “Accessories” in the navbar leads to a 404 page.",
+      "desc_en": "",
+      "desc_full": "Clicking “Accessories” in the navbar leads to a 404 page."
+    },
+    {
+      "bug_id": 96,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "In product information details page, clicking any related product redirects to the homepage instead of its product detail page.",
+      "desc_full": "In product information details page, clicking any related product redirects to the homepage instead of its product detail page."
+    },
+    {
+      "bug_id": 97,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "Clicking the Wool Beanie product causes a crash.",
+      "desc_full": "Clicking the Wool Beanie product causes a crash."
+    },
+    {
+      "bug_id": 98,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "Sorting products by “Trending” on the Apparel page causes a crash.",
+      "desc_en": "",
+      "desc_full": "Sorting products by “Trending” on the Apparel page causes a crash."
+    },
+    {
+      "bug_id": 99,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "Price sorting (low to high) is reversed.",
+      "desc_full": "Price sorting (low to high) is reversed."
+    },
+    {
+      "bug_id": 100,
+      "root_url": "https://bug-commerce.vercel.app/",
+      "desc_vi": "",
+      "desc_en": "Price sorting (high to low) is reversed.",
+      "desc_full": "Price sorting (high to low) is reversed."
+    }
+  ]
+}

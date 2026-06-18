@@ -1,0 +1,156 @@
+##################################
+# Python
+##################################
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.h5
+
+##################################
+# Virtual Environments
+##################################
+.venv/
+venv/
+env/
+ENV/
+
+##################################
+# Environment & Secrets
+##################################
+.env
+.env.*
+*.env
+openai_key.txt
+apikey.txt
+secrets.json
+config.local.json
+
+##################################
+# LangGraph / LLM Agents
+##################################
+chat_history.db
+*.sqlite
+*.sqlite3
+agent_logs/
+memory_store/
+vector_store/
+faiss_index/
+chroma/
+data/chroma_db/  
+pinecone/
+milvus/
+
+##################################
+# FastAPI
+##################################
+logs/
+*.pid
+uvicorn.log
+
+##################################
+# Selenium
+##################################
+chromedriver.exe
+geckodriver.exe
+msedgedriver.exe
+selenium_profiles/
+chrome_profile/
+browser_data/
+*.har
+screenshots/
+downloads/
+
+##################################
+# Jupyter / Experiments
+##################################
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+##################################
+# OS
+##################################
+.DS_Store
+Thumbs.db
+
+##################################
+# IDE
+##################################
+.vscode/
+.idea/
+*.iml
+
+##################################
+# Build & cache
+##################################
+build/
+dist/
+.eggs/
+*.egg-info/
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+##################################
+# Node (nếu dùng FE Vite / React)
+##################################
+node_modules/
+dist/
+.vite/
+
+##################################
+# Test output
+##################################
+test_results/
+coverage/
+htmlcov/
+
+##################################
+# folder uploads
+uploads/
+
+#Database files
+*.db
+*.bin
+
+
+# Editor folders
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+crawl_data/
+.playwright-mcp/
+references/
+results/
+# Cơ sở dữ liệu và cache của Agent
+rebugger-agent/data/

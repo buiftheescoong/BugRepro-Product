@@ -1,0 +1,45 @@
+[
+  {
+    "_id": {
+      "$oid": "697b71059a7065c560bd1b31"
+    },
+    "include": [
+      "Carry-on luggage: 07kg",
+      "Sky Care insurance (not applicable for flights operated by QAirline)."
+    ],
+    "exclude": [
+      "Checked baggage (optional).",
+      "Meal",
+      "3-in-1 amenity kit.",
+      "Pre-select seat.",
+      "Change flight, travel date, or itinerary.",
+      "Fare difference when making changes (if applicable)."
+    ],
+    "extra_fee": 0,
+    "type": "Economy"
+  },
+  {
+    "_id": {
+      "$oid": "697b71889a7065c560bd1b33"
+    },
+    "include": [
+      "Carry-on luggage: 10kg.",
+      "Checked baggage: 30kg and 1 set of golf equipment (if applicable).",
+      "Luxurious lounge (not applicable on domestic flights within Vietnam and at airports with lounges that do not meet the standards or are closed during flight operating hours).",
+      "Priority check-in before the flight.",
+      "Priority baggage service.",
+      "Priority security clearance (subject to the conditions of each airport).",
+      "Private shuttle service to the aircraft (applies when the aircraft is parked on the tarmac; not applicable at airports that do not provide private shuttle services).",
+      "Priority seat selection on the aircraft (not applicable to seats reserved for Business class passengers).",
+      "Enjoy fresh cuisine throughout the flight.",
+      "Amenity kit (for flights of 4 hours or more).",
+      "\nRefund of ticket fare credit within 2 (two) years from the original scheduled departure date.",
+      "Sky Care insurance (not applicable for flights operated by QAirline)."
+    ],
+    "exclude": [
+      ""
+    ],
+    "extra_fee": 0.5,
+    "type": "Business"
+  }
+]

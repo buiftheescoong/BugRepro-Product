@@ -1,0 +1,48 @@
+[
+  {
+    "_id": {
+      "$oid": "6a01f2caaea3c1367cc2c102"
+    },
+    "flight": {
+      "$oid": "6a01f1feaea3c1367cc2b9d6"
+    },
+    "user": {
+      "$oid": "6979dd144a5909b513f99959"
+    },
+    "seatNumber": "A30",
+    "classType": "Economy",
+    "price": 200,
+    "firstName": "The Cong",
+    "lastName": "Bui",
+    "dob": "2004-03-23",
+    "passportNumber": "0987654321",
+    "state": "Bac Ninh",
+    "phoneNumber": "0976543218",
+    "email": "cong@gmail.com",
+    "passportSizePhoto": "https://res.cloudinary.com/dmjgdrcme/image/upload/v1778512585/oxzslxaho1oswbocjoix.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6a01f32aaea3c1367cc2c37f"
+    },
+    "flight": {
+      "$oid": "6a01f26daea3c1367cc2bbe2"
+    },
+    "user": {
+      "$oid": "697b7824f28eccaeec66ef69"
+    },
+    "seatNumber": "B16",
+    "classType": "Business",
+    "price": 150,
+    "firstName": "Nguyen Van",
+    "lastName": "A",
+    "dob": "1999-12-10",
+    "passportNumber": "1234567890",
+    "state": "Bac Ninh",
+    "phoneNumber": "0976543218",
+    "email": "a@gmail.com",
+    "passportSizePhoto": "https://res.cloudinary.com/dmjgdrcme/image/upload/v1778512681/glcyvvyh4q5l9dens6az.jpg",
+    "__v": 0
+  }
+]
